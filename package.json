@@ -53,5 +53,9 @@
     "lerna": "^3.0.0-beta.10",
     "markdownlint-cli": "^0.3.1",
     "react": ">= 0.13.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "file:packages/eslint-config-airbnb",
+    "eslint-config-airbnb-base": "file:packages/eslint-config-airbnb-base"
   }
 }
