@@ -1,5 +1,5 @@
 const baseConfig = require('.');
-const CLIEngine = require('eslint').CLIEngine;
+const { CLIEngine } = require('eslint');
 
 function onlyErrorOnRules(rulesToError, config) {
   const errorsOnly = Object.assign({}, config);
