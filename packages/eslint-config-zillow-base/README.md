@@ -25,10 +25,6 @@ For example, in a JSON `.eslintrc`:
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+.
 
-### `"extends": "zillow-base/legacy"`
-
-Lints ES5 and below.
-
 ## Related
 
 - [Zillow's overarching ESLint config](https://npmjs.com/eslint-config-zillow)
