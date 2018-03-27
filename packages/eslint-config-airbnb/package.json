@@ -4,13 +4,7 @@
   "description": "Airbnb's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "pretests-only": "node ./test/requires",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
-    "test": "npm run --silent tests-only",
-    "pretravis": "cd ../eslint-config-airbnb-base && npm install && npm link && cd - && npm link --no-save eslint-config-airbnb-base",
-    "travis": "npm run --silent test",
-    "posttravis": "npm unlink --no-save eslint-config-airbnb-base >/dev/null &"
+    "test": "echo \"Run tests from root\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -48,14 +42,6 @@
   "engines": {
     "node": ">= 8.9.0"
   },
-  "devDependencies": {
-    "babel-tape-runner": "^2.0.1",
-    "editorconfig-tools": "^0.1.1",
-    "in-publish": "^2.0.0",
-    "react": ">= 0.13.0",
-    "safe-publish-latest": "^1.1.1",
-    "tape": "^4.9.0"
-  },
   "peerDependencies": {
     "eslint": "^4.18.1",
     "eslint-plugin-import": "^2.9.0",
@@ -63,7 +49,7 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-zillow-base": "file:../eslint-config-zillow-base",
     "object.assign": "^4.1.0",
     "object.entries": "^1.0.4"
   }

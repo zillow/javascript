@@ -4,13 +4,7 @@
   "description": "Airbnb's base JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "pretests-only": "node ./test/requires",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
-    "test": "npm run --silent tests-only",
-    "pretravis": ":",
-    "travis": "npm run --silent test",
-    "posttravis": ":"
+    "test": "echo \"Run tests from root\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -47,13 +41,6 @@
   "homepage": "https://github.com/airbnb/javascript",
   "engines": {
     "node": ">= 8.9.0"
-  },
-  "devDependencies": {
-    "babel-tape-runner": "^2.0.1",
-    "editorconfig-tools": "^0.1.1",
-    "in-publish": "^2.0.0",
-    "safe-publish-latest": "^1.1.1",
-    "tape": "^4.9.0"
   },
   "peerDependencies": {
     "eslint": "^4.18.1",

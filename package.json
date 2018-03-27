@@ -1,23 +1,18 @@
 {
   "name": "airbnb-style",
-  "version": "2.0.0",
+  "version": "0.0.0-monorepo",
+  "private": true,
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
-    "preinstall": "npm run install:config && npm run install:config:base",
-    "install:config": "cd packages/eslint-config-airbnb && npm prune && npm install",
-    "install:config:base": "cd packages/eslint-config-airbnb-base && npm prune && npm install",
     "lint": "npm run --silent lint:js && npm run --silent lint:md",
     "lint:js": "eslint ./packages --cache --report-unused-disable-directives",
     "lint:md": "markdownlint --config linters/.markdownlint.json README.md */README.md",
     "lint:rules": "eslint-find-rules --unused packages/*",
     "pretest": "npm run --silent lint",
-    "test": "npm run --silent test:config && npm run --silent test:config:base",
-    "test:config": "cd packages/eslint-config-airbnb; npm test",
-    "test:config:base": "cd packages/eslint-config-airbnb-base; npm test",
-    "pretravis": "npm run --silent lint",
-    "travis": "npm run --silent travis:config && npm run --silent travis:config:base",
-    "travis:config": "cd packages/eslint-config-airbnb; npm run travis",
-    "travis:config:base": "cd packages/eslint-config-airbnb-base; npm run travis"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prerelease": "npm test && npm run --silent lint:rules",
+    "release": "lerna publish"
   },
   "repository": {
     "type": "git",
@@ -41,12 +36,21 @@
   "engines": {
     "node": ">= 8.9.0"
   },
+  "jest": {
+    "rootDir": "packages",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/test/**/*.js"
+    ]
+  },
   "devDependencies": {
     "eslint": "^4.18.1",
     "eslint-find-rules": "^3.2.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "lerna": "^3.0.0-beta.10",
     "markdownlint-cli": "^0.3.1",
     "react": ">= 0.13.0"
   }
