@@ -5,11 +5,12 @@
     - plugin:jest/recommended
   plugins:
     - jest
+  env:
+    jest/globals: false
   rules:
-    comma-dangle: off
     prefer-destructuring: off
     strict: off
   overrides:
     - files: "**/test/**"
       env:
-        jest: true
+        jest/globals: true
