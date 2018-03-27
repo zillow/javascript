@@ -6,92 +6,43 @@ This package provides Zillow's base JS .eslintrc (without React plugins) as an e
 
 ## Usage
 
-We export two ESLint configurations for your usage.
+To install with all necessary `peerDependencies`, use [install-peerdeps](https://github.com/nathanhleung/install-peerdeps#usage):
 
-### eslint-config-zillow-base
+```sh
+npx install-peerdeps --dev eslint-config-zillow-base
+```
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires `eslint` and `eslint-plugin-import`.
+All exported configs should be added to your [ESlint configuration file](https://eslint.org/docs/user-guide/configuring#extending-configuration-files) `extends`.
+For example, in a JSON `.eslintrc`:
 
-If you use yarn, run `npm info "eslint-config-zillow-base@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency. See below for npm instructions.
+```json
+{
+  "extends": "zillow-base"
+}
+```
 
-1. Install the correct versions of each package, which are listed by the command:
+### `"extends": "zillow-base"`
 
-  ```sh
-  npm info "eslint-config-zillow-base@latest" peerDependencies
-  ```
+Our default export contains all of our ESLint rules, including ECMAScript 6+.
 
-  If using **npm 5+**, use this shortcut
+### `"extends": "zillow-base/legacy"`
 
-  ```sh
-  npx install-peerdeps --dev eslint-config-zillow-base
-  ```
+Lints ES5 and below.
 
-  If using **npm < 5**, Linux/OSX users can run
+### `"extends": "zillow-base/whitespace"`
 
-  ```sh
-  (
-    export PKG=eslint-config-zillow-base;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
+Only error on whitespace rules and warn on all other rules.
+View the list of whitespace rules [here](https://github.com/zillow/javascript/blob/master/packages/eslint-config-zillow-base/whitespace.js).
 
-  Which produces and runs a command like:
+## Related
 
-  ```sh
-    npm install --save-dev eslint-config-zillow-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-  ```
+- [Zillow's overarching ESLint config](https://npmjs.com/eslint-config-zillow)
+- [Zillow's Javascript styleguide](https://github.com/zillow/javascript)
 
-  If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-  ```sh
-  npm install -g install-peerdeps
-  install-peerdeps --dev eslint-config-zillow-base
-  ```
-
-  The cli will produce and run a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-zillow-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-  ```
-
-2. Add `"extends": "zillow-base"` to your .eslintrc.
-
-### eslint-config-zillow-base/legacy
-
-Lints ES5 and below. Requires `eslint` and `eslint-plugin-import`.
-
-1. Install the correct versions of each package, which are listed by the command:
-
-  ```sh
-  npm info "eslint-config-zillow-base@latest" peerDependencies
-  ```
-
-  Linux/OSX users can run
-  ```sh
-  (
-    export PKG=eslint-config-zillow-base;
-    npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
-  )
-  ```
-
-  Which produces and runs a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-zillow-base eslint@^3.0.1 eslint-plugin-import@^1.10.3
-  ```
-
-2. Add `"extends": "zillow-base/legacy"` to your .eslintrc
-
-See [Zillow's overarching ESLint config](https://npmjs.com/eslint-config-zillow), [Zillow's Javascript styleguide](https://github.com/zillow/javascript), and the [ESlint config docs](https://eslint.org/docs/user-guide/configuring#extending-configuration-files) for more information.
-
-### eslint-config-zillow-base/whitespace
-
-This entry point that only warns on whitespace rules and sets all other rules to warnings. View the list of whitespace rules [here](https://github.com/zillow/javascript/blob/master/packages/eslint-config-zillow-base/whitespace.js).
-
-## Improving this config
+## Development
 
 Consider adding test cases if you're making complicated rules changes, like anything involving regexes. Perhaps in a distant future, we could use literate programming to structure our README as test cases for our .eslintrc?
 
-You can run tests with `npm test`.
+You can run tests (from the repo root) with `npm test`.
 
-You can make sure this module lints with itself using `npm run lint`.
+You can make sure this module lints with itself using `npm run lint` (from the repo root).
