@@ -6,7 +6,10 @@
     "preinstall": "npm run install:config && npm run install:config:base",
     "install:config": "cd packages/eslint-config-airbnb && npm prune && npm install",
     "install:config:base": "cd packages/eslint-config-airbnb-base && npm prune && npm install",
-    "lint": "markdownlint --config linters/.markdownlint.json README.md */README.md",
+    "lint": "npm run --silent lint:js && npm run --silent lint:md",
+    "lint:js": "eslint ./packages --cache --report-unused-disable-directives",
+    "lint:md": "markdownlint --config linters/.markdownlint.json README.md */README.md",
+    "lint:rules": "eslint-find-rules --unused packages/*",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent test:config && npm run --silent test:config:base",
     "test:config": "cd packages/eslint-config-airbnb; npm test",
@@ -36,6 +39,12 @@
   },
   "homepage": "https://github.com/airbnb/javascript",
   "devDependencies": {
-    "markdownlint-cli": "^0.3.1"
+    "eslint": "^4.18.1",
+    "eslint-find-rules": "^3.2.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "markdownlint-cli": "^0.3.1",
+    "react": ">= 0.13.0"
   }
 }

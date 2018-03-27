@@ -1,0 +1,3 @@
+---
+  extends: "./packages/eslint-config-zillow-base"
+  root: true
