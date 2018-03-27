@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "npm run --silent lint:js && npm run --silent lint:md",
     "lint:js": "eslint ./packages --cache --report-unused-disable-directives",
-    "lint:md": "markdownlint --config linters/.markdownlint.json README.md */README.md packages/*/README.md",
+    "lint:md": "markdownlint README.md */README.md packages/*/README.md",
     "lint:rules": "eslint-find-rules --unused packages/*",
     "pretest": "npm run --silent lint",
     "test": "jest",
