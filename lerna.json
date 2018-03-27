@@ -1,4 +1,18 @@
 {
+  "command": {
+    "create": {
+      "license": "MIT"
+    },
+    "publish": {
+      "allowBranch": "latest",
+      "conventionalCommits": true,
+      "message": "chore(release): Publish"
+    }
+  },
+  "ignoreChanges": [
+    "**/test/**",
+    "**/*.md"
+  ],
   "packages": [
     "packages/*"
   ],
