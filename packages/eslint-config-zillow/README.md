@@ -27,11 +27,6 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ and
 
 If you don't need React, use [eslint-config-zillow-base](https://npmjs.com/eslint-config-zillow-base).
 
-### `"extends": "zillow/whitespace"`
-
-Only error on whitespace rules and warn on all other rules.
-View the list of whitespace rules [here](https://github.com/zillow/javascript/blob/master/packages/eslint-config-zillow/whitespace.js).
-
 ## Related
 
 - [Zillow's Javascript styleguide](https://github.com/zillow/javascript)

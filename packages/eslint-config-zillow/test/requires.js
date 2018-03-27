@@ -9,5 +9,4 @@ test('all entry points parse', () => {
   expect(() => require('..')).not.toThrow();
   expect(() => require('../base')).not.toThrow();
   expect(() => require('../legacy')).not.toThrow();
-  expect(() => require('../whitespace')).not.toThrow();
 });
