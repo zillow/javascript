@@ -49,8 +49,6 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "dependencies": {
-    "eslint-config-zillow-base": "file:../eslint-config-zillow-base",
-    "object.assign": "^4.1.0",
-    "object.entries": "^1.0.4"
+    "eslint-config-airbnb-base": "file:../eslint-config-airbnb-base"
   }
 }

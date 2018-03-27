@@ -1,16 +1,13 @@
 const baseConfig = require('.');
-const assign = require('object.assign');
-const entries = require('object.entries');
 const CLIEngine = require('eslint').CLIEngine;
 
 function onlyErrorOnRules(rulesToError, config) {
-  const errorsOnly = assign({}, config);
+  const errorsOnly = Object.assign({}, config);
   const cli = new CLIEngine({ baseConfig: config, useEslintrc: false });
   const baseRules = cli.getConfigForFile('./').rules;
 
-  entries(baseRules).forEach((rule) => {
-    const ruleName = rule[0];
-    const ruleConfig = rule[1];
+  Object.keys(baseRules).forEach((ruleName) => {
+    const ruleConfig = baseRules[ruleName];
 
     if (rulesToError.indexOf(ruleName) === -1) {
       if (Array.isArray(ruleConfig)) {
