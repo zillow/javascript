@@ -1,5 +1,5 @@
 {
-  "name": "airbnb-style",
+  "name": "zillow-style",
   "version": "0.0.0-monorepo",
   "private": true,
   "description": "A mostly reasonable approach to JavaScript.",
@@ -16,23 +16,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript.git"
+    "url": "https://github.com/zillow/javascript.git"
   },
   "keywords": [
     "style guide",
     "lint",
-    "airbnb",
+    "zillow",
     "es6",
     "es2015",
     "react",
     "jsx"
   ],
-  "author": "Harrison Shoff <hi@hshoff.com> (https://twitter.com/hshoff)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
-  },
-  "homepage": "https://github.com/airbnb/javascript",
+  "homepage": "https://github.com/zillow/javascript",
   "engines": {
     "node": ">= 8.9.0"
   },
@@ -69,7 +65,7 @@
     "react": ">= 0.13.0"
   },
   "dependencies": {
-    "eslint-config-airbnb": "file:packages/eslint-config-airbnb",
-    "eslint-config-airbnb-base": "file:packages/eslint-config-airbnb-base"
+    "eslint-config-zillow": "file:packages/eslint-config-zillow",
+    "eslint-config-zillow-base": "file:packages/eslint-config-zillow-base"
   }
 }
