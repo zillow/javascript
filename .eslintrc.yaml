@@ -1,3 +1,15 @@
 ---
-  extends: "airbnb-base"
   root: true
+  extends:
+    - airbnb-base
+    - plugin:jest/recommended
+  plugins:
+    - jest
+  rules:
+    comma-dangle: off
+    prefer-destructuring: off
+    strict: off
+  overrides:
+    - files: "**/test/**"
+      env:
+        jest: true

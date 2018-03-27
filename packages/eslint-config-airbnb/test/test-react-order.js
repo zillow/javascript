@@ -1,4 +1,3 @@
-import test from 'tape';
 import { CLIEngine } from 'eslint';
 import eslintrc from '..';
 import reactRules from '../rules/react';
@@ -20,6 +19,7 @@ function lint(text) {
   // @see https://eslint.org/docs/developer-guide/nodejs-api.html#executeonfiles
   // @see https://eslint.org/docs/developer-guide/nodejs-api.html#executeontext
   const linter = cli.executeOnText(text);
+
   return linter.results[0];
 }
 
@@ -34,15 +34,15 @@ ${body}
 `;
 }
 
-test('validate react prop order', (t) => {
-  t.test('make sure our eslintrc has React and JSX linting dependencies', (t) => {
-    t.plan(2);
-    t.deepEqual(reactRules.plugins, ['react']);
-    t.deepEqual(reactA11yRules.plugins, ['jsx-a11y', 'react']);
+describe('validate react prop order', () => {
+  test('make sure our eslintrc has React and JSX linting dependencies', () => {
+    expect(reactRules.plugins).toEqual(['react']);
+    expect(reactA11yRules.plugins).toEqual(['jsx-a11y', 'react']);
   });
 
-  t.test('passes a good component', (t) => {
-    t.plan(3);
+  test('passes a good component', () => {
+    expect.assertions(3);
+
     const result = lint(wrapComponent(`
   componentWillMount() {}
   componentDidMount() {}
@@ -53,13 +53,14 @@ test('validate react prop order', (t) => {
   renderDogs() {}
   render() { return <div />; }`));
 
-    t.notOk(result.warningCount, 'no warnings');
-    t.notOk(result.errorCount, 'no errors');
-    t.deepEquals(result.messages, [], 'no messages in results');
+    expect(result.warningCount).toBe(0);
+    expect(result.errorCount).toBe(0);
+    expect(result.messages).toHaveLength(0);
   });
 
-  t.test('order: when random method is first', (t) => {
-    t.plan(2);
+  test('order: when random method is first', () => {
+    expect.assertions(2);
+
     const result = lint(wrapComponent(`
   someMethod() {}
   componentWillMount() {}
@@ -71,12 +72,13 @@ test('validate react prop order', (t) => {
   render() { return <div />; }
 `));
 
-    t.ok(result.errorCount, 'fails');
-    t.equal(result.messages[0].ruleId, 'react/sort-comp', 'fails due to sort');
+    expect(result.errorCount).toBeGreaterThan(0);
+    expect(result.messages[0].ruleId).toBe('react/sort-comp');
   });
 
-  t.test('order: when random method after lifecycle methods', (t) => {
-    t.plan(2);
+  test('order: when random method after lifecycle methods', () => {
+    expect.assertions(2);
+
     const result = lint(wrapComponent(`
   componentWillMount() {}
   componentDidMount() {}
@@ -88,7 +90,7 @@ test('validate react prop order', (t) => {
   render() { return <div />; }
 `));
 
-    t.ok(result.errorCount, 'fails');
-    t.equal(result.messages[0].ruleId, 'react/sort-comp', 'fails due to sort');
+    expect(result.errorCount).toBeGreaterThan(0);
+    expect(result.messages[0].ruleId).toBe('react/sort-comp');
   });
 });
