@@ -23,7 +23,7 @@ For example, in a JSON `.eslintrc`:
 
 ### `"extends": "zillow"`
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+ and React.
+Lint all the things, including ECMAScript 6+ and React.
 
 If you don't need React, use [eslint-config-zillow-base](https://npmjs.com/eslint-config-zillow-base).
 
