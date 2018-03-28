@@ -3,6 +3,10 @@
   "version": "16.1.0",
   "description": "Zillow's ESLint config, following our styleguide",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "rules"
+  ],
   "scripts": {
     "test": "echo \"Run tests from root\" && exit 1"
   },
