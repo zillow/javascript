@@ -12,6 +12,10 @@ const cli = new CLIEngine({
     'import/no-extraneous-dependencies': [2, { devDependencies: true }],
     // this doesn't matter for tests
     'lines-between-class-members': 0,
+    // overrides indent to match upstream
+    indent: ['error', 2],
+    'react/jsx-indent': ['error', 2],
+    'react/jsx-indent-props': ['error', 2],
   },
 });
 

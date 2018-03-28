@@ -3,3 +3,7 @@
   rules:
     # match upstream because dangling comma conflicts are _the worst_
     comma-dangle: off
+    # ditto for indent
+    indent: [error, 2]
+    react/jsx-indent: [error, 2]
+    react/jsx-indent-props: [error, 2]
