@@ -178,6 +178,7 @@ module.exports = {
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: false }],
 
     // enforces empty lines around comments
+    // FIXME: prettier override
     'lines-around-comment': 'off',
 
     // require or disallow newlines around directives
@@ -192,6 +193,7 @@ module.exports = {
 
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
+    // FIXME: prettier override
     'max-len': ['error', 100, 2, {
       ignoreUrls: true,
       ignoreComments: false,
@@ -273,6 +275,7 @@ module.exports = {
 
     // disallow un-paren'd mixes of different operators
     // https://eslint.org/docs/rules/no-mixed-operators
+    // FIXME: prettier override
     'no-mixed-operators': ['error', {
       // the list of arthmetic groups disallows mixing `%` and `**`
       // with other arithmetic operators.
@@ -344,6 +347,7 @@ module.exports = {
     'no-spaced-func': 'error',
 
     // disallow tab characters entirely
+    // FIXME: prettier override
     'no-tabs': 'error',
 
     // disallow the use of ternary operators
@@ -421,6 +425,7 @@ module.exports = {
     'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
     // specify whether double or single quotes should be used
+    // FIXME: prettier override
     quotes: ['error', 'single', { avoidEscape: true }],
 
     // do not require jsdoc

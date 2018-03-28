@@ -23,6 +23,7 @@ module.exports = {
     'consistent-return': 'error',
 
     // specify curly brace conventions for all control statements
+    // FIXME: prettier override
     curly: ['error', 'multi-line'],
 
     // require default case in switch statements

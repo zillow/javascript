@@ -42,6 +42,7 @@ module.exports = {
 
     // disallow arrow functions where they could be confused with comparisons
     // https://eslint.org/docs/rules/no-confusing-arrow
+    // FIXME: prettier override
     'no-confusing-arrow': ['error', {
       allowParens: true,
     }],
