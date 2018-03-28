@@ -1,6 +1,7 @@
 # eslint-config-zillow-base
 
-[![npm version](https://badge.fury.io/js/eslint-config-zillow-base.svg)](http://badge.fury.io/js/eslint-config-zillow-base)
+[![npm version](https://img.shields.io/npm/v/eslint-config-zillow-base.svg)](https://www.npmjs.com/package/eslint-config-zillow-base)
+[![Build Status](https://travis-ci.org/zillow/javascript.svg?branch=latest)](https://travis-ci.org/zillow/javascript)
 
 This package provides Zillow's base JS .eslintrc (without React plugins) as an extensible shared config.
 

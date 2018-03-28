@@ -4,8 +4,8 @@
 
 > **Note**: this guide assumes you are using [Babel](https://babeljs.io), and requires that you use [babel-preset-airbnb](https://npmjs.com/babel-preset-airbnb) or the equivalent. It also assumes you are installing shims/polyfills in your app, with [airbnb-browser-shims](https://npmjs.com/airbnb-browser-shims) or the equivalent.
 
-[![Downloads](https://img.shields.io/npm/dm/eslint-config-zillow.svg)](https://www.npmjs.com/package/eslint-config-zillow)
-[![Downloads](https://img.shields.io/npm/dm/eslint-config-zillow-base.svg)](https://www.npmjs.com/package/eslint-config-zillow-base)
+[![npm version](https://img.shields.io/npm/v/eslint-config-zillow.svg)](https://www.npmjs.com/package/eslint-config-zillow)
+[![Build Status](https://travis-ci.org/zillow/javascript.svg?branch=latest)](https://travis-ci.org/zillow/javascript)
 
 Other Style Guides
 
