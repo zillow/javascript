@@ -229,5 +229,11 @@ module.exports = {
     // Ensures that there are no useless path segments
     // https://github.com/benmosher/eslint-plugin-import/issues/1032
     'import/no-useless-path-segments': 'error',
+
+    // Ensures that there is no resolvable path back to this module via its dependencies.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
+    // TODO: enable? (LOTS of problems right now)
+    'import/no-cycle': ['off', { maxDepth: 10 }],
+    // purportedly claims to honor { commonjs: true, caseSensitive: true }, but it fails instead
   },
 };
