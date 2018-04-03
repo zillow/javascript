@@ -4,14 +4,16 @@
   "private": true,
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
-    "lint": "npm run --silent lint:js && npm run --silent lint:md",
+    "lint": "npm-run-all --silent lint:*",
     "lint:js": "eslint ./packages --cache --report-unused-disable-directives",
     "lint:md": "markdownlint README.md */README.md packages/*/README.md",
-    "lint:rules": "eslint-find-rules --unused packages/*",
+    "lint:rules": "npm-run-all --silent --print-label lint:rules:*",
+    "lint:rules:base": "eslint-find-rules --unused packages/eslint-config-zillow-base/index.js",
+    "lint:rules:main": "eslint-find-rules --unused packages/eslint-config-zillow/index.js",
     "pretest": "npm run --silent lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prerelease": "npm test && npm run --silent lint:rules",
+    "prerelease": "npm test",
     "release": "lerna publish"
   },
   "repository": {
