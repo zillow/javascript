@@ -1,6 +1,6 @@
 # `babel-preset-zillow`
 
-> A Babel preset for transpiling JavaScript following our styleguide
+> A Babel preset for transpiling JavaScript following our code conventions
 
 Currently contains transforms for all standard syntax that is [stage 4](https://tc39.github.io/ecma262/) (ES2017) or [stage 3](https://github.com/tc39/proposals#active-proposals), except for the following:
   - generators: `regenerator-runtime` is too heavyweight for our use.

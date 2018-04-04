@@ -1,4 +1,4 @@
-# Zillow CSS-in-JavaScript Style Guide
+# Zillow CSS-in-JavaScript Code Conventions
 
 *A mostly reasonable approach to CSS-in-JavaScript*
 

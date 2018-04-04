@@ -1,4 +1,4 @@
-# Zillow JavaScript Style Guide() {
+# Zillow JavaScript Code Conventions() {
 
 *A mostly reasonable approach to JavaScript*
 
@@ -7,7 +7,7 @@
 [![npm version](https://img.shields.io/npm/v/eslint-config-zillow.svg)](https://www.npmjs.com/package/eslint-config-zillow)
 [![Build Status](https://travis-ci.org/zillow/javascript.svg?branch=latest)](https://travis-ci.org/zillow/javascript)
 
-Other Style Guides
+Other Code Conventions:
 
   - [React](react/)
   - [CSS-in-JavaScript](css-in-javascript/)
@@ -41,7 +41,7 @@ Other Style Guides
   1. [Events](#events)
   1. [jQuery](#jquery)
   1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
-  1. [ECMAScript 6+ (ES 2015+) Styles](#ecmascript-6-es-2015-styles)
+  1. [ECMAScript 6+ (ES 2015+) Patterns](#ecmascript-6-es-2015-patterns)
   1. [Standard Library](#standard-library)
   1. [Testing](#testing)
   1. [Performance](#performance)
@@ -1219,15 +1219,15 @@ Other Style Guides
 
     ```javascript
     // bad
-    const ZillowStyleGuide = require('./ZillowStyleGuide');
-    module.exports = ZillowStyleGuide.es6;
+    const ZillowCodeConventions = require('./ZillowCodeConventions');
+    module.exports = ZillowCodeConventions.es6;
 
     // ok
-    import ZillowStyleGuide from './ZillowStyleGuide';
-    export default ZillowStyleGuide.es6;
+    import ZillowCodeConventions from './ZillowCodeConventions';
+    export default ZillowCodeConventions.es6;
 
     // best
-    import { es6 } from './ZillowStyleGuide';
+    import { es6 } from './ZillowCodeConventions';
     export default es6;
     ```
 
@@ -1238,10 +1238,10 @@ Other Style Guides
 
     ```javascript
     // bad
-    import * as ZillowStyleGuide from './ZillowStyleGuide';
+    import * as ZillowCodeConventions from './ZillowCodeConventions';
 
     // good
-    import ZillowStyleGuide from './ZillowStyleGuide';
+    import ZillowCodeConventions from './ZillowCodeConventions';
     ```
 
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
@@ -1252,11 +1252,11 @@ Other Style Guides
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './ZillowStyleGuide';
+    export { es6 as default } from './ZillowCodeConventions';
 
     // good
     // filename es6.js
-    import { es6 } from './ZillowStyleGuide';
+    import { es6 } from './ZillowCodeConventions';
     export default es6;
     ```
 
@@ -2412,14 +2412,14 @@ Other Style Guides
 
     ```javascript
     // bad
-    import { es6 } from './ZillowStyleGuide';
+    import { es6 } from './ZillowCodeConventions';
       // ...
     export default es6;
     ```
 
     ```javascript
     // bad
-    import { es6 } from './ZillowStyleGuide';
+    import { es6 } from './ZillowCodeConventions';
       // ...
     export default es6;↵
     ↵
@@ -2427,7 +2427,7 @@ Other Style Guides
 
     ```javascript
     // good
-    import { es6 } from './ZillowStyleGuide';
+    import { es6 } from './ZillowCodeConventions';
       // ...
     export default es6;↵
     ```
@@ -3085,12 +3085,12 @@ Other Style Guides
   - [23.8](#naming--PascalCase-singleton) Use PascalCase when you export a constructor / class / singleton / function library / bare object.
 
     ```javascript
-    const ZillowStyleGuide = {
+    const ZillowCodeConventions = {
       es6: {
       },
     };
 
-    export default ZillowStyleGuide;
+    export default ZillowCodeConventions;
     ```
 
   <a name="naming--Acronyms-and-Initialisms"></a>
@@ -3345,11 +3345,11 @@ Other Style Guides
 
 **[⬆ back to top](#table-of-contents)**
 
-<a name="ecmascript-6-styles"></a>
-## ECMAScript 6+ (ES 2015+) Styles
+<a name="ecmascript-6-patterns"></a>
+## ECMAScript 6+ (ES 2015+) Patterns
 
-  <a name="es6-styles"></a><a name="27.1"></a>
-  - [28.1](#es6-styles) This is a collection of links to the various ES6+ features.
+  <a name="es6-patterns"></a><a name="27.1"></a>
+  - [28.1](#es6-patterns) This is a collection of links to the various ES6+ features.
 
 1. [Arrow Functions](#arrow-functions)
 1. [Classes](#classes--constructors)
@@ -3468,13 +3468,13 @@ Other Style Guides
   - [Prettier](https://prettier.io/)
   - [Jest](https://facebook.github.io/jest/)
 
-**Other Style Guides**
+**Other Code Conventions**
 
   - [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
   - [jQuery Core Style Guidelines](https://contribute.jquery.org/style-guide/js/)
   - [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js)
 
-**Other Styles**
+**Other Patterns**
 
   - [Naming this in nested functions](https://gist.github.com/cjohansen/4135065) - Christian Johansen
   - [Conditional Callbacks](https://github.com/airbnb/javascript/issues/52) - Ross Allen

@@ -1,4 +1,4 @@
-# Zillow React/JSX Style Guide
+# Zillow React/JSX Code Conventions
 
 *A mostly reasonable approach to React and JSX*
 

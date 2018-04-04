@@ -30,7 +30,7 @@ If you don't need React, use [eslint-config-zillow-base](https://npmjs.com/eslin
 
 ## Related
 
-- [Zillow's Javascript styleguide](https://github.com/zillow/javascript)
+- [Zillow's Javascript code conventions](https://github.com/zillow/javascript)
 
 ## Development
 

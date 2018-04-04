@@ -1,11 +1,11 @@
 {
   "name": "babel-preset-zillow",
   "version": "1.0.0-alpha.1",
-  "description": "A Babel preset for transpiling JavaScript following our styleguide",
+  "description": "A Babel preset for transpiling JavaScript following our code conventions",
   "keywords": [
     "babel",
     "es6",
-    "es205",
+    "es2015",
     "javascript"
   ],
   "author": "Daniel Stockman <daniel.stockman@gmail.com>",

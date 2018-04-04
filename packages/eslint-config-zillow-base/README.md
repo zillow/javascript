@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/eslint-config-zillow-base.svg)](https://www.npmjs.com/package/eslint-config-zillow-base)
 [![Build Status](https://travis-ci.org/zillow/javascript.svg?branch=latest)](https://travis-ci.org/zillow/javascript)
 
-This package provides Zillow's base JS .eslintrc (without React plugins) as an extensible shared config.
+This package provides Zillow's base .eslintrc (without React plugins) as an extensible shared config.
 
 ## Usage
 
@@ -29,7 +29,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+.
 ## Related
 
 - [Zillow's overarching ESLint config](https://npmjs.com/eslint-config-zillow)
-- [Zillow's Javascript styleguide](https://github.com/zillow/javascript)
+- [Zillow's Javascript code conventions](https://github.com/zillow/javascript)
 
 ## Development
 
