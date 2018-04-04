@@ -1,0 +1,35 @@
+{
+  "name": "babel-preset-zillow",
+  "version": "1.0.0",
+  "description": "A Babel preset for transpiling JavaScript following our styleguide",
+  "keywords": [
+    "babel",
+    "es6",
+    "es205",
+    "javascript"
+  ],
+  "author": "Daniel Stockman <daniel.stockman@gmail.com>",
+  "homepage": "https://github.com/zillow/javascript/tree/master/packages/babel-preset-zillow#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zillow/javascript.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "fast-async": "^6.3.1"
+  }
+}
