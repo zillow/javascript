@@ -29,6 +29,7 @@ module.exports = function babelPresetZillow(context, options) {
         debug: enableDebug,
         exclude: [
           'transform-async-to-generator',
+          'transform-es2015-block-scoping',
           'transform-es2015-template-literals',
           'transform-regenerator',
         ],
@@ -42,6 +43,9 @@ module.exports = function babelPresetZillow(context, options) {
       require('babel-plugin-transform-class-properties'),
       [require('fast-async'), {
         spec: true,
+      }],
+      [require('babel-plugin-transform-es2015-block-scoping'), {
+        throwIfClosureRequired: true,
       }],
       [require('babel-plugin-transform-es2015-template-literals'), {
         spec: true,
