@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-alpha.1"></a>
+# [1.0.0-alpha.1](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-alpha.0...eslint-config-zillow@1.0.0-alpha.1) (2018-04-04)
+
+**Note:** Version bump only for package eslint-config-zillow
+
+
+
+
+
 <a name="1.0.0-alpha.0"></a>
 # 1.0.0-alpha.0 (2018-03-28)
 
