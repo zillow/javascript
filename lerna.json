@@ -5,6 +5,7 @@
     },
     "publish": {
       "allowBranch": "latest",
+      "cdVersion": "prerelease",
       "conventionalCommits": true,
       "message": "chore(release): Publish"
     }
