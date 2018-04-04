@@ -20,6 +20,7 @@ function buildTargets(options) {
 }
 
 module.exports = function babelPresetZillow(context, options) {
+  const envIsDev = (process.env.BABEL_ENV || process.env.NODE_ENV || 'development') === 'development';
   const transpileTargets = (options && options.targets) || buildTargets(options);
   const enableDebug = (options && typeof options.debug === 'boolean') ? !!options.debug : false;
 
@@ -54,6 +55,8 @@ module.exports = function babelPresetZillow(context, options) {
         useBuiltIns: true,
       }],
       require('babel-plugin-lodash'),
+      envIsDev && require('babel-plugin-transform-react-jsx-source'),
+      envIsDev && require('babel-plugin-transform-react-jsx-self'),
     ].filter(Boolean),
   };
 };
