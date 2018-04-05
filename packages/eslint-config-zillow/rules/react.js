@@ -1,3 +1,5 @@
+/* eslint prettier/prettier: off */
+
 module.exports = {
   plugins: [
     'react',
@@ -14,7 +16,7 @@ module.exports = {
   rules: {
     // Specify whether double or single quotes should be used in JSX attributes
     // https://eslint.org/docs/rules/jsx-quotes
-    'jsx-quotes': ['error', 'prefer-double'],
+    'jsx-quotes': ['off'/* prettier */, 'prefer-double'],
 
     'class-methods-use-this': ['error', {
       exceptMethods: [
@@ -55,18 +57,15 @@ module.exports = {
 
     // Validate closing bracket location in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
-    // FIXME: prettier
-    'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
+    'react/jsx-closing-bracket-location': ['off'/* prettier */, 'line-aligned'],
 
     // Validate closing tag location in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
-    // FIXME: prettier
-    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-closing-tag-location': 'off'/* prettier */,
 
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
-    // FIXME: prettier
-    'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
+    'react/jsx-curly-spacing': ['off'/* prettier */, 'never', { allowMultiline: true }],
 
     // Enforce event handler naming conventions in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
@@ -77,8 +76,7 @@ module.exports = {
 
     // Validate props indentation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
-    // FIXME: prettier
-    'react/jsx-indent-props': ['error', 4],
+    'react/jsx-indent-props': ['off'/* prettier */, 4],
 
     // Validate JSX has key prop when in array or iterator
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
@@ -86,8 +84,7 @@ module.exports = {
 
     // Limit maximum of props on a single line in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
-    // FIXME: prettier
-    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
+    'react/jsx-max-props-per-line': ['off'/* prettier */, { maximum: 1, when: 'multiline' }],
 
     // Prevent usage of .bind() in JSX props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
@@ -272,8 +269,7 @@ module.exports = {
 
     // Prevent missing parentheses around multilines JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-wrap-multilines.md
-    // FIXME: prettier
-    'react/jsx-wrap-multilines': ['error', {
+    'react/jsx-wrap-multilines': ['off'/* prettier */, {
       declaration: 'parens-new-line',
       assignment: 'parens-new-line',
       return: 'parens-new-line',
@@ -285,18 +281,15 @@ module.exports = {
 
     // Require that the first prop in a JSX element be on a new line when the element is multiline
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
-    // FIXME: prettier
-    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
+    'react/jsx-first-prop-new-line': ['off'/* prettier */, 'multiline-multiprop'],
 
     // Enforce spacing around jsx equals signs
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
-    // FIXME: prettier
-    'react/jsx-equals-spacing': ['error', 'never'],
+    'react/jsx-equals-spacing': ['off'/* prettier */, 'never'],
 
     // Enforce JSX indentation
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
-    // FIXME: prettier
-    'react/jsx-indent': ['error', 4],
+    'react/jsx-indent': ['off'/* prettier */, 4],
 
     // Disallow target="_blank" on links
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
@@ -356,8 +349,7 @@ module.exports = {
 
     // Validate whitespace in and around the JSX opening and closing brackets
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-tag-spacing.md
-    // FIXME: prettier
-    'react/jsx-tag-spacing': ['error', {
+    'react/jsx-tag-spacing': ['off'/* prettier */, {
       closingSlash: 'never',
       beforeSelfClosing: 'always',
       afterOpening: 'never',
@@ -419,8 +411,7 @@ module.exports = {
 
     // One JSX Element Per Line
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-one-expression-per-line.md
-    // FIXME: prettier
-    'react/jsx-one-expression-per-line': 'error',
+    'react/jsx-one-expression-per-line': 'off'/* prettier */,
 
     // Enforce consistent usage of destructuring assignment of props, state, and context
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/destructuring-assignment.md

@@ -24,7 +24,15 @@ For example, in a JSON `.eslintrc`:
 
 ### `"extends": "zillow-base"`
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+.
+Our default export contains all of our ESLint rules, including ECMAScript 6+ and Prettier.
+
+### `prettier` Editor Plugin Integration
+
+Unfortunately, super-useful editor plugins like `prettier-atom` and `prettier-vscode` do not load Prettier settings from ESLint config, which is where we load our Prettier options from. To workaround this, add a `.prettierrc.js` or `prettier.config.js` file to your repo root with the following content:
+
+```js
+module.exports = require('eslint-config-zillow-base/prettier.config');
+```
 
 ## Related
 

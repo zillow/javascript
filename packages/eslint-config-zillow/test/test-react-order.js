@@ -1,3 +1,5 @@
+/* eslint prettier/prettier: off */
+
 import { CLIEngine } from 'eslint';
 import eslintrc from '..';
 import reactRules from '../rules/react';
@@ -16,6 +18,8 @@ const cli = new CLIEngine({
     indent: ['error', 2],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
+    // prettier is irrelevant here
+    'prettier/prettier': 'off',
   },
 });
 

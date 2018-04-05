@@ -23,8 +23,8 @@ module.exports = {
     'consistent-return': 'error',
 
     // specify curly brace conventions for all control statements
-    // FIXME: prettier override
-    curly: ['error', 'multi-line'],
+    // https://github.com/prettier/eslint-config-prettier#curly
+    curly: ['error', 'all'],
 
     // require default case in switch statements
     'default-case': ['error', { commentPattern: '^no default$' }],
@@ -34,7 +34,7 @@ module.exports = {
 
     // enforces consistent newlines before or after dots
     // https://eslint.org/docs/rules/dot-location
-    'dot-location': ['error', 'property'],
+    'dot-location': ['off'/* prettier */, 'property'],
 
     // require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
@@ -95,7 +95,7 @@ module.exports = {
     'no-fallthrough': 'error',
 
     // disallow the use of leading or trailing decimal points in numeric literals
-    'no-floating-decimal': 'error',
+    'no-floating-decimal': 'off'/* prettier */,
 
     // disallow reassignments of native objects or read-only globals
     // https://eslint.org/docs/rules/no-global-assign
@@ -144,7 +144,7 @@ module.exports = {
     }],
 
     // disallow use of multiple spaces
-    'no-multi-spaces': ['error', {
+    'no-multi-spaces': ['off'/* prettier */, {
       ignoreEOLComments: false,
     }],
 
@@ -311,7 +311,7 @@ module.exports = {
 
     // require immediate function invocation to be wrapped in parentheses
     // https://eslint.org/docs/rules/wrap-iife.html
-    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
+    'wrap-iife': ['off'/* prettier */, 'outside', { functionPrototypeMethods: false }],
 
     // require or disallow Yoda conditions
     yoda: 'error'

@@ -1,3 +1,5 @@
+/* eslint function-paren-newline: error */
+
 import fs from 'fs';
 import path from 'path';
 

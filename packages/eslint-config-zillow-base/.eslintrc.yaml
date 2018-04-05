@@ -5,3 +5,5 @@
     comma-dangle: off
     # ditto for indent
     indent: [error, 2]
+    # far too many disagreements to be useful
+    prettier/prettier: off

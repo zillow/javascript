@@ -11,14 +11,14 @@ module.exports = {
     'array-element-newline': ['off', { multiline: true, minItems: 3 }],
 
     // enforce spacing inside array brackets
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-spacing': ['off'/* prettier */, 'never'],
 
     // enforce spacing inside single-line blocks
     // https://eslint.org/docs/rules/block-spacing
-    'block-spacing': ['error', 'always'],
+    'block-spacing': ['off'/* prettier */, 'always'],
 
     // enforce one true brace style
-    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    'brace-style': ['off'/* prettier */, '1tbs', { allowSingleLine: true }],
 
     // require camel case names
     camelcase: ['error', { properties: 'never' }],
@@ -39,7 +39,7 @@ module.exports = {
     }],
 
     // require trailing commas in multiline object literals
-    'comma-dangle': ['error', {
+    'comma-dangle': ['off'/* prettier */, {
       arrays: 'always-multiline',
       objects: 'always-multiline',
       imports: 'always-multiline',
@@ -48,10 +48,10 @@ module.exports = {
     }],
 
     // enforce spacing before and after comma
-    'comma-spacing': ['error', { before: false, after: true }],
+    'comma-spacing': ['off'/* prettier */, { before: false, after: true }],
 
     // enforce one true comma style
-    'comma-style': ['error', 'last', {
+    'comma-style': ['off'/* prettier */, 'last', {
       exceptions: {
         ArrayExpression: false,
         ArrayPattern: false,
@@ -68,17 +68,17 @@ module.exports = {
     }],
 
     // disallow padding inside computed properties
-    'computed-property-spacing': ['error', 'never'],
+    'computed-property-spacing': ['off'/* prettier */, 'never'],
 
     // enforces consistent naming when capturing the current execution context
     'consistent-this': 'off',
 
     // enforce newline at the end of file, with no multiple empty lines
-    'eol-last': ['error', 'always'],
+    'eol-last': ['off'/* prettier */, 'always'],
 
     // enforce spacing between functions and their invocations
     // https://eslint.org/docs/rules/func-call-spacing
-    'func-call-spacing': ['error', 'never'],
+    'func-call-spacing': ['off'/* prettier */, 'never'],
 
     // requires function names to match the name of the variable or property to which they are
     // assigned
@@ -98,7 +98,7 @@ module.exports = {
 
     // enforce consistent line breaks inside function parentheses
     // https://eslint.org/docs/rules/function-paren-newline
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': ['off'/* prettier */, 'multiline'],
 
     // Blacklist certain identifiers to prevent them being used
     // https://eslint.org/docs/rules/id-blacklist
@@ -113,11 +113,11 @@ module.exports = {
 
     // Enforce the location of arrow function bodies with implicit returns
     // https://eslint.org/docs/rules/implicit-arrow-linebreak
-    'implicit-arrow-linebreak': ['error', 'beside'],
+    'implicit-arrow-linebreak': ['off'/* prettier */, 'beside'],
 
     // this option sets a specific tab width for your code
     // https://eslint.org/docs/rules/indent
-    indent: ['error', 4, {
+    indent: ['off'/* prettier */, 4, {
       SwitchCase: 1,
       VariableDeclarator: 1,
       outerIIFEBody: 1,
@@ -144,13 +144,13 @@ module.exports = {
 
     // specify whether double or single quotes should be used in JSX attributes
     // https://eslint.org/docs/rules/jsx-quotes
-    'jsx-quotes': ['off', 'prefer-double'],
+    'jsx-quotes': ['off'/* prettier */, 'prefer-double'],
 
     // enforces spacing between keys and values in object literal properties
-    'key-spacing': ['error', { beforeColon: false, afterColon: true }],
+    'key-spacing': ['off'/* prettier */, { beforeColon: false, afterColon: true }],
 
     // require a space before & after certain keywords
-    'keyword-spacing': ['error', {
+    'keyword-spacing': ['off'/* prettier */, {
       before: true,
       after: true,
       overrides: {
@@ -178,7 +178,7 @@ module.exports = {
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: false }],
 
     // enforces empty lines around comments
-    // FIXME: prettier override
+    // https://github.com/prettier/eslint-config-prettier#lines-around-comment
     'lines-around-comment': 'off',
 
     // require or disallow newlines around directives
@@ -193,7 +193,7 @@ module.exports = {
 
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
-    // FIXME: prettier override
+    // https://github.com/prettier/eslint-config-prettier#max-len
     'max-len': ['error', 100, 2, {
       ignoreUrls: true,
       ignoreComments: false,
@@ -242,7 +242,7 @@ module.exports = {
 
     // disallow the omission of parentheses when invoking a constructor with no arguments
     // https://eslint.org/docs/rules/new-parens
-    'new-parens': 'error',
+    'new-parens': 'off'/* prettier */,
 
     // allow/disallow an empty newline after var statement
     'newline-after-var': 'off',
@@ -253,7 +253,7 @@ module.exports = {
     // enforces new line after each method call in the chain to make it
     // more readable and easy to maintain
     // https://eslint.org/docs/rules/newline-per-chained-call
-    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
+    'newline-per-chained-call': ['off'/* prettier */, { ignoreChainWithDepth: 4 }],
 
     // disallow use of the Array constructor
     'no-array-constructor': 'error',
@@ -275,7 +275,7 @@ module.exports = {
 
     // disallow un-paren'd mixes of different operators
     // https://eslint.org/docs/rules/no-mixed-operators
-    // FIXME: prettier override
+    // https://github.com/prettier/eslint-config-prettier#no-mixed-operators
     'no-mixed-operators': ['error', {
       // the list of arthmetic groups disallows mixing `%` and `**`
       // with other arithmetic operators.
@@ -298,14 +298,14 @@ module.exports = {
     }],
 
     // disallow mixed spaces and tabs for indentation
-    'no-mixed-spaces-and-tabs': 'error',
+    'no-mixed-spaces-and-tabs': 'off'/* prettier */,
 
     // disallow use of chained assignment expressions
     // https://eslint.org/docs/rules/no-multi-assign
     'no-multi-assign': ['error'],
 
     // disallow multiple empty lines and only one newline at the end
-    'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
+    'no-multiple-empty-lines': ['off'/* prettier */, { max: 2, maxEOF: 1 }],
 
     // disallow negated conditions
     // https://eslint.org/docs/rules/no-negated-condition
@@ -344,17 +344,17 @@ module.exports = {
     ],
 
     // disallow space between function identifier and application
-    'no-spaced-func': 'error',
+    'no-spaced-func': 'off'/* prettier */,
 
     // disallow tab characters entirely
-    // FIXME: prettier override
+    // https://github.com/prettier/eslint-config-prettier#no-tabs
     'no-tabs': 'error',
 
     // disallow the use of ternary operators
     'no-ternary': 'off',
 
     // disallow trailing whitespace at the end of lines
-    'no-trailing-spaces': ['error', {
+    'no-trailing-spaces': ['off'/* prettier */, {
       skipBlankLines: false,
       ignoreComments: false,
     }],
@@ -374,18 +374,18 @@ module.exports = {
 
     // disallow whitespace before properties
     // https://eslint.org/docs/rules/no-whitespace-before-property
-    'no-whitespace-before-property': 'error',
+    'no-whitespace-before-property': 'off'/* prettier */,
 
     // enforce the location of single-line statements
     // https://eslint.org/docs/rules/nonblock-statement-body-position
-    'nonblock-statement-body-position': ['error', 'beside', { overrides: {} }],
+    'nonblock-statement-body-position': ['off'/* prettier */, 'beside', { overrides: {} }],
 
     // require padding inside curly braces
-    'object-curly-spacing': ['error', 'always'],
+    'object-curly-spacing': ['off'/* prettier */, 'always'],
 
     // enforce line breaks between braces
     // https://eslint.org/docs/rules/object-curly-newline
-    'object-curly-newline': ['error', {
+    'object-curly-newline': ['off'/* prettier */, {
       ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
       ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
       ImportDeclaration: { minProperties: 4, multiline: true, consistent: true },
@@ -394,7 +394,7 @@ module.exports = {
 
     // enforce "same line" or "multiple line" on object properties.
     // https://eslint.org/docs/rules/object-property-newline
-    'object-property-newline': ['error', {
+    'object-property-newline': ['off'/* prettier */, {
       allowAllPropertiesOnSameLine: true,
     }],
 
@@ -403,7 +403,7 @@ module.exports = {
 
     // require a newline around variable declaration
     // https://eslint.org/docs/rules/one-var-declaration-per-line
-    'one-var-declaration-per-line': ['error', 'always'],
+    'one-var-declaration-per-line': ['off'/* prettier */, 'always'],
 
     // require assignment operator shorthand where possible or prohibit it entirely
     // https://eslint.org/docs/rules/operator-assignment
@@ -411,10 +411,10 @@ module.exports = {
 
     // Requires operator at the beginning of the line in multiline statements
     // https://eslint.org/docs/rules/operator-linebreak
-    'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
+    'operator-linebreak': ['off'/* prettier */, 'before', { overrides: { '=': 'none' } }],
 
     // disallow padding within blocks
-    'padded-blocks': ['error', { blocks: 'never', classes: 'never', switches: 'never' }],
+    'padded-blocks': ['off'/* prettier */, { blocks: 'never', classes: 'never', switches: 'never' }],
 
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
@@ -422,25 +422,25 @@ module.exports = {
 
     // require quotes around object literal property names
     // https://eslint.org/docs/rules/quote-props.html
-    'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
+    'quote-props': ['off'/* prettier */, 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
     // specify whether double or single quotes should be used
-    // FIXME: prettier override
-    quotes: ['error', 'single', { avoidEscape: true }],
+    // https://github.com/prettier/eslint-config-prettier#quotes
+    quotes: ['off'/* prettier */, 'single', { avoidEscape: true }],
 
     // do not require jsdoc
     // https://eslint.org/docs/rules/require-jsdoc
     'require-jsdoc': 'off',
 
     // require or disallow use of semicolons instead of ASI
-    semi: ['error', 'always'],
+    semi: ['off'/* prettier */, 'always'],
 
     // enforce spacing before and after semicolons
-    'semi-spacing': ['error', { before: false, after: true }],
+    'semi-spacing': ['off'/* prettier */, { before: false, after: true }],
 
     // Enforce location of semicolons
     // https://eslint.org/docs/rules/semi-style
-    'semi-style': ['error', 'last'],
+    'semi-style': ['off'/* prettier */, 'last'],
 
     // requires object keys to be sorted
     'sort-keys': ['off', 'asc', { caseSensitive: false, natural: true }],
@@ -449,25 +449,25 @@ module.exports = {
     'sort-vars': 'off',
 
     // require or disallow space before blocks
-    'space-before-blocks': 'error',
+    'space-before-blocks': 'off'/* prettier */,
 
     // require or disallow space before function opening parenthesis
     // https://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': ['error', {
+    'space-before-function-paren': ['off'/* prettier */, {
       anonymous: 'always',
       named: 'never',
       asyncArrow: 'always'
     }],
 
     // require or disallow spaces inside parentheses
-    'space-in-parens': ['error', 'never'],
+    'space-in-parens': ['off'/* prettier */, 'never'],
 
     // require spaces around operators
-    'space-infix-ops': 'error',
+    'space-infix-ops': 'off'/* prettier */,
 
     // Require or disallow spaces before/after unary operators
     // https://eslint.org/docs/rules/space-unary-ops
-    'space-unary-ops': ['error', {
+    'space-unary-ops': ['off'/* prettier */, {
       words: true,
       nonwords: false,
       overrides: {
@@ -490,15 +490,15 @@ module.exports = {
 
     // Enforce spacing around colons of switch statements
     // https://eslint.org/docs/rules/switch-colon-spacing
-    'switch-colon-spacing': ['error', { after: true, before: false }],
+    'switch-colon-spacing': ['off'/* prettier */, { after: true, before: false }],
 
     // Require or disallow spacing between template tags and their literals
     // https://eslint.org/docs/rules/template-tag-spacing
-    'template-tag-spacing': ['error', 'never'],
+    'template-tag-spacing': ['off'/* prettier */, 'never'],
 
     // require or disallow the Unicode Byte Order Mark
     // https://eslint.org/docs/rules/unicode-bom
-    'unicode-bom': ['error', 'never'],
+    'unicode-bom': ['off'/* prettier */, 'never'],
 
     // require regex literals to be wrapped in parentheses
     'wrap-regex': 'off'

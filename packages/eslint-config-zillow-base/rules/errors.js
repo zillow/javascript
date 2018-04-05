@@ -64,7 +64,7 @@ module.exports = {
     }],
 
     // disallow unnecessary semicolons
-    'no-extra-semi': 'error',
+    'no-extra-semi': 'off'/* prettier */,
 
     // disallow overwriting functions written as function declarations
     'no-func-assign': 'error',
@@ -97,7 +97,7 @@ module.exports = {
 
     // Avoid code that looks like two expressions but is actually one
     // https://eslint.org/docs/rules/no-unexpected-multiline
-    // FIXME: prettier override
+    // https://github.com/prettier/eslint-config-prettier#no-unexpected-multiline
     'no-unexpected-multiline': 'error',
 
     // disallow unreachable statements after a return, throw, continue, or break statement

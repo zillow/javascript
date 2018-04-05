@@ -5,5 +5,5 @@ module.exports = {
     './rules/react',
     './rules/react-a11y',
   ].map(require.resolve),
-  rules: {}
+  rules: {},
 };

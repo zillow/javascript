@@ -1,3 +1,5 @@
+/* eslint prettier/prettier: off */
+
 module.exports = {
   plugins: [
     'jsx-a11y',

@@ -1,9 +1,5 @@
 ---
   extends: "./index.js"
   rules:
-    # match upstream because dangling comma conflicts are _the worst_
-    comma-dangle: off
-    # ditto for indent
-    indent: [error, 2]
-    react/jsx-indent: [error, 2]
-    react/jsx-indent-props: [error, 2]
+    # enable root lint:prettier to return useful results
+    prettier/prettier: [error, { tabWidth: 2 }]

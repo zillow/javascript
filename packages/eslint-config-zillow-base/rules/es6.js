@@ -21,20 +21,20 @@ module.exports = {
 
     // require parens in arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['error', 'as-needed', {
+    'arrow-parens': ['off'/* prettier */, 'as-needed', {
       requireForBlockBody: true,
     }],
 
     // require space before/after arrow function's arrow
     // https://eslint.org/docs/rules/arrow-spacing
-    'arrow-spacing': ['error', { before: true, after: true }],
+    'arrow-spacing': ['off'/* prettier */, { before: true, after: true }],
 
     // verify super() callings in constructors
     'constructor-super': 'error',
 
     // enforce the spacing around the * in generator functions
     // https://eslint.org/docs/rules/generator-star-spacing
-    'generator-star-spacing': ['error', { before: false, after: true }],
+    'generator-star-spacing': ['off'/* prettier */, { before: false, after: true }],
 
     // disallow modifying variables of class declarations
     // https://eslint.org/docs/rules/no-class-assign
@@ -42,9 +42,9 @@ module.exports = {
 
     // disallow arrow functions where they could be confused with comparisons
     // https://eslint.org/docs/rules/no-confusing-arrow
-    // FIXME: prettier override
+    // https://github.com/prettier/eslint-config-prettier#no-confusing-arrow
     'no-confusing-arrow': ['error', {
-      allowParens: true,
+      allowParens: false,
     }],
 
     // disallow modifying variables that are declared using const
@@ -153,7 +153,7 @@ module.exports = {
 
     // enforce spacing between object rest-spread
     // https://eslint.org/docs/rules/rest-spread-spacing
-    'rest-spread-spacing': ['error', 'never'],
+    'rest-spread-spacing': ['off'/* prettier */, 'never'],
 
     // import sorting
     // https://eslint.org/docs/rules/sort-imports
@@ -169,10 +169,10 @@ module.exports = {
 
     // enforce usage of spacing in template strings
     // https://eslint.org/docs/rules/template-curly-spacing
-    'template-curly-spacing': 'error',
+    'template-curly-spacing': 'off'/* prettier */,
 
     // enforce spacing around the * in yield* expressions
     // https://eslint.org/docs/rules/yield-star-spacing
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['off'/* prettier */, 'after']
   }
 };
