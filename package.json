@@ -10,6 +10,7 @@
     "lint:rules": "npm-run-all --silent --print-label lint:rules:*",
     "lint:rules:base": "eslint-find-rules --unused packages/eslint-config-zillow-base/index.js",
     "lint:rules:main": "eslint-find-rules --unused packages/eslint-config-zillow/index.js",
+    "lint:prettier": "eslint --print-config packages/eslint-config-zillow/index.js | eslint-config-prettier-check",
     "pretest": "npm run --silent lint",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -56,6 +57,7 @@
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.18.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-find-rules": "^3.2.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jest": "^21.15.0",
