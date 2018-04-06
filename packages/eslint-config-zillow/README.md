@@ -1,9 +1,9 @@
 # eslint-config-zillow
 
+> Zillow's ESLint config, following our code conventions
+
 [![npm version](https://img.shields.io/npm/v/eslint-config-zillow.svg)](https://www.npmjs.com/package/eslint-config-zillow)
 [![Build Status](https://travis-ci.org/zillow/javascript.svg?branch=latest)](https://travis-ci.org/zillow/javascript)
-
-This package provides Zillow's .eslintrc as an extensible shared config.
 
 ## Usage
 
