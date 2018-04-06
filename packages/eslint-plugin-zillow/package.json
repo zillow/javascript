@@ -12,7 +12,7 @@
     "javascript",
     "code conventions"
   ],
-  "author": "Daniel Stockman <daniel.stockman@gmail.com>",
+  "author": "Daniel Stockman <daniel.stockman@gmail.com> (https://twitter.com/@evocateur)",
   "homepage": "https://github.com/zillow/javascript/tree/master/packages/eslint-plugin-zillow#readme",
   "license": "MIT",
   "main": "lib/eslint-plugin-zillow.js",

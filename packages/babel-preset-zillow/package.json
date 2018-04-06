@@ -8,7 +8,7 @@
     "es2015",
     "javascript"
   ],
-  "author": "Daniel Stockman <daniel.stockman@gmail.com>",
+  "author": "Daniel Stockman <daniel.stockman@gmail.com> (https://twitter.com/@evocateur)",
   "homepage": "https://github.com/zillow/javascript/tree/master/packages/babel-preset-zillow#readme",
   "license": "MIT",
   "main": "index.js",

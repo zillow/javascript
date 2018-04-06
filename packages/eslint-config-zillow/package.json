@@ -23,7 +23,7 @@
     "javascript",
     "code conventions"
   ],
-  "author": "Daniel Stockman (https://twitter.com/@evocateur)",
+  "author": "Daniel Stockman <daniel.stockman@gmail.com> (https://twitter.com/@evocateur)",
   "license": "MIT",
   "homepage": "https://github.com/zillow/javascript",
   "engines": {
