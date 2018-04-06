@@ -4,6 +4,7 @@
   "private": true,
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
+    "prepare": "lerna run prepare",
     "lint": "npm-run-all --silent lint:*",
     "lint:js": "eslint ./packages --cache --report-unused-disable-directives",
     "lint:md": "markdownlint README.md */README.md packages/*/README.md",
