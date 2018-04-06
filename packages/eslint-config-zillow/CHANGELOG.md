@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-alpha.3"></a>
+# [1.0.0-alpha.3](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-alpha.2...eslint-config-zillow@1.0.0-alpha.3) (2018-04-06)
+
+
+### Bug Fixes
+
+* **react:** Disable react/destructuring-assignment as it is too naïve to be useful ([2b0f735](https://github.com/zillow/javascript/commit/2b0f735))
+* Normalize author metadata ([bdcab0c](https://github.com/zillow/javascript/commit/bdcab0c))
+* Sync eslint peer dependency to ^4.19.1 ([c5d5220](https://github.com/zillow/javascript/commit/c5d5220))
+
+
+### BREAKING CHANGES
+
+* This updates the eslint peer's lower bound one minor version higher, from 4.18.1 to 4.19.1.
+
+
+
+
+
 <a name="1.0.0-alpha.2"></a>
 # [1.0.0-alpha.2](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-alpha.1...eslint-config-zillow@1.0.0-alpha.2) (2018-04-05)
 
