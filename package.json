@@ -11,7 +11,7 @@
     "lint:rules:base": "eslint-find-rules --unused packages/eslint-config-zillow-base/index.js",
     "lint:rules:main": "eslint-find-rules --unused packages/eslint-config-zillow/index.js",
     "lint:prettier": "eslint --print-config packages/eslint-config-zillow/index.js | eslint-config-prettier-check",
-    "pretest": "npm run --silent lint",
+    "pretest": "lerna run prepare --loglevel error && npm run --silent lint",
     "test": "jest",
     "test:watch": "jest --watch",
     "prerelease": "npm test",
