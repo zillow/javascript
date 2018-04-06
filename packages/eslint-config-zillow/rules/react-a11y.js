@@ -156,7 +156,8 @@ module.exports = {
 
     // media elements must have captions
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/media-has-caption.md
-    'jsx-a11y/media-has-caption': ['error', {
+    // TODO: re-enable once `muted` fix is released
+    'jsx-a11y/media-has-caption': ['off', {
       audio: [],
       video: [],
       track: [],
