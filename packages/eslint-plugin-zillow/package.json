@@ -1,0 +1,46 @@
+{
+  "name": "eslint-plugin-zillow",
+  "version": "1.0.0-alpha.2",
+  "description": "Zillow's ESLint config bundled into a \"zero-conf\" plugin",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslintplugin",
+    "eslint-plugin",
+    "zillow",
+    "javascript",
+    "code conventions"
+  ],
+  "author": "Daniel Stockman <daniel.stockman@gmail.com>",
+  "homepage": "https://github.com/zillow/javascript/tree/master/packages/eslint-plugin-zillow#readme",
+  "license": "MIT",
+  "main": "lib/eslint-plugin-zillow.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib",
+    "prettier.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zillow/javascript.git"
+  },
+  "scripts": {
+    "prepare": "node ./lib/render-configs.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": "^4.19.1",
+    "prettier": "^1.11.1"
+  },
+  "dependencies": {
+    "eslint-config-zillow": "file:../eslint-config-zillow",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}

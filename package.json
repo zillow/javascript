@@ -74,6 +74,7 @@
   "dependencies": {
     "babel-preset-zillow": "file:packages/babel-preset-zillow",
     "eslint-config-zillow": "file:packages/eslint-config-zillow",
-    "eslint-config-zillow-base": "file:packages/eslint-config-zillow-base"
+    "eslint-config-zillow-base": "file:packages/eslint-config-zillow-base",
+    "eslint-plugin-zillow": "file:packages/eslint-plugin-zillow"
   }
 }
