@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-alpha.4"></a>
+# [1.0.0-alpha.4](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-alpha.3...eslint-config-zillow@1.0.0-alpha.4) (2018-04-07)
+
+
+### Bug Fixes
+
+* **eslint-config-zillow:** Disable jsx-a11y/media-has-caption until upstream 'muted' fix is released ([5c65fa0](https://github.com/zillow/javascript/commit/5c65fa0))
+
+
+### Features
+
+* Add Jest subpath config/plugin ([b639c7e](https://github.com/zillow/javascript/commit/b639c7e))
+* Add Mocha subpath config/plugin ([9ddfa68](https://github.com/zillow/javascript/commit/9ddfa68))
+
+
+
+
+
 <a name="1.0.0-alpha.3"></a>
 # [1.0.0-alpha.3](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-alpha.2...eslint-config-zillow@1.0.0-alpha.3) (2018-04-06)
 

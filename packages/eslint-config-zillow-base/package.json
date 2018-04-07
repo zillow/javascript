@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zillow-base",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Zillow's base ESLint config, following our code conventions",
   "main": "index.js",
   "files": [
