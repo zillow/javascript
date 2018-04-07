@@ -27,6 +27,16 @@ Configure ESLint to use this config. For example, in your package.json, this wou
   },
 ```
 
+### Jest
+
+Jest-specific rules and environment added to the default export.
+
+```json
+  "eslintConfig": {
+    "extends": ["plugin:zillow/recommended", "plugin:zillow/jest"]
+  },
+```
+
 ### Customizing Rules
 
 You can configure the rules like every other `eslint` plugin.

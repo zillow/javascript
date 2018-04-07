@@ -10,6 +10,9 @@ const getComputedConfig = require('./get-computed-config');
 const wrapInPlugin = require('./wrap-in-plugin');
 
 const configs = {
+    jest: {
+        extends: [/* 'zillow', */ 'zillow/jest'],
+    },
     recommended: {
         extends: ['zillow'],
     },

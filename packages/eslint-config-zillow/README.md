@@ -28,6 +28,10 @@ Lint all the things, including ECMAScript 6+, React, and Prettier.
 
 If you don't need React, use [eslint-config-zillow-base](https://npmjs.com/eslint-config-zillow-base).
 
+### `"extends": ["zillow", "zillow/jest]`
+
+Jest-specific rules and environment added to the default export.
+
 ### `prettier` Editor Plugin Integration
 
 Unfortunately, super-useful editor plugins like `prettier-atom` and `prettier-vscode` do not load Prettier settings from ESLint config, which is where we load our Prettier options from. To workaround this, add a `.prettierrc.js` or `prettier.config.js` file to your root with the following content:

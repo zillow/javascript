@@ -5,6 +5,7 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "jest.js",
     "prettier.config.js",
     "rules"
   ],
@@ -32,6 +33,7 @@
   "peerDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.15.0",
     "eslint-plugin-prettier": "^2.6.0",
     "prettier": "^1.11.1"
   },
