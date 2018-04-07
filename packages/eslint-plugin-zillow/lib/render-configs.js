@@ -13,6 +13,9 @@ const configs = {
     jest: {
         extends: [/* 'zillow', */ 'zillow/jest'],
     },
+    mocha: {
+        extends: [/* 'zillow', */ 'zillow/mocha'],
+    },
     recommended: {
         extends: ['zillow'],
     },
