@@ -1,11 +1,12 @@
 'use strict';
 
-const getPluginRules = require('./get-plugin-rules');
-const recommended = require('./configs/recommended.json');
+const { getPluginProcessors, getPluginRules } = require('./plugins');
+const recommendedConfig = require('./configs/recommended.json');
 
 module.exports = {
     configs: {
-        recommended,
+        recommended: recommendedConfig,
     },
+    processors: getPluginProcessors(),
     rules: getPluginRules(),
 };

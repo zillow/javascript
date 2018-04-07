@@ -1,7 +1,7 @@
 'use strict';
 
 require('../lib/render-configs'); // ensure up-to-date JSON
-const { configs, rules } = require('..');
+const { configs, processors, rules } = require('..');
 
 describe('eslint-plugin-zillow', () => {
     test('configs', () => {
@@ -14,6 +14,12 @@ describe('eslint-plugin-zillow', () => {
                     'zillow/jsx-a11y/label-has-for': ['error', { components: ['label'] }],
                 },
             },
+        });
+    });
+
+    test('processors', () => {
+        expect(processors).toMatchObject({
+            '.snap': {},
         });
     });
 
