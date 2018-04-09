@@ -162,11 +162,10 @@ module.exports = {
 
     // enforce position of line comments
     // https://eslint.org/docs/rules/line-comment-position
-    // TODO: enable?
-    'line-comment-position': ['off', {
+    'line-comment-position': ['warn', {
       position: 'above',
       ignorePattern: '',
-      applyDefaultPatterns: true,
+      applyDefaultIgnorePatterns: true,
     }],
 
     // disallow mixed 'LF' and 'CRLF' as linebreaks
