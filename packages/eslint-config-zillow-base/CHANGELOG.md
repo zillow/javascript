@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-alpha.5"></a>
+# [1.0.0-alpha.5](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0-alpha.4...eslint-config-zillow-base@1.0.0-alpha.5) (2018-04-10)
+
+
+### Features
+
+* **eslint-config-zillow-base:** Enable line-comment-position warning ([057102a](https://github.com/zillow/javascript/commit/057102a))
+
+
+
+
+
 <a name="1.0.0-alpha.4"></a>
 # [1.0.0-alpha.4](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0-alpha.3...eslint-config-zillow-base@1.0.0-alpha.4) (2018-04-07)
 
