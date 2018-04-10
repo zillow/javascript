@@ -1,48 +1,37 @@
 {
-  "name": "airbnb-browser-shims",
-  "version": "2.1.0",
-  "description": "Browser and JS shims used by Airbnb.",
-  "main": "index.js",
+  "name": "zillow-browser-shims",
+  "version": "1.0.0-alpha.0",
+  "description": "Browser and JS shims used by Zillow",
+  "main": "zillow-browser-shims.js",
+  "files": [
+    "browser-only.js",
+    "document-contains.js",
+    "zillow-browser-shims.js"
+  ],
   "scripts": {
-    "prepublish": "safe-publish-latest",
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "npm run tests-only",
-    "tests-only": "node test",
-    "posttest": "nsp check"
+    "test": "echo \"Run tests from root\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/airbnb/browser-shims.git"
+    "url": "https://github.com/zillow/javascript"
   },
   "keywords": [
     "shims",
     "polyfills"
   ],
-  "author": "Jordan Harband <ljharb@gmail.com>",
+  "author": "Daniel Stockman <daniel.stockman@gmail.com> (https://twitter.com/@evocateur)",
   "license": "MIT",
+  "homepage": "https://github.com/zillow/javascript",
+  "engines": {
+    "node": ">= 8.9.0"
+  },
   "dependencies": {
-    "airbnb-js-shims": "^1.4.1",
+    "zillow-js-shims": "file:../zillow-js-shims",
     "classlist-polyfill": "^1.2.0",
-    "console-polyfill": "^0.3.0",
     "element-closest": "^2.0.2",
-    "ima-babel6-polyfill": "^0.12.0",
-    "matchmedia-polyfill": "^0.3.0",
     "raf": "^3.4.0",
     "ric-shim": "^1.0.0",
-    "smoothscroll-polyfill": "^0.3.6",
-    "whatwg-fetch": "^0.11.1",
-    "window-location-origin": "^0.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "nsp": "^3.1.0",
-    "safe-publish-latest": "^1.1.1",
-    "tape": "^4.8.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "smoothscroll-polyfill": "^0.4.3",
+    "whatwg-fetch": "^2.0.4"
   }
 }
