@@ -5,7 +5,8 @@ import path from 'path';
 
 import index from '..';
 
-const files = { ...{ index } }; // object spread is to test parsing
+// object spread is to test parsing
+const files = { ...{ index } };
 
 fs.readdirSync(path.join(__dirname, '../rules')).forEach((name) => {
   // eslint-disable-next-line import/no-dynamic-require
@@ -13,7 +14,8 @@ fs.readdirSync(path.join(__dirname, '../rules')).forEach((name) => {
 });
 
 Object.keys(files).forEach(( // eslint-disable-line function-paren-newline
-  name, // trailing function comma is to test parsing
+  // trailing function comma is to test parsing
+  name,
 ) => { // eslint-disable-line function-paren-newline
   const config = files[name];
 

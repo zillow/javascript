@@ -3,7 +3,8 @@ module.exports = {
     // enforce line breaks after opening and before closing array brackets
     // https://eslint.org/docs/rules/array-bracket-newline
     // TODO: enable? semver-major
-    'array-bracket-newline': ['off', 'consistent'], // object option alternative: { multiline: true, minItems: 3 }
+    // object option alternative: { multiline: true, minItems: 3 }
+    'array-bracket-newline': ['off', 'consistent'],
 
     // enforce line breaks between array elements
     // https://eslint.org/docs/rules/array-element-newline
@@ -478,11 +479,13 @@ module.exports = {
     'spaced-comment': ['error', 'always', {
       line: {
         exceptions: ['-', '+'],
-        markers: ['=', '!'], // space here to support sprockets directives
+        // space here to support sprockets directives
+        markers: ['=', '!'],
       },
       block: {
         exceptions: ['-', '+'],
-        markers: ['=', '!'], // space here to support sprockets directives
+        // space here to support sprockets directives
+        markers: ['=', '!'],
         balanced: true,
       }
     }],

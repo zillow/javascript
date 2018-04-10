@@ -1,6 +1,8 @@
 'use strict';
 
-require('../lib/render-configs'); // ensure up-to-date JSON
+// ensure up-to-date JSON
+require('../lib/render-configs');
+
 const { configs, processors, rules } = require('..');
 
 describe('eslint-plugin-zillow', () => {

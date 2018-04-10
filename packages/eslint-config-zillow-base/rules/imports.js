@@ -70,24 +70,30 @@ module.exports = {
     // paths are treated both as absolute paths, and relative to process.cwd()
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
-        'test/**', // tape, common npm pattern
-        'tests/**', // also common npm pattern
-        'spec/**', // mocha, rspec-like pattern
-        '**/__tests__/**', // jest pattern
-        '**/__mocks__/**', // jest pattern
-        'test.{js,jsx}', // repos with a single test file
-        'test-*.{js,jsx}', // repos with multiple top-level test files
-        '**/*.{test,spec}.{js,jsx}', // tests where the extension denotes that it is a test
-        '**/jest.config.js', // jest config
-        '**/webpack.config.js', // webpack config
-        '**/webpack.config.*.js', // webpack config
-        '**/rollup.config.js', // rollup config
-        '**/rollup.config.*.js', // rollup config
-        '**/gulpfile.js', // gulp config
-        '**/gulpfile.*.js', // gulp config
-        '**/Gruntfile{,.js}', // grunt config
-        '**/protractor.conf.js', // protractor config
-        '**/protractor.conf.*.js', // protractor config
+        // common npm patterns (tape, mocha, etc)
+        'test/**',
+        'tests/**',
+        'spec/**',
+        // jest patterns
+        '**/__tests__/**',
+        '**/__mocks__/**',
+        // repos with a single test file
+        'test.{js,jsx}',
+        // repos with multiple top-level test files
+        'test-*.{js,jsx}',
+        // tests where the extension denotes that it is a test
+        '**/*.{test,spec}.{js,jsx}',
+        // config files
+        '**/jest.config.js',
+        '**/webpack.config.js',
+        '**/webpack.config.*.js',
+        '**/rollup.config.js',
+        '**/rollup.config.*.js',
+        '**/gulpfile.js',
+        '**/gulpfile.*.js',
+        '**/Gruntfile{,.js}',
+        '**/protractor.conf.js',
+        '**/protractor.conf.*.js',
       ],
       optionalDependencies: false,
     }],
