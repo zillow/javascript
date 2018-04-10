@@ -2,11 +2,15 @@
 
 const defaultTargets = {
     android: 62,
-    chrome: 62,
-    edge: 15,
+    and_uc: 11,
+    and_chr: 64,
+    chrome: 64,
+    edge: 16,
     explorer: 11,
-    firefox: 57,
-    safari: 9,
+    firefox: 58,
+    ios_saf: 10,
+    safari: 10,
+    samsung: 6,
 };
 
 function buildTargets(options) {
