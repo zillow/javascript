@@ -1,6 +1,6 @@
 {
   "name": "zillow-browser-shims",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Browser and JS shims used by Zillow",
   "main": "zillow-browser-shims.js",
   "files": [
@@ -26,12 +26,12 @@
     "node": ">= 8.9.0"
   },
   "dependencies": {
-    "zillow-js-shims": "file:../zillow-js-shims",
     "classlist-polyfill": "^1.2.0",
     "element-closest": "^2.0.2",
     "raf": "^3.4.0",
     "ric-shim": "^1.0.0",
     "smoothscroll-polyfill": "^0.4.3",
-    "whatwg-fetch": "^2.0.4"
+    "whatwg-fetch": "^2.0.4",
+    "zillow-js-shims": "file:../zillow-js-shims"
   }
 }
