@@ -1,49 +1,41 @@
 {
-	"name": "airbnb-js-shims",
-	"version": "1.4.1",
-	"description": "JS language shims used by Airbnb.",
-	"main": "index.js",
-	"scripts": {
-		"prepublish": "safe-publish-latest",
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "npm run tests-only",
-		"tests-only": "node test",
-		"posttest": "nsp check"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/airbnb/js-shims.git"
-	},
-	"keywords": [
-		"shims",
-		"polyfills"
-	],
-	"author": "Jordan Harband <ljharb@gmail.com>",
-	"license": "MIT",
-	"dependencies": {
-		"array-includes": "^3.0.3",
-		"array.prototype.flatmap": "^1.2.0",
-		"array.prototype.flatten": "^1.2.0",
-		"es5-shim": "^4.5.10",
-		"es6-shim": "^0.35.3",
-		"function.prototype.name": "^1.1.0",
-		"object.entries": "^1.0.4",
-		"object.getownpropertydescriptors": "^2.0.3",
-		"object.values": "^1.0.4",
-		"promise.prototype.finally": "^3.1.0",
-		"string.prototype.padend": "^3.0.0",
-		"string.prototype.padstart": "^3.0.0"
-	},
-	"devDependencies": {
-		"eslint": "^4.16.0",
-		"eslint-config-airbnb-base": "^12.1.0",
-		"eslint-plugin-import": "^2.8.0",
-		"nsp": "^3.1.0",
-		"safe-publish-latest": "^1.1.1",
-		"tape": "^4.8.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "zillow-js-shims",
+  "version": "1.0.0-alpha.0",
+  "description": "JS language shims used by Zillow",
+  "main": "zillow-js-shims.js",
+  "files": [
+    "target",
+    "zillow-js-shims.js"
+  ],
+  "scripts": {
+    "test": "echo \"Run tests from root\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zillow/javascript"
+  },
+  "keywords": [
+    "shims",
+    "polyfills"
+  ],
+  "author": "Daniel Stockman <daniel.stockman@gmail.com> (https://twitter.com/@evocateur)",
+  "license": "MIT",
+  "homepage": "https://github.com/zillow/javascript",
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "dependencies": {
+    "array-includes": "^3.0.3",
+    "array.prototype.flatmap": "^1.2.1",
+    "array.prototype.flatten": "^1.2.1",
+    "es5-shim": "^4.5.10",
+    "es6-shim": "^0.35.3",
+    "function.prototype.name": "^1.1.0",
+    "object.entries": "^1.0.4",
+    "object.getownpropertydescriptors": "^2.0.3",
+    "object.values": "^1.0.4",
+    "promise.prototype.finally": "^3.1.0",
+    "string.prototype.padend": "^3.0.0",
+    "string.prototype.padstart": "^3.0.0"
+  }
 }

@@ -76,6 +76,7 @@
     "babel-preset-zillow": "file:packages/babel-preset-zillow",
     "eslint-config-zillow": "file:packages/eslint-config-zillow",
     "eslint-config-zillow-base": "file:packages/eslint-config-zillow-base",
-    "eslint-plugin-zillow": "file:packages/eslint-plugin-zillow"
+    "eslint-plugin-zillow": "file:packages/eslint-plugin-zillow",
+    "zillow-js-shims": "file:packages/zillow-js-shims"
   }
 }
