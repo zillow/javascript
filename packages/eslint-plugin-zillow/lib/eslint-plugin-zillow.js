@@ -11,6 +11,7 @@ module.exports = {
         mocha: mochaConfig,
         recommended: recommendedConfig,
     },
+    // TODO: environments
     processors: getPluginProcessors(),
     rules: getPluginRules(),
 };

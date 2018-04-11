@@ -17,5 +17,8 @@ function getComputedConfig(baseConfig) {
     delete computed.filePath;
     delete computed.baseDirectory;
 
+    // FIXME: Propagate environments correctly
+    delete computed.env;
+
     return computed;
 }

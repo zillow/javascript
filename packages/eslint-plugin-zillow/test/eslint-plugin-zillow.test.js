@@ -8,6 +8,17 @@ const { configs, processors, rules } = require('..');
 describe('eslint-plugin-zillow', () => {
     test('configs', () => {
         expect(configs).toMatchObject({
+            jest: {
+                // TODO: re-enable
+                // env: {},
+                globals: {
+                    it: false,
+                },
+                plugins: ['zillow'],
+                rules: {
+                    'zillow/jest/no-focused-tests': 'error',
+                },
+            },
             recommended: {
                 rules: {
                     'zillow/react/jsx-indent': ['off', 4],
