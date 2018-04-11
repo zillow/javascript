@@ -1,5 +1,6 @@
 'use strict';
 
+exports.getPluginEnvironments = getPluginEnvironments;
 exports.getPluginProcessors = getPluginProcessors;
 exports.getPluginRules = getPluginRules;
 
@@ -11,6 +12,22 @@ plugins.set('jsx-a11y', require('eslint-plugin-jsx-a11y'));
 plugins.set('mocha', require('eslint-plugin-mocha'));
 plugins.set('react', require('eslint-plugin-react'));
 plugins.set('prettier', require('eslint-plugin-prettier'));
+
+/**
+ * Create an environments object from plugin environments.
+ * Each environment is prefixed by the name of the plugin it comes from.
+ */
+function getPluginEnvironments() {
+    const result = {};
+
+    plugins.forEach(({ environments = {} }, namespace) => {
+        Object.keys(environments).forEach(name => {
+            result[`${namespace}/${name}`] = environments[name];
+        });
+    });
+
+    return result;
+}
 
 /**
  * Create a processors object from plugin processors.
