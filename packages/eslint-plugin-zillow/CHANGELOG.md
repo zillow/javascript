@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-alpha.6"></a>
+# [1.0.0-alpha.6](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-alpha.5...eslint-plugin-zillow@1.0.0-alpha.6) (2018-04-11)
+
+
+### Bug Fixes
+
+* Don't expose computed env for now, it's broken ([9f253f7](https://github.com/zillow/javascript/commit/9f253f7))
+
+
+
+
+
 <a name="1.0.0-alpha.5"></a>
 # [1.0.0-alpha.5](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-alpha.4...eslint-plugin-zillow@1.0.0-alpha.5) (2018-04-10)
 
