@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-beta.0"></a>
+# [1.0.0-beta.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-alpha.6...eslint-plugin-zillow@1.0.0-beta.0) (2018-04-26)
+
+
+### Bug Fixes
+
+* **base:** Demote max-len to a warning, super-long comments should not break builds ([e09a582](https://github.com/zillow/javascript/commit/e09a582))
+* **plugin:** Bump dependencies ([8665212](https://github.com/zillow/javascript/commit/8665212))
+
+
+### Features
+
+* **plugin:** Scope jest & mocha configs to globs ([5c28e8c](https://github.com/zillow/javascript/commit/5c28e8c))
+
+
+
+
+
 <a name="1.0.0-alpha.6"></a>
 # [1.0.0-alpha.6](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-alpha.5...eslint-plugin-zillow@1.0.0-alpha.6) (2018-04-11)
 

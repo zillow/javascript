@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-beta.0"></a>
+# [1.0.0-beta.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0-alpha.5...eslint-config-zillow-base@1.0.0-beta.0) (2018-04-26)
+
+
+### Bug Fixes
+
+* **base:** Demote 'special' prettier rules to warnings ([0f0dca0](https://github.com/zillow/javascript/commit/0f0dca0))
+* **base:** Demote max-len to a warning, super-long comments should not break builds ([e09a582](https://github.com/zillow/javascript/commit/e09a582))
+* **base:** Demote prefer-destructuring to a warning, as it is not auto-fixable ([307647f](https://github.com/zillow/javascript/commit/307647f))
+
+
+
+
+
 <a name="1.0.0-alpha.5"></a>
 # [1.0.0-alpha.5](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0-alpha.4...eslint-config-zillow-base@1.0.0-alpha.5) (2018-04-10)
 
