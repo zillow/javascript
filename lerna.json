@@ -7,7 +7,8 @@
       "allowBranch": "latest",
       "cdVersion": "prerelease",
       "conventionalCommits": true,
-      "message": "chore(release): Publish"
+      "message": "chore(release): Publish",
+      "preid": "beta"
     }
   },
   "ignoreChanges": [
