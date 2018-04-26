@@ -99,7 +99,7 @@ module.exports = {
     // Avoid code that looks like two expressions but is actually one
     // https://eslint.org/docs/rules/no-unexpected-multiline
     // https://github.com/prettier/eslint-config-prettier#no-unexpected-multiline
-    'no-unexpected-multiline': 'error',
+    'no-unexpected-multiline': 'warn'/* prettier */,
 
     // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unreachable': 'error',

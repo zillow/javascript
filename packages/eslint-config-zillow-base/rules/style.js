@@ -276,7 +276,7 @@ module.exports = {
     // disallow un-paren'd mixes of different operators
     // https://eslint.org/docs/rules/no-mixed-operators
     // https://github.com/prettier/eslint-config-prettier#no-mixed-operators
-    'no-mixed-operators': ['error', {
+    'no-mixed-operators': ['warn'/* prettier */, {
       // the list of arthmetic groups disallows mixing `%` and `**`
       // with other arithmetic operators.
       groups: [
@@ -348,7 +348,7 @@ module.exports = {
 
     // disallow tab characters entirely
     // https://github.com/prettier/eslint-config-prettier#no-tabs
-    'no-tabs': 'error',
+    'no-tabs': 'warn'/* prettier */,
 
     // disallow the use of ternary operators
     'no-ternary': 'off',

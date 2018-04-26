@@ -43,7 +43,7 @@ module.exports = {
     // disallow arrow functions where they could be confused with comparisons
     // https://eslint.org/docs/rules/no-confusing-arrow
     // https://github.com/prettier/eslint-config-prettier#no-confusing-arrow
-    'no-confusing-arrow': ['error', {
+    'no-confusing-arrow': ['warn'/* prettier */, {
       allowParens: false,
     }],
 
