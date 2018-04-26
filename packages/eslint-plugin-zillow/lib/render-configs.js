@@ -9,22 +9,27 @@ const path = require('path');
 const getComputedConfig = require('./get-computed-config');
 const wrapInPlugin = require('./wrap-in-plugin');
 
-const configs = {
-    jest: {
-        extends: [/* 'zillow', */ 'zillow/jest'],
-    },
-    mocha: {
-        extends: [/* 'zillow', */ 'zillow/mocha'],
-    },
-    recommended: {
-        extends: ['zillow'],
-    },
-};
+renderConfig('jest', { extends: ['zillow/jest'] }, [
+    // prettier-ignore
+    '**/*{-,.}test.js',
+    '**/*.stories.js',
+    '**/__tests__/**/*.js',
+    '**/test/**/*.js',
+]);
 
-Object.keys(configs).forEach(name => {
-    const config = configs[name];
+renderConfig('mocha', { extends: ['zillow/mocha'] }, [
+    // prettier-ignore
+    '**/*-test.js',
+    '**/test/**/*.js',
+]);
+
+renderConfig('recommended', {
+    extends: ['zillow'],
+});
+
+function renderConfig(name, config, overrides) {
     const computedConfig = getComputedConfig(config);
-    const wrappedConfig = wrapInPlugin(computedConfig);
+    const wrappedConfig = wrapInPlugin(computedConfig, overrides);
     const targetPath = path.join(__dirname, `configs/${name}.json`);
 
     if (process.env.NODE_ENV !== 'test') {
@@ -33,4 +38,4 @@ Object.keys(configs).forEach(name => {
     }
 
     fs.writeFileSync(targetPath, JSON.stringify(wrappedConfig, null, 2));
-});
+}

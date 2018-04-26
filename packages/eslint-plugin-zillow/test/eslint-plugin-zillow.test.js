@@ -9,15 +9,43 @@ describe('eslint-plugin-zillow', () => {
     test('configs', () => {
         expect(configs).toMatchObject({
             jest: {
-                // TODO: re-enable
-                // env: {},
-                globals: {
-                    it: false,
-                },
-                plugins: ['zillow'],
-                rules: {
-                    'zillow/jest/no-focused-tests': 'error',
-                },
+                overrides: [
+                    {
+                        files: [
+                            '**/*{-,.}test.js',
+                            '**/*.stories.js',
+                            '**/__tests__/**/*.js',
+                            '**/test/**/*.js',
+                        ],
+                        globals: {
+                            it: false,
+                            jest: false,
+                        },
+                        plugins: ['zillow'],
+                        rules: {
+                            'zillow/jest/no-focused-tests': 'error',
+                        },
+                    },
+                ],
+            },
+            mocha: {
+                overrides: [
+                    {
+                        files: [
+                            // prettier-ignore
+                            '**/*-test.js',
+                            '**/test/**/*.js',
+                        ],
+                        globals: {
+                            it: false,
+                            mocha: false,
+                        },
+                        plugins: ['zillow'],
+                        rules: {
+                            'zillow/mocha/no-exclusive-tests': 'error',
+                        },
+                    },
+                ],
             },
             recommended: {
                 rules: {
