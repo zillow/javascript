@@ -22,7 +22,7 @@ describe('eslint-plugin-zillow', () => {
             recommended: {
                 rules: {
                     'zillow/react/jsx-indent': ['off', 4],
-                    'max-len': ['error', 100, 4, { ignoreComments: false }],
+                    'max-len': ['warn', 100, 4, { ignoreComments: false }],
                     'zillow/import/prefer-default-export': 'error',
                     'zillow/jsx-a11y/label-has-for': ['error', { components: ['label'] }],
                 },

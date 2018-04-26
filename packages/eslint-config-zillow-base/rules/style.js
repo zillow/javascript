@@ -194,7 +194,7 @@ module.exports = {
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
     // https://github.com/prettier/eslint-config-prettier#max-len
-    'max-len': ['error', 100, 4, {
+    'max-len': ['warn', 100, 4, {
       ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
