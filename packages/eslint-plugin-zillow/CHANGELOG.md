@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-beta.1"></a>
+# [1.0.0-beta.1](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-beta.0...eslint-plugin-zillow@1.0.0-beta.1) (2018-05-01)
+
+
+### Bug Fixes
+
+* **plugin:** Add __mocks__ to jest glob overrides ([0cbf4d5](https://github.com/zillow/javascript/commit/0cbf4d5))
+
+
+
+
+
 <a name="1.0.0-beta.0"></a>
 # [1.0.0-beta.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-alpha.6...eslint-plugin-zillow@1.0.0-beta.0) (2018-04-26)
 
