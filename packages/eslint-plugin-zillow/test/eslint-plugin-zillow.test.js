@@ -15,6 +15,7 @@ describe('eslint-plugin-zillow', () => {
                             '**/*{-,.}test.js',
                             '**/*.stories.js',
                             '**/__tests__/**/*.js',
+                            '**/__mocks__/**/*.js',
                             '**/test/**/*.js',
                         ],
                         globals: {

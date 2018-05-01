@@ -14,6 +14,7 @@ renderConfig('jest', { extends: ['zillow/jest'] }, [
     '**/*{-,.}test.js',
     '**/*.stories.js',
     '**/__tests__/**/*.js',
+    '**/__mocks__/**/*.js',
     '**/test/**/*.js',
 ]);
 
