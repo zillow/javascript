@@ -26,6 +26,7 @@ renderConfig('mocha', { extends: ['zillow/mocha'] }, [
 
 renderConfig('recommended', {
     extends: ['zillow'],
+    parser: 'babel-eslint',
 });
 
 function renderConfig(name, config, overrides) {

@@ -7,7 +7,6 @@ module.exports = wrapInPlugin;
 function wrapInPlugin(config, files) {
     // if files passed, this whole block will be moved to overrides[0]
     const pluginConfig = Object.assign({}, { files }, config, {
-        // parser: 'babel-eslint',
         // We expose a config already computed from the whole extends chain, so no extends here.
         extends: [],
         // Plugins appear to come from this plugin, so it's the only one externally visible.
