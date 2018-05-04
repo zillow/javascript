@@ -18,11 +18,23 @@ renderConfig('jest', { extends: ['zillow/jest'] }, [
     '**/test/**/*.js',
 ]);
 
-renderConfig('mocha', { extends: ['zillow/mocha'] }, [
-    // prettier-ignore
-    '**/*-test.js',
-    '**/test/**/*.js',
-]);
+renderConfig(
+    'mocha',
+    {
+        extends: ['zillow/mocha'],
+        rules: {
+            // mocha does fancy things with test case scope,
+            // and this conflicts with mocha/no-mocha-arrow
+            'prefer-arrow-callback': 'off',
+            'func-names': 'off',
+        },
+    },
+    [
+        // prettier-ignore
+        '**/*-test.js',
+        '**/test/**/*.js',
+    ]
+);
 
 renderConfig('recommended', {
     extends: ['zillow'],

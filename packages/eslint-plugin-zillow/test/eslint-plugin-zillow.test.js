@@ -44,6 +44,8 @@ describe('eslint-plugin-zillow', () => {
                         plugins: ['zillow'],
                         rules: {
                             'zillow/mocha/no-exclusive-tests': 'error',
+                            'prefer-arrow-callback': 'off',
+                            'func-names': 'off',
                         },
                     },
                 ],
