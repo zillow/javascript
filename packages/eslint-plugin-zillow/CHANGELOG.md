@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-beta.3"></a>
+# [1.0.0-beta.3](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-beta.2...eslint-plugin-zillow@1.0.0-beta.3) (2018-05-04)
+
+
+### Bug Fixes
+
+* **plugin:** Don't prefer-arrow-callback inside mocha tests ([4d0829b](https://github.com/zillow/javascript/commit/4d0829b))
+
+
+
+
+
 <a name="1.0.0-beta.2"></a>
 # [1.0.0-beta.2](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-beta.1...eslint-plugin-zillow@1.0.0-beta.2) (2018-05-02)
 
