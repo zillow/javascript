@@ -20,8 +20,10 @@ import 'zillow-js-shims';
   - [String.prototype.padStart](https://www.npmjs.com/package/string.prototype.padstart) (ES8/ES2017)
   - [String.prototype.padEnd](https://www.npmjs.com/package/string.prototype.padend) (ES8/ES2017)
   - [Promise.prototype.finally](https://npmjs.com/package/promise.prototype.finally) (Stage 4, ES2018)
-  - [Array.prototype.flatten](https://npmjs.com/package/array.prototype.flatten) (Stage 3, ES2018 candidate)
-  - [Array.prototype.flatMap](https://npmjs.com/package/array.prototype.flatMap) (Stage 3, ES2018 candidate)
+  - [Array.prototype.flat](https://npmjs.com/package/array.prototype.flat) (Stage 3, ES2019 candidate)
+  - [Array.prototype.flatMap](https://npmjs.com/package/array.prototype.flatMap) (Stage 3, ES2019 candidate)
+  - [Symbol.prototype.description](https://npmjs.com/package/symbol.prototype.description) (Stage 3, ES2019 candidate)
+  - [String.prototype.matchAll](https://npmjs.com/package/string.prototype.matchall) (Stage 3, ES2019 candidate)
 
 ## Targeting versions
 
@@ -38,6 +40,7 @@ import 'zillow-js-shims/target/es2015';
   - `zillow-js-shims/target/es2016`
   - `zillow-js-shims/target/es2017`
   - `zillow-js-shims/target/es2018`
+  - `zillow-js-shims/target/es2019`
 
 [1]: https://npmjs.org/package/zillow-js-shims
 [2]: http://versionbadg.es/zillow/js-shims.svg
