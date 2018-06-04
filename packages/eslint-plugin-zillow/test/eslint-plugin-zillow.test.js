@@ -56,7 +56,16 @@ describe('eslint-plugin-zillow', () => {
                     'zillow/react/jsx-indent': ['off', 4],
                     'max-len': ['warn', 100, 4, { ignoreComments: false }],
                     'zillow/import/prefer-default-export': 'error',
-                    'zillow/jsx-a11y/label-has-for': ['error', { components: ['label'] }],
+                    'zillow/jsx-a11y/label-has-for': [
+                        'error',
+                        {
+                            components: [],
+                            required: {
+                                every: ['nesting', 'id'],
+                            },
+                            allowChildren: false,
+                        },
+                    ],
                 },
             },
         });
