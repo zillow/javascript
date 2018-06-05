@@ -234,7 +234,7 @@ module.exports = {
     'import/no-self-import': 'error',
 
     // Ensures that there are no useless path segments
-    // https://github.com/benmosher/eslint-plugin-import/issues/1032
+    // https://github.com/benmosher/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/no-useless-path-segments.md
     'import/no-useless-path-segments': 'error',
 
     // Ensures that there is no resolvable path back to this module via its dependencies.
@@ -242,5 +242,12 @@ module.exports = {
     // TODO: enable? (LOTS of problems right now)
     'import/no-cycle': ['off', { maxDepth: 10 }],
     // purportedly claims to honor { commonjs: true, caseSensitive: true }, but it fails instead
+
+    // dynamic imports require a leading comment with a webpackChunkName
+    // https://github.com/benmosher/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/dynamic-import-chunkname.md
+    'import/dynamic-import-chunkname': ['off', {
+      importFunctions: [],
+      webpackChunknameFormat: '[0-9a-zA-Z-_/.]+',
+    }],
   },
 };
