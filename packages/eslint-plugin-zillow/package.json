@@ -34,7 +34,7 @@
   },
   "peerDependencies": {
     "eslint": "^4.19.1",
-    "prettier": "^1.11.1"
+    "prettier": "^1.13.4"
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",

@@ -4,6 +4,7 @@
   "private": true,
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
+    "check:prettier:parser": "prettier --debug-check --ignore-path ./.gitignore 'packages/**/*.@(js|md)'",
     "lint": "npm-run-all --silent lint:*",
     "lint:js": "eslint ./packages --cache --report-unused-disable-directives",
     "lint:md": "markdownlint README.md */README.md packages/*/README.md",
@@ -70,7 +71,7 @@
     "lerna": "^3.0.0-beta.21",
     "markdownlint-cli": "^0.10.0",
     "npm-run-all": "^4.1.3",
-    "prettier": "^1.12.1",
+    "prettier": "^1.13.4",
     "react": "^16.4.0"
   },
   "dependencies": {

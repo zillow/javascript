@@ -37,7 +37,7 @@
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-mocha": "^5.0.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.11.1"
+    "prettier": "^1.13.4"
   },
   "dependencies": {
     "eslint-restricted-globals": "^0.1.1"
