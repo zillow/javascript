@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-rc.0"></a>
+# [1.0.0-rc.0](https://github.com/zillow/javascript/compare/zillow-js-shims@1.0.0-alpha.1...zillow-js-shims@1.0.0-rc.0) (2018-06-05)
+
+
+### Features
+
+* **js-shims:** Port airbnb-js-shims v1.6.0 changes ([9c11c1a](https://github.com/zillow/javascript/commit/9c11c1a))
+
+
+
+
+
 <a name="1.0.0-alpha.1"></a>
 # 1.0.0-alpha.1 (2018-04-10)
 

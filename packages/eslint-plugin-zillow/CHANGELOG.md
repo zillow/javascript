@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-rc.0"></a>
+# [1.0.0-rc.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-beta.3...eslint-plugin-zillow@1.0.0-rc.0) (2018-06-05)
+
+
+### Features
+
+* Sync upstream eslint plugins ([5e42578](https://github.com/zillow/javascript/commit/5e42578))
+* **prettier:** Remove explicit parser from config ([ce6a740](https://github.com/zillow/javascript/commit/ce6a740))
+
+
+
+
+
 <a name="1.0.0-beta.3"></a>
 # [1.0.0-beta.3](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-beta.2...eslint-plugin-zillow@1.0.0-beta.3) (2018-05-04)
 
