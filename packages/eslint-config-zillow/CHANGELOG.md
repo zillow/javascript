@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-rc.1"></a>
+# [1.0.0-rc.1](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-rc.0...eslint-config-zillow@1.0.0-rc.1) (2018-06-15)
+
+
+### Features
+
+* Allow babel-eslint@8 peers ([5a01115](https://github.com/zillow/javascript/commit/5a01115))
+
+
+
+
+
 <a name="1.0.0-rc.0"></a>
 # [1.0.0-rc.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-beta.1...eslint-config-zillow@1.0.0-rc.0) (2018-06-05)
 
