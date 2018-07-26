@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0-rc.2"></a>
+# [1.0.0-rc.2](https://github.com/zillow/javascript/compare/babel-preset-zillow@1.0.0-rc.0...babel-preset-zillow@1.0.0-rc.2) (2018-07-26)
+
+
+### Bug Fixes
+
+* **babel-preset-zillow:** Preserve buildTargets when no options are passed ([#1](https://github.com/zillow/javascript/issues/1)) ([8138568](https://github.com/zillow/javascript/commit/8138568))
+
+
+
+
+
 <a name="1.0.0-rc.1"></a>
 # [1.0.0-rc.1](https://github.com/zillow/javascript/compare/babel-preset-zillow@1.0.0-rc.0...babel-preset-zillow@1.0.0-rc.1) (2018-07-26)
 
