@@ -14,7 +14,7 @@ const defaultTargets = {
 };
 
 function buildTargets(options) {
-    return Object.assign({}, defaultTargets, options.additionalTargets);
+    return Object.assign({}, defaultTargets, options && options.additionalTargets);
 }
 
 module.exports = function babelPresetZillow(context, options) {
