@@ -22,6 +22,7 @@ module.exports = {
     'brace-style': ['off'/* prettier */, '1tbs', { allowSingleLine: true }],
 
     // require camel case names
+    // TODO: semver-major (eslint 5): add ignoreDestructuring: false option
     camelcase: ['error', { properties: 'never' }],
 
     // enforce or disallow capitalization of the first letter of a comment
@@ -84,6 +85,7 @@ module.exports = {
     // requires function names to match the name of the variable or property to which they are
     // assigned
     // https://eslint.org/docs/rules/func-name-matching
+    // TODO: semver-major (eslint 5): add considerPropertyDescriptor: true
     'func-name-matching': ['off', 'always', {
       includeCommonJSModuleExports: false
     }],
@@ -208,6 +210,15 @@ module.exports = {
       max: 300,
       skipBlankLines: true,
       skipComments: true
+    }],
+
+    // enforce a maximum function length
+    // https://eslint.org/docs/rules/max-lines-per-function
+    'max-lines-per-function': ['off', {
+      max: 50,
+      skipBlankLines: true,
+      skipComments: true,
+      IIFEs: true,
     }],
 
     // specify the maximum depth callbacks can be nested
@@ -419,6 +430,11 @@ module.exports = {
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
     'padding-line-between-statements': 'off',
+
+    // Prefer use of an object spread over Object.assign
+    // https://eslint.org/docs/rules/prefer-object-spread
+    // TODO: semver-major (eslint 5): enable
+    'prefer-object-spread': 'off',
 
     // require quotes around object literal property names
     // https://eslint.org/docs/rules/quote-props.html
