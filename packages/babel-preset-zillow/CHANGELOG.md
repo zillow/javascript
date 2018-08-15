@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@1.0.0-rc.2...babel-preset-zillow@1.0.0) (2018-08-15)
+
+
+### Bug Fixes
+
+* **pkg:** Correct homepage URL ([1b5e7f0](https://github.com/zillow/javascript/commit/1b5e7f0))
+
+
+
+
+
 <a name="1.0.0-rc.2"></a>
 # [1.0.0-rc.2](https://github.com/zillow/javascript/compare/babel-preset-zillow@1.0.0-rc.0...babel-preset-zillow@1.0.0-rc.2) (2018-07-26)
 

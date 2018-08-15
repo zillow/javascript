@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-rc.1...eslint-plugin-zillow@1.0.0) (2018-08-15)
+
+
+### Bug Fixes
+
+* **pkg:** Correct homepage URL ([1b5e7f0](https://github.com/zillow/javascript/commit/1b5e7f0))
+
+
+### Features
+
+* Add eslint v5 support ([a52862a](https://github.com/zillow/javascript/commit/a52862a))
+* **deps:** Bump eslint plugins ([c134c45](https://github.com/zillow/javascript/commit/c134c45))
+* **plugin:** Bump eslint plugins ([19d2fae](https://github.com/zillow/javascript/commit/19d2fae))
+* Raise floor of peer dependency ranges ([3d6bbfd](https://github.com/zillow/javascript/commit/3d6bbfd))
+
+
+
+
+
 <a name="1.0.0-rc.1"></a>
 # [1.0.0-rc.1](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@1.0.0-rc.0...eslint-plugin-zillow@1.0.0-rc.1) (2018-06-15)
 

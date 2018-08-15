@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-rc.1...eslint-config-zillow@1.0.0) (2018-08-15)
+
+
+### Bug Fixes
+
+* **config:** Add jsx-a11y/label-has-associated-control rule ([7a9b73d](https://github.com/zillow/javascript/commit/7a9b73d))
+* **config:** Add new methods in React 16.3+ to class-methods-use-this ([7b39fa2](https://github.com/zillow/javascript/commit/7b39fa2))
+* **config:** Add react/no-unsafe rule ([5103478](https://github.com/zillow/javascript/commit/5103478))
+* **config:** Set `forbid-foreign-prop-types` to "warn" ([8c677a5](https://github.com/zillow/javascript/commit/8c677a5))
+* **pkg:** Correct homepage URL ([1b5e7f0](https://github.com/zillow/javascript/commit/1b5e7f0))
+
+
+### Features
+
+* Add eslint v5 support ([a52862a](https://github.com/zillow/javascript/commit/a52862a))
+* **deps:** Bump eslint plugins ([c134c45](https://github.com/zillow/javascript/commit/c134c45))
+* Raise floor of peer dependency ranges ([3d6bbfd](https://github.com/zillow/javascript/commit/3d6bbfd))
+
+
+
+
+
 <a name="1.0.0-rc.1"></a>
 # [1.0.0-rc.1](https://github.com/zillow/javascript/compare/eslint-config-zillow@1.0.0-rc.0...eslint-config-zillow@1.0.0-rc.1) (2018-06-15)
 

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0-rc.0...eslint-config-zillow-base@1.0.0) (2018-08-15)
+
+
+### Bug Fixes
+
+* **base:** Add import/no-relative-parent-imports rule ([c94f162](https://github.com/zillow/javascript/commit/c94f162))
+* **base:** Update ecmaVersion to 2018, remove deprecated experimentalObjectRestSpread ecmaFeature ([0a34930](https://github.com/zillow/javascript/commit/0a34930))
+* **pkg:** Correct homepage URL ([1b5e7f0](https://github.com/zillow/javascript/commit/1b5e7f0))
+
+
+### Features
+
+* Add eslint v5 support ([a52862a](https://github.com/zillow/javascript/commit/a52862a))
+* Raise floor of peer dependency ranges ([3d6bbfd](https://github.com/zillow/javascript/commit/3d6bbfd))
+
+
+
+
+
 <a name="1.0.0-rc.0"></a>
 # [1.0.0-rc.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0-beta.0...eslint-config-zillow-base@1.0.0-rc.0) (2018-06-05)
 

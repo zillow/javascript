@@ -1,6 +1,6 @@
 {
   "name": "zillow-js-shims",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0",
   "description": "JS language shims used by Zillow",
   "main": "zillow-js-shims.js",
   "files": [
