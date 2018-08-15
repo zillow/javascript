@@ -5,10 +5,8 @@
     },
     "publish": {
       "allowBranch": "latest",
-      "bump": "prerelease",
       "conventionalCommits": true,
-      "message": "chore(release): Publish",
-      "preid": "rc"
+      "message": "chore(release): Publish"
     }
   },
   "ignoreChanges": [
