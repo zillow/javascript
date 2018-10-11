@@ -37,7 +37,7 @@
     "prettier": "^1.14.2"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.6 || ^7.2.3",
+    "babel-eslint": "^10.0.1 || ^9.0.0 || ^8.2.6 || ^7.2.3",
     "eslint-config-zillow": "file:../eslint-config-zillow",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.21.0",
