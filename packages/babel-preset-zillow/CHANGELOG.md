@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@1.0.0...babel-preset-zillow@2.0.0) (2018-11-06)
+
+
+### Features
+
+* Upgrade to Babel 7 ([23bba84](https://github.com/zillow/javascript/commit/23bba84))
+
+
+### BREAKING CHANGES
+
+* Babel 6 is no longer supported.
+
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@1.0.0-rc.2...babel-preset-zillow@1.0.0) (2018-08-15)
 

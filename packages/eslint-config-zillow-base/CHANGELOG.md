@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0...eslint-config-zillow-base@2.0.0) (2018-11-06)
+
+
+### Features
+
+* Loosen prettier peer to >= 1.13.0 ([24c5fcb](https://github.com/zillow/javascript/commit/24c5fcb))
+* Raise floor of eslint peer to >= 5.0.0 ([5b8abfc](https://github.com/zillow/javascript/commit/5b8abfc))
+* Upgrade eslint-plugin-prettier to ^3.0.0 ([d636689](https://github.com/zillow/javascript/commit/d636689))
+
+
+### BREAKING CHANGES
+
+* eslint v4 is no longer supported
+
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0-rc.0...eslint-config-zillow-base@1.0.0) (2018-08-15)
 
