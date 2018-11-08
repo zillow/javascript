@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.0...eslint-config-zillow-base@2.1.1) (2018-11-08)
+
+
+### Bug Fixes
+
+* **jest:** Disable `prefer-spy-on`, it is buggy ([c3b5c53](https://github.com/zillow/javascript/commit/c3b5c53))
+
+
+
+
+
 # [2.1.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.0.0...eslint-config-zillow-base@2.1.0) (2018-11-08)
 
 
