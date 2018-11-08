@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.0.0...eslint-config-zillow-base@2.1.0) (2018-11-08)
+
+
+### Features
+
+* **base:** Expand eslint-plugin-jest peer range ([8e1f24c](https://github.com/zillow/javascript/commit/8e1f24c))
+* **jest:** Update rules, error all fixable rules ([7bb2d8a](https://github.com/zillow/javascript/commit/7bb2d8a))
+
+
+
+
+
 # [2.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@1.0.0...eslint-config-zillow-base@2.0.0) (2018-11-06)
 
 
