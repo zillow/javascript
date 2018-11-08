@@ -34,7 +34,7 @@
   "peerDependencies": {
     "eslint": ">= 5.0.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^21.21.0",
+    "eslint-plugin-jest": "^21.21.0 || ^22.0.0",
     "eslint-plugin-mocha": "^5.2.0",
     "eslint-plugin-prettier": "^3.0.0",
     "prettier": ">= 1.13.0"
