@@ -65,7 +65,8 @@ module.exports = {
     'jest/prefer-inline-snapshots': 'off',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-spy-on.md
-    'jest/prefer-spy-on': 'error',
+    // TODO: enable when bugs are fixed
+    'jest/prefer-spy-on': 'off',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-strict-equal.md
     'jest/prefer-strict-equal': 'error',
