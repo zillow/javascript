@@ -56,6 +56,8 @@ module.exports = declare((api, options) => {
             [require('@babel/preset-react'), { development }],
         ],
         plugins: [
+            require('@babel/plugin-syntax-dynamic-import'),
+            api.env('test') && require('babel-plugin-dynamic-import-node'),
             removePropTypes
                 ? [
                       require('babel-plugin-transform-react-remove-prop-types'),
