@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.0.0...babel-preset-zillow@2.1.0) (2018-11-12)
+
+
+### Features
+
+* **babel-preset-zillow:** Support dynamic import() with test fallback ([2a120ca](https://github.com/zillow/javascript/commit/2a120ca))
+
+
+
+
+
 # [2.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@1.0.0...babel-preset-zillow@2.0.0) (2018-11-06)
 
 
