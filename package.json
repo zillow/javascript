@@ -37,10 +37,9 @@
     "node": ">= 8.9.0"
   },
   "jest": {
-    "rootDir": "packages",
     "testEnvironment": "node",
     "testMatch": [
-      "**/test/**/*.js"
+      "<rootDir>/packages/**/test/**/*.js"
     ]
   },
   "devDependencies": {
