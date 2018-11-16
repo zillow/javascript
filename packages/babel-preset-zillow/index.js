@@ -23,7 +23,7 @@ module.exports = declare((api, options) => {
     // see docs about api at https://babeljs.io/docs/en/config-files#apicache
     api.assertVersion(7);
 
-    const { modules, targets = buildTargets(options), removePropTypes } = options;
+    const { modules, targets = buildTargets(options), removePropTypes = true } = options;
 
     if (typeof modules !== 'undefined' && typeof modules !== 'boolean' && modules !== 'auto') {
         throw new TypeError(
@@ -57,6 +57,7 @@ module.exports = declare((api, options) => {
         ],
         plugins: [
             require('@babel/plugin-syntax-dynamic-import'),
+            // TODO: Remove this when Jest supports dynamic import() "natively"
             api.env('test') && require('babel-plugin-dynamic-import-node'),
             removePropTypes
                 ? [
