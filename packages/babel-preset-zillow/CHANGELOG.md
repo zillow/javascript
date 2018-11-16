@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.1.0...babel-preset-zillow@2.1.1) (2018-11-16)
+
+
+### Bug Fixes
+
+* **babel-preset-zillow:** Wrap `propTypes` by default with explicit opt-out ([606be92](https://github.com/zillow/javascript/commit/606be92))
+
+
+
+
+
 # [2.1.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.0.0...babel-preset-zillow@2.1.0) (2018-11-12)
 
 
