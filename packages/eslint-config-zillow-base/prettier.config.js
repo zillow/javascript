@@ -27,5 +27,14 @@ module.exports = {
         trailingComma: 'none',
       },
     },
+    {
+      files: [
+        '*.yaml',
+        '*.yml',
+      ],
+      options: {
+        tabWidth: 2,
+      },
+    },
   ],
 };
