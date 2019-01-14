@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.1...eslint-config-zillow-base@2.1.2) (2019-01-14)
+
+
+### Bug Fixes
+
+* **base:** Add disabled no-useless-catch config ([26b1398](https://github.com/zillow/javascript/commit/26b1398))
+* **prettier:** Explicitly preserve npm default formatting for manifests and lockfiles ([50c54dc](https://github.com/zillow/javascript/commit/50c54dc))
+
+
+
+
+
 ## [2.1.1](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.0...eslint-config-zillow-base@2.1.1) (2018-11-08)
 
 

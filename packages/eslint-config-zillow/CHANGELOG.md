@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/zillow/javascript/compare/eslint-config-zillow@2.0.3...eslint-config-zillow@2.0.4) (2019-01-14)
+
+
+### Bug Fixes
+
+* **config:** Add disabled react/jsx-fragments config ([a631ab9](https://github.com/zillow/javascript/commit/a631ab9))
+* **config:** Add missing config to react/jsx-no-bind ([b1ce606](https://github.com/zillow/javascript/commit/b1ce606))
+
+
+
+
+
 ## [2.0.3](https://github.com/zillow/javascript/compare/eslint-config-zillow@2.0.2...eslint-config-zillow@2.0.3) (2018-11-08)
 
 **Note:** Version bump only for package eslint-config-zillow
