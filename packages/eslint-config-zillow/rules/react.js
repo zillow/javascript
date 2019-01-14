@@ -95,7 +95,9 @@ module.exports = {
     'react/jsx-no-bind': ['error', {
       ignoreRefs: true,
       allowArrowFunctions: true,
+      allowFunctions: false,
       allowBind: false,
+      ignoreDOMComponents: true,
     }],
 
     // Prevent duplicate props in JSX
