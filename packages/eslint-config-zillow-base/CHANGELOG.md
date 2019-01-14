@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.2...eslint-config-zillow-base@2.1.3) (2019-01-14)
+
+
+### Bug Fixes
+
+* **prettier:** Add lerna.json and .eslintrc.json to json-stringify overrides ([ec46f69](https://github.com/zillow/javascript/commit/ec46f69))
+* **prettier:** YAML always uses 2-space indent ([967a1f5](https://github.com/zillow/javascript/commit/967a1f5))
+
+
+
+
+
 ## [2.1.2](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.1...eslint-config-zillow-base@2.1.2) (2019-01-14)
 
 
