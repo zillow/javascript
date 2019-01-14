@@ -15,6 +15,8 @@ module.exports = {
     // explicitly keep output consistent with npm
     {
       files: [
+        '.eslintrc.json',
+        'lerna.json',
         'package.json',
         'package-lock.json',
         'npm-shrinkwrap.json',
