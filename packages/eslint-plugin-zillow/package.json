@@ -16,10 +16,6 @@
   "homepage": "https://github.com/zillow/javascript/tree/latest/packages/eslint-plugin-zillow#readme",
   "license": "MIT",
   "main": "lib/eslint-plugin-zillow.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
   "files": [
     "lib",
     "prettier.config.js"
