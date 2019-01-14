@@ -5,9 +5,25 @@ module.exports = {
   semi: true,
   useTabs: false,
 
-  // overrides
+  // customized
   printWidth: 100,
   singleQuote: true,
   tabWidth: 4,
   trailingComma: 'es5',
+
+  overrides: [
+    // explicitly keep output consistent with npm
+    {
+      files: [
+        'package.json',
+        'package-lock.json',
+        'npm-shrinkwrap.json',
+      ],
+      options: {
+        parser: 'json-stringify',
+        tabWidth: 2,
+        trailingComma: 'none',
+      },
+    },
+  ],
 };
