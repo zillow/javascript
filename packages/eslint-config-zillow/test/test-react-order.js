@@ -44,7 +44,7 @@ ${body}
 
 describe('validate react prop order', () => {
   test('make sure our eslintrc has React and JSX linting dependencies', () => {
-    expect(reactRules.plugins).toEqual(['react']);
+    expect(reactRules.plugins).toEqual(['react', 'react-hooks']);
     expect(reactA11yRules.plugins).toEqual(['jsx-a11y', 'react']);
   });
 
