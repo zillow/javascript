@@ -6,7 +6,7 @@
   "scripts": {
     "check:prettier:parser": "prettier --debug-check --ignore-path ./.gitignore 'packages/**/*.@(js|md)'",
     "lint": "npm-run-all --silent lint:*",
-    "lint:js": "eslint ./packages --cache --report-unused-disable-directives",
+    "lint:js": "eslint ./packages --cache --cache-location ./node_modules/.cache/eslint --report-unused-disable-directives",
     "lint:md": "markdownlint README.md */README.md packages/*/README.md",
     "lint:rules": "npm-run-all --silent --print-label lint:rules:*",
     "lint:rules:base": "eslint-find-rules --unused packages/eslint-config-zillow-base/index.js",
