@@ -11,6 +11,7 @@ plugins.set('jest', require('eslint-plugin-jest'));
 plugins.set('jsx-a11y', require('eslint-plugin-jsx-a11y'));
 plugins.set('mocha', require('eslint-plugin-mocha'));
 plugins.set('react', require('eslint-plugin-react'));
+plugins.set('react-hooks', require('eslint-plugin-react-hooks'));
 plugins.set('prettier', require('eslint-plugin-prettier'));
 
 /**
