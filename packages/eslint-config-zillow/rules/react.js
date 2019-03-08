@@ -451,9 +451,8 @@ module.exports = {
     'react/no-this-in-sfc': 'error',
 
     // Enforce shorthand or standard form for React fragments
-    // https://github.com/yannickcr/eslint-plugin-react/blob/2e60d0e7d705a73109f3c832a68f7810d2fc496d/docs/rules/jsx-fragments.md
-    // TODO: enable, semver-major
-    'react/jsx-fragments': ['off', 'syntax'],
+    // https://github.com/yannickcr/eslint-plugin-react/blob/9497745e1946c8e0a30c60d5df8fdb06a52494a3/docs/rules/jsx-fragments.md
+    'react/jsx-fragments': ['error', 'element'],
 
     // Validate JSX maximum depth
     // https://github.com/yannickcr/eslint-plugin-react/blob/abe8381c0d6748047224c430ce47f02e40160ed0/docs/rules/jsx-max-depth.md
