@@ -1,7 +1,6 @@
 module.exports = {
   // defaults
   arrowParens: 'avoid',
-  endOfLine: 'auto',
   bracketSpacing: true,
   jsxBracketSameLine: false,
   htmlWhitespaceSensitivity: 'css',
@@ -12,6 +11,7 @@ module.exports = {
   useTabs: false,
 
   // customized
+  endOfLine: 'lf',
   printWidth: 100,
   singleQuote: true,
   tabWidth: 4,
