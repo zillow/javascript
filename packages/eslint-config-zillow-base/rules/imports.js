@@ -85,6 +85,7 @@ module.exports = {
         '**/*.{test,spec}.{js,jsx}',
         // config files
         '**/jest.config.js',
+        '**/jest.setup.js',
         '**/webpack.config.js',
         '**/webpack.config.*.js',
         '**/rollup.config.js',
@@ -228,6 +229,10 @@ module.exports = {
     // forbid default exports. this is a terrible rule, do not use it.
     // https://github.com/benmosher/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/no-default-export.md
     'import/no-default-export': 'off',
+
+    // forbid named exports. this is a terrible rule, do not use it.
+    // https://github.com/benmosher/eslint-plugin-import/blob/f04b7b6b0368f794f8dc0779d06f057aef4b8ff5/docs/rules/no-named-export.md
+    'import/no-named-export': 'off',
 
     // Forbid a module from importing itself
     // https://github.com/benmosher/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/no-self-import.md

@@ -425,7 +425,12 @@ module.exports = {
     'operator-linebreak': ['off'/* prettier */, 'before', { overrides: { '=': 'none' } }],
 
     // disallow padding within blocks
-    'padded-blocks': ['off'/* prettier */, { blocks: 'never', classes: 'never', switches: 'never' }],
+    'padded-blocks': ['off'/* prettier */, {
+      blocks: 'never',
+      classes: 'never',
+      switches: 'never',
+      // allowSingleLineBlocks: true,
+    }],
 
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
