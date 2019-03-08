@@ -228,7 +228,7 @@ module.exports = {
 
     // Prevent extra closing tags for components without children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
-    'react/self-closing-comp': 'error',
+    'react/self-closing-comp': 'off'/* prettier */,
 
     // Enforce component methods order
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/sort-comp.md
