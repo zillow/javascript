@@ -381,9 +381,8 @@ module.exports = {
 
     // Forbids using non-exported propTypes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
-    // this is intentionally set to "warn". it would be "error", but it's only critical
-    // if you're using a babel transform to strip propTypes in production.
-    'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
+    // we're often using a babel transform to strip propTypes in production.
+    'react/forbid-foreign-prop-types': ['error', { allowInPropTypes: true }],
 
     // Prevent void DOM elements from receiving children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
