@@ -1530,6 +1530,7 @@ Other Code Conventions:
 
     const isJedi = getProp('jedi');
     ```
+
   <a name="es2016-properties--exponentiation-operator"></a>
   - [12.3](#es2016-properties--exponentiation-operator) Use exponentiation operator `**` when calculating exponentiations. eslint: [`no-restricted-properties`](https://eslint.org/docs/rules/no-restricted-properties).
 
@@ -1643,6 +1644,7 @@ Other Code Conventions:
       return name;
     }
     ```
+
   <a name="variables--no-chain-assignment"></a><a name="13.5"></a>
   - [13.5](#variables--no-chain-assignment) Don’t chain variable assignments. eslint: [`no-multi-assign`](https://eslint.org/docs/rules/no-multi-assign)
 
@@ -2749,6 +2751,7 @@ Other Code Conventions:
   - [19.19](#whitespace--no-multiple-empty-lines) Avoid multiple empty lines and only allow one newline at the end of files. eslint: [`no-multiple-empty-lines`](https://eslint.org/docs/rules/no-multiple-empty-lines)
 
     <!-- markdownlint-disable MD012 -->
+
     ```javascript
     // bad
     var x = 1;
@@ -2762,6 +2765,7 @@ Other Code Conventions:
 
     var y = 2;
     ```
+
     <!-- markdownlint-enable MD012 -->
 
 **[⬆ back to top](#table-of-contents)**
