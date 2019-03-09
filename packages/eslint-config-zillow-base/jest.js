@@ -52,8 +52,7 @@ module.exports = {
     'jest/no-test-prefixes': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-return-statement.md
-    // TODO: semver-major -> error
-    'jest/no-test-return-statement': 'warn',
+    'jest/no-test-return-statement': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md
     // TODO: semver-major -> error
