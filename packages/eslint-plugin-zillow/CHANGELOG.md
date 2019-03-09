@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@2.2.1...eslint-plugin-zillow@3.0.0) (2019-03-09)
+
+
+### Bug Fixes
+
+* **peer:** Tighten prettier range to ^1.16.4 ([3d0bd89](https://github.com/zillow/javascript/commit/3d0bd89))
+
+
+### Features
+
+* **plugin:** Add rules of React Hooks ([#2](https://github.com/zillow/javascript/issues/2)) ([abf05c5](https://github.com/zillow/javascript/commit/abf05c5))
+* **plugin:** bump lower range of dependencies ([de44db2](https://github.com/zillow/javascript/commit/de44db2))
+
+
+### BREAKING CHANGES
+
+* **peer:** The peer dependency on `prettier` has been tightened to encompass React Hooks-related features and bugfixes, as well as to explicitly disclaim support for _all_ versions 2.x and above.
+
+
+
+
+
 ## [2.2.1](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@2.2.0...eslint-plugin-zillow@2.2.1) (2019-01-14)
 
 **Note:** Version bump only for package eslint-plugin-zillow

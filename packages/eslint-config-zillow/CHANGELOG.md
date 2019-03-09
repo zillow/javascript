@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@2.0.5...eslint-config-zillow@3.0.0) (2019-03-09)
+
+
+### Bug Fixes
+
+* **config:** Add React 16.3+ lifecycle methods to react/sort-comp ([c1a1224](https://github.com/zillow/javascript/commit/c1a1224))
+* **config:** Disable 'react/self-closing-comp' in favor of prettier ([6466da3](https://github.com/zillow/javascript/commit/6466da3))
+* **config:** Enforce 'react/forbid-foreign-prop-types', stripping propTypes in production is very common ([4a53beb](https://github.com/zillow/javascript/commit/4a53beb))
+* **config:** Enforce jsx-a11y/control-has-associated-label ([9cb6334](https://github.com/zillow/javascript/commit/9cb6334))
+* **peer:** Tighten prettier range to ^1.16.4 ([3d0bd89](https://github.com/zillow/javascript/commit/3d0bd89))
+
+
+### Features
+
+* **config:** Enforce 'react/jsx-fragments' non-shorthand ([c7338f1](https://github.com/zillow/javascript/commit/c7338f1))
+* **config:** Update settings.react.version to 16.8 ([bf49ccc](https://github.com/zillow/javascript/commit/bf49ccc))
+* **meta:** Sync latest upstream changes ([e6e463e](https://github.com/zillow/javascript/commit/e6e463e))
+* **peer:** Bump lower range of peerDependencies ([a83ca95](https://github.com/zillow/javascript/commit/a83ca95))
+* **plugin:** Add rules of React Hooks ([#2](https://github.com/zillow/javascript/issues/2)) ([abf05c5](https://github.com/zillow/javascript/commit/abf05c5))
+
+
+### BREAKING CHANGES
+
+* **peer:** The peer dependency on `prettier` has been tightened to encompass React Hooks-related features and bugfixes, as well as to explicitly disclaim support for _all_ versions 2.x and above.
+* **peer:** Several new rules require a higher minimum version of various peer plugins.
+* **config:** If you are not on React 16.8 yet, you will need to override this setting locally.
+
+
+
+
+
 ## [2.0.5](https://github.com/zillow/javascript/compare/eslint-config-zillow@2.0.4...eslint-config-zillow@2.0.5) (2019-01-14)
 
 **Note:** Version bump only for package eslint-config-zillow

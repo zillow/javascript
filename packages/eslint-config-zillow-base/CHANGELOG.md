@@ -3,6 +3,64 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.3...eslint-config-zillow-base@3.0.0) (2019-03-09)
+
+
+### Bug Fixes
+
+* **base:** Disable 'line-break-style' in favor of prettier ([101af2d](https://github.com/zillow/javascript/commit/101af2d))
+* **base:** Lint jest plugin rules, add missing ([ef87358](https://github.com/zillow/javascript/commit/ef87358))
+* **base:** Lint mocha plugin rules, add missing ([f3f2096](https://github.com/zillow/javascript/commit/f3f2096))
+* **base:** Switch to confusing-browser-globals ([e2a129b](https://github.com/zillow/javascript/commit/e2a129b))
+* **peer:** Tighten prettier range to ^1.16.4 ([3d0bd89](https://github.com/zillow/javascript/commit/3d0bd89))
+* **style:** Allow non-camelCase when destructuring ([ebb6a3c](https://github.com/zillow/javascript/commit/ebb6a3c))
+
+
+### Features
+
+* **base:** Add explicit prettier config defaults ([e4b5717](https://github.com/zillow/javascript/commit/e4b5717))
+* **best-practices:** Enforce `max-classes-per-file` ([9274049](https://github.com/zillow/javascript/commit/9274049))
+* **best-practices:** Enforce `no-self-assign` for properties ([0eb3505](https://github.com/zillow/javascript/commit/0eb3505))
+* **best-practices:** Enforce `no-useless-catch` ([487ffdf](https://github.com/zillow/javascript/commit/487ffdf))
+* **errors:** Enforce `no-async-promise-executor` ([5612fc4](https://github.com/zillow/javascript/commit/5612fc4))
+* **errors:** Enforce `no-misleading-character-class` ([50b936a](https://github.com/zillow/javascript/commit/50b936a))
+* **errors:** Enforce `require-atomic-updates` ([206f0ac](https://github.com/zillow/javascript/commit/206f0ac))
+* **jest:** Enforce `jest/expect-expect` ([d80cc09](https://github.com/zillow/javascript/commit/d80cc09))
+* **jest:** Enforce `jest/no-jasmine-globals` ([40e9087](https://github.com/zillow/javascript/commit/40e9087))
+* **jest:** Enforce `jest/no-test-return-statement` ([8f8af38](https://github.com/zillow/javascript/commit/8f8af38))
+* **jest:** Enforce `jest/no-truthy-falsy` ([69bcd05](https://github.com/zillow/javascript/commit/69bcd05))
+* **jest:** Enforce `jest/prefer-todo` ([d7d29fd](https://github.com/zillow/javascript/commit/d7d29fd))
+* **meta:** Sync latest upstream changes ([e6e463e](https://github.com/zillow/javascript/commit/e6e463e))
+* **mocha:** Enforce mocha/no-mocha-arrows ([a58e1d8](https://github.com/zillow/javascript/commit/a58e1d8))
+* **peer:** Bump lower range of peerDependencies ([a83ca95](https://github.com/zillow/javascript/commit/a83ca95))
+* **style:** Enforce `func-name-matching` ([dc07745](https://github.com/zillow/javascript/commit/dc07745))
+* **style:** Enforce `prefer-object-spread` ([0b5347c](https://github.com/zillow/javascript/commit/0b5347c))
+
+
+### BREAKING CHANGES
+
+* **peer:** The peer dependency on `prettier` has been tightened to encompass React Hooks-related features and bugfixes, as well as to explicitly disclaim support for _all_ versions 2.x and above.
+* **mocha:** Passing an arrow function to a Mocha test case is now an error.
+* **style:** Prefer object spread instead of `Object.assign()`. This rule is fixable.
+* **style:** Function names must match the name of the variable or property to which they are assigned.
+* **style:** `camelcase` no longer errors when (predominantly) Python APIs insist on returning JSON with `snake_case` keys.
+* **errors:** Assignments that can lead to race conditions due to usage of `await` or `yield` are not allowed.
+* **errors:** Misleading character classes in regular expressions are not allowed.
+* **errors:** Passing an `async` function to the `Promise` constructor is not allowed.
+* **peer:** Several new rules require a higher minimum version of various peer plugins.
+* **best-practices:** Self-assigning properties is not allowed.
+* **best-practices:** Only one class per-file is allowed.
+* **jest:** Emtpy test cases are no longer allowed. This rule is fixable.
+* **jest:** The `toBeTruthy()` and `toBeFalsy()` assertions are no longer allowed. There are several assertions available with greater clarity.
+* **jest:** Returning values from test cases is not allowed. Tests with Promise return values should be converted to async/await.
+* **jest:** Jasmine globals are no longer allowed. This rule is fixable.
+* **jest:** Test cases without a call to `expect()` will now error. If you use a different assertion function, you will need to extend the [assertionFunctionNames](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/expect-expect.md#assertfunctionnames) rule option.
+* **best-practices:** Empty `catch` statements are not allowed.
+
+
+
+
+
 ## [2.1.3](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.2...eslint-config-zillow-base@2.1.3) (2019-01-14)
 
 
