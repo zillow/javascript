@@ -92,8 +92,8 @@ module.exports = {
     // requires function names to match the name of the variable or property to which they are
     // assigned
     // https://eslint.org/docs/rules/func-name-matching
-    // TODO: semver-major (eslint 5): add considerPropertyDescriptor: true
-    'func-name-matching': ['off', 'always', {
+    'func-name-matching': ['error', 'always', {
+      considerPropertyDescriptor: true,
       includeCommonJSModuleExports: false
     }],
 
