@@ -37,8 +37,7 @@ module.exports = {
     'jest/no-identical-title': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-jasmine-globals.md
-    // TODO: semver-major -> error
-    'jest/no-jasmine-globals': 'warn',
+    'jest/no-jasmine-globals': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-jest-import.md
     'jest/no-jest-import': 'error',
