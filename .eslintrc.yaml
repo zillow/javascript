@@ -16,3 +16,6 @@
     - files: "packages/zillow-browser-shims/document-contains.js"
       rules:
         func-name-matching: "off"
+    - files: "packages/babel-preset-zillow/index.js"
+      rules:
+        prefer-object-spread: "off"
