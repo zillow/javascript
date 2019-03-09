@@ -57,6 +57,13 @@ module.exports = {
     // TODO: semver-major -> error
     'jest/no-test-return-statement': 'warn',
 
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md
+    // TODO: semver-major -> error
+    'jest/no-truthy-falsy': 'off',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-called-with.md
+    'jest/prefer-called-with': 'off',
+
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-expect-assertions.md
     'jest/prefer-expect-assertions': 'off',
 
@@ -82,6 +89,10 @@ module.exports = {
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-have-length.md
     'jest/prefer-to-have-length': 'error',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-todo.md
+    // TODO: semver-major -> error
+    'jest/prefer-todo': 'off',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-tothrow-message.md
     'jest/require-tothrow-message': 'warn',
