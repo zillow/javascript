@@ -32,7 +32,7 @@ module.exports = {
     'mocha/no-identical-title': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-mocha-arrows.md
-    'mocha/no-mocha-arrows': 'warn',
+    'mocha/no-mocha-arrows': 'error',
 
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-nested-tests.md
     'mocha/no-nested-tests': 'error',
