@@ -126,8 +126,7 @@ module.exports = {
 
     // Disallow assignments that can lead to race conditions due to usage of await or yield
     // https://eslint.org/docs/rules/require-atomic-updates
-    // TODO: enable, semver-major
-    'require-atomic-updates': 'off',
+    'require-atomic-updates': 'error',
 
     // disallow comparisons with the value NaN
     'use-isnan': 'error',
