@@ -8,8 +8,11 @@
   env:
     jest/globals: false
   rules:
-    strict: off
+    strict: "off"
   overrides:
     - files: "**/test/**"
       env:
         jest/globals: true
+    - files: "packages/zillow-browser-shims/document-contains.js"
+      rules:
+        func-name-matching: "off"
