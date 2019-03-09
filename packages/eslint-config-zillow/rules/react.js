@@ -469,11 +469,11 @@ module.exports = {
 
     // Follow rules of React Hooks
     // https://www.npmjs.com/package/eslint-plugin-react-hooks
-    "react-hooks/rules-of-hooks": "error",
+    'react-hooks/rules-of-hooks': 'error',
 
     // Verify dependencies of React Hooks
     // https://github.com/facebook/react/issues/14920
-    "react-hooks/exhaustive-deps": "warn",
+    'react-hooks/exhaustive-deps': 'warn',
   },
 
   settings: {
@@ -484,7 +484,7 @@ module.exports = {
     },
     react: {
       pragma: 'React',
-      version: '16.0'
+      version: '16.8'
     },
     propWrapperFunctions: [
       // https://www.npmjs.com/package/airbnb-prop-types
