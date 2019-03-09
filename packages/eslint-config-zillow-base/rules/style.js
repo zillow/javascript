@@ -445,8 +445,7 @@ module.exports = {
 
     // Prefer use of an object spread over Object.assign
     // https://eslint.org/docs/rules/prefer-object-spread
-    // TODO: semver-major (eslint 5): enable
-    'prefer-object-spread': 'off',
+    'prefer-object-spread': 'error',
 
     // require quotes around object literal property names
     // https://eslint.org/docs/rules/quote-props.html
