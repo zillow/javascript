@@ -87,8 +87,7 @@ module.exports = {
     'jest/prefer-to-have-length': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-todo.md
-    // TODO: semver-major -> error
-    'jest/prefer-todo': 'off',
+    'jest/prefer-todo': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-tothrow-message.md
     'jest/require-tothrow-message': 'warn',
