@@ -14,8 +14,7 @@ module.exports = {
     }],
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/expect-expect.md
-    // TODO: semver-major -> error
-    'jest/expect-expect': ['warn', {
+    'jest/expect-expect': ['error', {
       assertFunctionNames: ['expect']
     }],
 
