@@ -55,8 +55,7 @@ module.exports = {
     'jest/no-test-return-statement': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md
-    // TODO: semver-major -> error
-    'jest/no-truthy-falsy': 'off',
+    'jest/no-truthy-falsy': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-called-with.md
     'jest/prefer-called-with': 'off',
