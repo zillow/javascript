@@ -29,11 +29,10 @@ module.exports = declare((api, options) => {
         targets = buildTargets(options),
         removeDataTestId = env !== 'test',
         removePropTypes = true,
-        // TODO: (semver-major) invert loose defaults
-        looseClasses = false,
-        looseComputedProperties = false,
-        looseParameters = false,
-        looseTemplateLiterals = false,
+        looseClasses = true,
+        looseComputedProperties = true,
+        looseParameters = true,
+        looseTemplateLiterals = true,
     } = options;
 
     if (typeof modules !== 'undefined' && typeof modules !== 'boolean' && modules !== 'auto') {

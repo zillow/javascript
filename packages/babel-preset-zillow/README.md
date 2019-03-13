@@ -149,21 +149,21 @@ Change the [`mode` option of remove-prop-types](https://github.com/oliviertassin
 
 ## Selective Loose Modes
 
-By default, this preset will compile everything in normal mode. This is safer, but comes with bundle size and runtime overhead. We have some options to selectively opt in to loose mode for some features. These options are:
+By default, this preset will compile as many modules as possible in loose mode. Normal mode is safer, but adds to bundle size and runtime overhead. We have options to selectively opt out of loose mode for applicable features. These options are:
   - [classes](https://babeljs.io/docs/en/babel-plugin-transform-classes#loose): `looseClasses`
   - [computed properties](https://babeljs.io/docs/en/babel-plugin-transform-computed-properties#loose): `looseComputedProperties`
   - [parameters](https://babeljs.io/docs/en/babel-plugin-transform-parameters#loose): `looseParameters`
   - [template literals](https://babeljs.io/docs/en/babel-plugin-transform-template-literals#loose): `looseTemplateLiterals`
 
-For example, enable _all_ loose compilation options:
+For example, disable _all_ loose compilation options:
 
 ```json
 {
   "presets": [["zillow", {
-    "looseClasses": true,
-    "looseComputedProperties": true,
-    "looseParameters": true,
-    "looseTemplateLiterals": true
+    "looseClasses": false,
+    "looseComputedProperties": false,
+    "looseParameters": false,
+    "looseTemplateLiterals": false
   }]]
 }
 ```
