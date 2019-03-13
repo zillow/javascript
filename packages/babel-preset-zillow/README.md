@@ -14,6 +14,7 @@ Additionally, we also transpile the following:
   - [async/await](https://www.npmjs.com/package/fast-async)
   - [class properties](https://www.npmjs.com/package/babel-plugin-transform-class-properties)
   - [lodash](https://www.npmjs.com/package/babel-plugin-lodash)
+  - [styled-components](https://www.styled-components.com/docs/tooling#babel-plugin)
 
 ## Install
 

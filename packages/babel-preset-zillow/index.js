@@ -45,6 +45,7 @@ module.exports = declare((api, options) => {
         typeof options.development === 'boolean'
             ? options.development
             : api.cache.using(() => process.env.NODE_ENV === 'development');
+    const production = !development && api.cache.using(() => process.env.NODE_ENV === 'production');
 
     /* eslint global-require: off */
     return {
@@ -65,6 +66,21 @@ module.exports = declare((api, options) => {
             [require('@babel/preset-react'), { development }],
         ],
         plugins: [
+            [
+                // this plugin _always_ needs to be loaded first
+                require('babel-plugin-styled-components'),
+                production
+                    ? {
+                          // help bundlers tree-shake
+                          pure: true,
+                          // remove dev-mode noise
+                          displayName: false,
+                      }
+                    : {
+                          // use defaults
+                      },
+            ],
+
             require('@babel/plugin-syntax-dynamic-import'),
             // TODO: Remove this when Jest supports dynamic import() "natively"
             api.env('test') && require('babel-plugin-dynamic-import-node'),
