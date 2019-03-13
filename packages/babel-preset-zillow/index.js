@@ -23,7 +23,16 @@ module.exports = declare((api, options) => {
     // see docs about api at https://babeljs.io/docs/en/config-files#apicache
     api.assertVersion('^7.0.0');
 
-    const { modules, targets = buildTargets(options), removePropTypes = true } = options;
+    const {
+        modules,
+        targets = buildTargets(options),
+        removePropTypes = true,
+        // TODO: (semver-major) invert loose defaults
+        looseClasses = false,
+        looseComputedProperties = false,
+        looseParameters = false,
+        looseTemplateLiterals = false,
+    } = options;
 
     if (typeof modules !== 'undefined' && typeof modules !== 'boolean' && modules !== 'auto') {
         throw new TypeError(
@@ -47,7 +56,6 @@ module.exports = declare((api, options) => {
                     exclude: [
                         '@babel/plugin-proposal-async-generator-functions',
                         '@babel/plugin-transform-async-to-generator',
-                        '@babel/plugin-transform-template-literals',
                         '@babel/plugin-transform-regenerator',
                     ],
                     modules: modules === false ? false : 'auto',
@@ -60,6 +68,24 @@ module.exports = declare((api, options) => {
             require('@babel/plugin-syntax-dynamic-import'),
             // TODO: Remove this when Jest supports dynamic import() "natively"
             api.env('test') && require('babel-plugin-dynamic-import-node'),
+
+            // need to hoist this above class transformer, otherwise it explodes
+            [require('@babel/plugin-proposal-class-properties'), { loose: true }],
+
+            // prettier-ignore
+            looseClasses
+                ? [require('@babel/plugin-transform-classes'), { loose: true }]
+                : null,
+            looseComputedProperties
+                ? [require('@babel/plugin-transform-computed-properties'), { loose: true }]
+                : null,
+            looseParameters
+                ? [require('@babel/plugin-transform-parameters'), { loose: true }]
+                : null,
+            looseTemplateLiterals
+                ? [require('@babel/plugin-transform-template-literals'), { loose: true }]
+                : null,
+
             removePropTypes
                 ? [
                       require('babel-plugin-transform-react-remove-prop-types'),
@@ -74,12 +100,10 @@ module.exports = declare((api, options) => {
                   ]
                 : null,
 
-            [require('@babel/plugin-transform-template-literals'), { loose: true }],
             require('@babel/plugin-transform-property-mutators'),
             require('@babel/plugin-transform-member-expression-literals'),
             require('@babel/plugin-transform-property-literals'),
             [require('@babel/plugin-proposal-object-rest-spread'), { useBuiltIns: true }],
-            [require('@babel/plugin-proposal-class-properties'), { loose: true }],
             [require('fast-async'), { spec: true }],
             require('babel-plugin-lodash'),
         ].filter(Boolean),

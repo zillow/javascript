@@ -47,7 +47,7 @@ require("babel-core").transform("code", {
 });
 ```
 
-### Targeting Environments
+## Targeting Environments
 
 This module uses `babel-preset-env` to target specific environments.
 
@@ -94,7 +94,7 @@ If you wish, you can also inherit our default list of browsers and extend them u
 }
 ```
 
-### Debugging
+## Debugging
 
 You may override our default debug option by providing your own `debug` key.
 
@@ -102,6 +102,26 @@ You may override our default debug option by providing your own `debug` key.
 {
   "presets": [["zillow", {
     "debug": true
+  }]]
+}
+```
+
+## Selective Loose Modes
+
+By default, this preset will compile everything in normal mode. This is safer, but comes with bundle size and runtime overhead. We have some options to selectively opt in to loose mode for some features. These options are:
+  - [classes](https://babeljs.io/docs/en/babel-plugin-transform-classes#loose): `looseClasses`
+  - [computed properties](https://babeljs.io/docs/en/babel-plugin-transform-computed-properties#loose): `looseComputedProperties`
+  - [parameters](https://babeljs.io/docs/en/babel-plugin-transform-parameters#loose): `looseParameters`
+  - [template literals](https://babeljs.io/docs/en/babel-plugin-transform-template-literals#loose): `looseTemplateLiterals`
+
+For example, enable _all_ loose compilation options:
+```json
+{
+  "presets": [["zillow", {
+    "looseClasses": true,
+    "looseComputedProperties": true,
+    "looseParameters": true,
+    "looseTemplateLiterals": true
   }]]
 }
 ```
