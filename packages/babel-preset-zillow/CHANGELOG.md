@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.1.2...babel-preset-zillow@2.2.0) (2019-03-13)
+
+
+### Features
+
+* **babel-preset-zillow:** Add opt-in loose mode options ([262d55b](https://github.com/zillow/javascript/commit/262d55b))
+* **babel-preset-zillow:** Add opt-out removal of JSX data-testid attributes ([8184c46](https://github.com/zillow/javascript/commit/8184c46))
+* **babel-preset-zillow:** Add styled-components plugin ([29b391d](https://github.com/zillow/javascript/commit/29b391d))
+
+
+
+
+
 ## [2.1.2](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.1.1...babel-preset-zillow@2.1.2) (2019-03-13)
 
 
