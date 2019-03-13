@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.1.1...babel-preset-zillow@2.1.2) (2019-03-13)
+
+
+### Bug Fixes
+
+* **babel-preset-zillow:** Sync upstream changes ([a79abb4](https://github.com/zillow/javascript/commit/a79abb4))
+
+
+
+
+
 ## [2.1.1](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.1.0...babel-preset-zillow@2.1.1) (2018-11-16)
 
 
