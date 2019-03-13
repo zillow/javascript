@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/babel-preset-zillow.svg)](https://www.npmjs.com/package/babel-preset-zillow)
 [![Build Status](https://travis-ci.org/zillow/javascript.svg?branch=latest)](https://travis-ci.org/zillow/javascript)
 
-Currently contains transforms for all standard syntax that is [stage 4](https://tc39.github.io/ecma262/) (ES2017) or [stage 3](https://github.com/tc39/proposals#active-proposals), except for the following:
+Currently contains transforms for all [stage 4](https://tc39.github.io/ecma262/) (ES2018) and [stage 3](https://github.com/tc39/proposals#active-proposals) syntax that is permitted in the [Zillow Style Guide](https://github.com/zillow/javascript). Please note that if usage of a stage 3 proposal is not explicitly mentioned in the Zillow Style Guide, then it will not be enabled here. Additionally, stage 4 syntax that is excluded is as follows:
   - generators: `regenerator-runtime` is too heavyweight for our use.
   - `SIMD`: this is a performance feature, so is pretty pointless to polyfill/transpile.
   - lifted template literal restrictions: we do not use tagged template literals, nor implement custom DSLs, otherwise we would enable this.

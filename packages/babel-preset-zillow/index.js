@@ -21,7 +21,7 @@ function buildTargets({ additionalTargets }) {
 
 module.exports = declare((api, options) => {
     // see docs about api at https://babeljs.io/docs/en/config-files#apicache
-    api.assertVersion(7);
+    api.assertVersion('^7.0.0');
 
     const { modules, targets = buildTargets(options), removePropTypes = true } = options;
 
@@ -45,9 +45,10 @@ module.exports = declare((api, options) => {
                 {
                     debug,
                     exclude: [
-                        'transform-async-to-generator',
-                        'transform-template-literals',
-                        'transform-regenerator',
+                        '@babel/plugin-proposal-async-generator-functions',
+                        '@babel/plugin-transform-async-to-generator',
+                        '@babel/plugin-transform-template-literals',
+                        '@babel/plugin-transform-regenerator',
                     ],
                     modules: modules === false ? false : 'auto',
                     targets,
