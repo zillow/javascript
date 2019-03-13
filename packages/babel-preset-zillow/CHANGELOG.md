@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.2.0...babel-preset-zillow@3.0.0) (2019-03-13)
+
+
+### Features
+
+* **babel-preset-zillow:** Opt-out of loose mode ([0cb59e7](https://github.com/zillow/javascript/commit/0cb59e7))
+
+
+### BREAKING CHANGES
+
+* **babel-preset-zillow:** Formerly opt-in, the loose mode configuration is now opt-out.
+
+
+
+
+
 # [2.2.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.1.2...babel-preset-zillow@2.2.0) (2019-03-13)
 
 
