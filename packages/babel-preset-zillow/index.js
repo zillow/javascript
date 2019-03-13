@@ -23,9 +23,11 @@ module.exports = declare((api, options) => {
     // see docs about api at https://babeljs.io/docs/en/config-files#apicache
     api.assertVersion('^7.0.0');
 
+    const env = api.env();
     const {
         modules,
         targets = buildTargets(options),
+        removeDataTestId = env !== 'test',
         removePropTypes = true,
         // TODO: (semver-major) invert loose defaults
         looseClasses = false,
@@ -42,10 +44,8 @@ module.exports = declare((api, options) => {
 
     const debug = typeof options.debug === 'boolean' ? options.debug : false;
     const development =
-        typeof options.development === 'boolean'
-            ? options.development
-            : api.cache.using(() => process.env.NODE_ENV === 'development');
-    const production = !development && api.cache.using(() => process.env.NODE_ENV === 'production');
+        typeof options.development === 'boolean' ? options.development : env === 'development';
+    const production = !development && env === 'production';
 
     /* eslint global-require: off */
     return {
@@ -83,7 +83,7 @@ module.exports = declare((api, options) => {
 
             require('@babel/plugin-syntax-dynamic-import'),
             // TODO: Remove this when Jest supports dynamic import() "natively"
-            api.env('test') && require('babel-plugin-dynamic-import-node'),
+            env === 'test' && require('babel-plugin-dynamic-import-node'),
 
             // need to hoist this above class transformer, otherwise it explodes
             [require('@babel/plugin-proposal-class-properties'), { loose: true }],
@@ -102,6 +102,17 @@ module.exports = declare((api, options) => {
                 ? [require('@babel/plugin-transform-template-literals'), { loose: true }]
                 : null,
 
+            removeDataTestId
+                ? [
+                      require('babel-plugin-jsx-remove-data-test-id'),
+                      Object.assign(
+                          {
+                              attributes: ['data-testid', 'data-test-id'],
+                          },
+                          removePropTypes
+                      ),
+                  ]
+                : null,
             removePropTypes
                 ? [
                       require('babel-plugin-transform-react-remove-prop-types'),

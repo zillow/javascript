@@ -107,6 +107,46 @@ You may override our default debug option by providing your own `debug` key.
 }
 ```
 
+## React Optimizations
+
+By default, this preset will [remove `data-testid` attributes](https://github.com/coderas/babel-plugin-jsx-remove-data-test-id#readme) from JSX elements in non-test builds and [remove `propTypes` definitions](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types#readme) (via wrapping) from React components in production builds. To explicitly customize this behavior, either pass `false` (to disable) or a config object.
+
+Disable both optimizations:
+
+```json
+{
+  "presets": [["zillow", {
+    "removeDataTestId": false,
+    "removePropTypes": false
+  }]]
+}
+```
+
+Replace the [attributes targeted by remove-data-test-id](https://github.com/coderas/babel-plugin-jsx-remove-data-test-id#define-custom-attribute-names):
+
+```json
+{
+  "presets": [["zillow", {
+    "removeDataTestId": {
+      "attributes": ["data-selenium-id"]
+    }
+  }]]
+}
+```
+
+Change the [`mode` option of remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types#mode):
+
+```json
+{
+  "presets": [["zillow", {
+    "removePropTypes": {
+      "mode": "remove",
+      "removeImport": true
+    }
+  }]]
+}
+```
+
 ## Selective Loose Modes
 
 By default, this preset will compile everything in normal mode. This is safer, but comes with bundle size and runtime overhead. We have some options to selectively opt in to loose mode for some features. These options are:
@@ -116,6 +156,7 @@ By default, this preset will compile everything in normal mode. This is safer, b
   - [template literals](https://babeljs.io/docs/en/babel-plugin-transform-template-literals#loose): `looseTemplateLiterals`
 
 For example, enable _all_ loose compilation options:
+
 ```json
 {
   "presets": [["zillow", {
