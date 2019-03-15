@@ -126,9 +126,6 @@ module.exports = declare((api, options) => {
                   ]
                 : null,
 
-            require('@babel/plugin-transform-property-mutators'),
-            require('@babel/plugin-transform-member-expression-literals'),
-            require('@babel/plugin-transform-property-literals'),
             [require('@babel/plugin-proposal-object-rest-spread'), { useBuiltIns: true }],
             [require('fast-async'), { spec: true }],
             require('babel-plugin-lodash'),
