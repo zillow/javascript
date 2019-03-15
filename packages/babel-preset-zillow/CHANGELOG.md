@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@3.0.0...babel-preset-zillow@4.0.0) (2019-03-15)
+
+
+### Features
+
+* **babel-preset-zillow:** Omit many plugins when `targets.node` option is present ([adcfeb8](https://github.com/zillow/javascript/commit/adcfeb8))
+* **babel-preset-zillow:** Remove ES3 and ES5 plugins ([ce6ce75](https://github.com/zillow/javascript/commit/ce6ce75))
+
+
+### BREAKING CHANGES
+
+* **babel-preset-zillow:** Ancient browsers such as IE 8 are no longer supported.
+
+
+
+
+
 # [3.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@2.2.0...babel-preset-zillow@3.0.0) (2019-03-13)
 
 
