@@ -46,6 +46,10 @@ module.exports = declare((api, options) => {
         typeof options.development === 'boolean' ? options.development : env === 'development';
     const production = !development && env === 'production';
 
+    // we assume that those opting into node env know what they're doing,
+    // and don't need a significant number of plugins or exclusions
+    const isNode = 'node' in targets;
+
     /* eslint global-require: off */
     return {
         presets: [
@@ -53,11 +57,13 @@ module.exports = declare((api, options) => {
                 require('@babel/preset-env'),
                 {
                     debug,
-                    exclude: [
-                        '@babel/plugin-proposal-async-generator-functions',
-                        '@babel/plugin-transform-async-to-generator',
-                        '@babel/plugin-transform-regenerator',
-                    ],
+                    exclude: isNode
+                        ? []
+                        : [
+                              '@babel/plugin-proposal-async-generator-functions',
+                              '@babel/plugin-transform-async-to-generator',
+                              '@babel/plugin-transform-regenerator',
+                          ],
                     modules: modules === false ? false : 'auto',
                     targets,
                 },
@@ -81,23 +87,23 @@ module.exports = declare((api, options) => {
             ],
 
             require('@babel/plugin-syntax-dynamic-import'),
-            // TODO: Remove this when Jest supports dynamic import() "natively"
-            env === 'test' && require('babel-plugin-dynamic-import-node'),
+            // TODO: Remove env test when Jest supports dynamic import() "natively"
+            isNode || env === 'test' ? require('babel-plugin-dynamic-import-node') : null,
 
-            // need to hoist this above class transformer, otherwise it explodes
+            // need to hoist this above (possible) class transformer, otherwise it explodes
             [require('@babel/plugin-proposal-class-properties'), { loose: true }],
 
             // prettier-ignore
-            looseClasses
+            !isNode && looseClasses
                 ? [require('@babel/plugin-transform-classes'), { loose: true }]
                 : null,
-            looseComputedProperties
+            !isNode && looseComputedProperties
                 ? [require('@babel/plugin-transform-computed-properties'), { loose: true }]
                 : null,
-            looseParameters
+            !isNode && looseParameters
                 ? [require('@babel/plugin-transform-parameters'), { loose: true }]
                 : null,
-            looseTemplateLiterals
+            !isNode && looseTemplateLiterals
                 ? [require('@babel/plugin-transform-template-literals'), { loose: true }]
                 : null,
 
@@ -126,8 +132,10 @@ module.exports = declare((api, options) => {
                   ]
                 : null,
 
-            [require('@babel/plugin-proposal-object-rest-spread'), { useBuiltIns: true }],
-            [require('fast-async'), { spec: true }],
+            isNode
+                ? null
+                : [require('@babel/plugin-proposal-object-rest-spread'), { useBuiltIns: true }],
+            isNode ? null : [require('fast-async'), { spec: true }],
             require('babel-plugin-lodash'),
         ].filter(Boolean),
     };
