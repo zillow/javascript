@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.0.0...eslint-plugin-zillow@3.1.0) (2019-03-21)
+
+
+### Features
+
+* **plugin:** Bump eslint-plugin-jest ([29ffc7c](https://github.com/zillow/javascript/commit/29ffc7c))
+* **plugin:** Bump eslint-plugin-react-hooks ([7554db3](https://github.com/zillow/javascript/commit/7554db3))
+
+
+
+
+
 # [3.0.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@2.2.1...eslint-plugin-zillow@3.0.0) (2019-03-09)
 
 

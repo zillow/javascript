@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.0...babel-preset-zillow@4.0.1) (2019-03-21)
+
+
+### Bug Fixes
+
+* **babel-preset-zillow:** Remove browser targets that were removed in a silently-breaking minor release ([a50c64f](https://github.com/zillow/javascript/commit/a50c64f))
+
+
+
+
+
 # [4.0.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@3.0.0...babel-preset-zillow@4.0.0) (2019-03-15)
 
 

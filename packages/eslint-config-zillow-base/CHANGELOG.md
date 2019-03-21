@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.0.0...eslint-config-zillow-base@3.1.0) (2019-03-21)
+
+
+### Features
+
+* **base:** Enforce jest/no-empty-title ([cc76f49](https://github.com/zillow/javascript/commit/cc76f49))
+
+
+
+
+
 # [3.0.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@2.1.3...eslint-config-zillow-base@3.0.0) (2019-03-09)
 
 
