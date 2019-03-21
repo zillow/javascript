@@ -33,6 +33,9 @@ module.exports = {
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-hooks.md
     'jest/no-hooks': 'off',
 
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-empty-title.md
+    'jest/no-empty-title': 'error',
+
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-identical-title.md
     'jest/no-identical-title': 'error',
 
