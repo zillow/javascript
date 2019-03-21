@@ -4,15 +4,12 @@ const { declare } = require('@babel/helper-plugin-utils');
 
 const defaultTargets = {
     android: 62,
-    and_uc: 11,
-    and_chr: 64,
     chrome: 64,
     edge: 16,
-    explorer: 11,
+    ie: 11,
     firefox: 58,
-    ios_saf: 10,
+    ios: 10,
     safari: 10,
-    samsung: 6,
 };
 
 function buildTargets({ additionalTargets }) {
