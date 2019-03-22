@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.2...babel-preset-zillow@4.0.3) (2019-03-22)
+
+
+### Bug Fixes
+
+* **preset:** Don't use full plugin names in exclude list, it's not backward-compatible ([7463ad4](https://github.com/zillow/javascript/commit/7463ad4))
+
+
+
+
+
 ## [4.0.2](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.1...babel-preset-zillow@4.0.2) (2019-03-22)
 
 
