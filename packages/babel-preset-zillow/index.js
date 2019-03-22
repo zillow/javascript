@@ -57,9 +57,9 @@ module.exports = declare((api, options) => {
                     exclude: isNode
                         ? []
                         : [
-                              '@babel/plugin-proposal-async-generator-functions',
-                              '@babel/plugin-transform-async-to-generator',
-                              '@babel/plugin-transform-regenerator',
+                              // TODO: use the full names again at some point
+                              'transform-async-to-generator',
+                              'transform-regenerator',
                           ],
                     modules: modules === false ? false : 'auto',
                     targets,
