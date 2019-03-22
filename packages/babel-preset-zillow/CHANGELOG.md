@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.1...babel-preset-zillow@4.0.2) (2019-03-22)
+
+
+### Bug Fixes
+
+* **preset:** Relax babel plugin dependency ranges back to ^7.0.0 ([741ea9c](https://github.com/zillow/javascript/commit/741ea9c))
+
+
+
+
+
 ## [4.0.1](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.0...babel-preset-zillow@4.0.1) (2019-03-21)
 
 
