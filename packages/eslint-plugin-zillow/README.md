@@ -70,7 +70,7 @@ For example:
 Unfortunately, super-useful editor plugins like `prettier-atom` and `prettier-vscode` do not load Prettier settings from ESLint config, which is where we load our Prettier options from. To workaround this, add a `.prettierrc.js` or `prettier.config.js` file to your root with the following content:
 
 ```js
-module.exports = require('eslint-plugin-zillow/prettier.config');
+module.exports = require('prettier-config-zillow');
 ```
 
 ## "Bundled" Plugins
