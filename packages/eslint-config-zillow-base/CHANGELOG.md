@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.1.0...eslint-config-zillow-base@3.2.0) (2019-04-22)
+
+
+### Bug Fixes
+
+* **base:** Add import/no-unused-modules config ([486e9f3](https://github.com/zillow/javascript/commit/486e9f3))
+
+
+### Features
+
+* **base:** Consume prettier-config-zillow ([7df1a55](https://github.com/zillow/javascript/commit/7df1a55))
+* **prettier:** Add `quoteProps: 'consistent'` config ([#4](https://github.com/zillow/javascript/issues/4)) ([4f49447](https://github.com/zillow/javascript/commit/4f49447))
+
+
+
+
+
 # [3.1.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.0.0...eslint-config-zillow-base@3.1.0) (2019-03-21)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.1.0...eslint-plugin-zillow@3.2.0) (2019-04-22)
+
+
+### Features
+
+* **plugin:** Bump dependencies ([3f10738](https://github.com/zillow/javascript/commit/3f10738))
+* **plugin:** Consume prettier-config-zillow ([ff5f5ae](https://github.com/zillow/javascript/commit/ff5f5ae))
+
+
+
+
+
 # [3.1.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.0.0...eslint-plugin-zillow@3.1.0) (2019-03-21)
 
 
