@@ -16,6 +16,7 @@ module.exports = {
   singleQuote: true,
   tabWidth: 4,
   trailingComma: 'es5',
+  quoteProps: 'consistent',
 
   overrides: [
     // explicitly keep output consistent with npm
