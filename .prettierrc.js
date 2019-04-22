@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('eslint-plugin-zillow/prettier.config');
+module.exports = require('prettier-config-zillow');
