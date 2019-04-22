@@ -1,0 +1,31 @@
+{
+  "name": "prettier-config-zillow",
+  "version": "1.0.0",
+  "description": "Zillow's base Prettier config, following our code conventions",
+  "keywords": [
+    "prettier",
+    "config",
+    "zillow",
+    "javascript"
+  ],
+  "author": "Daniel Stockman <daniel.stockman@gmail.com> (https://twitter.com/@evocateur)",
+  "homepage": "https://github.com/zillow/javascript/tree/latest/packages/prettier-config-zillow#readme",
+  "license": "MIT",
+  "main": "lib/prettier-config-zillow.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zillow/javascript.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "peerDependencies": {
+    "prettier": "^1.17.0"
+  }
+}

@@ -72,6 +72,7 @@
     "eslint-config-zillow": "file:packages/eslint-config-zillow",
     "eslint-config-zillow-base": "file:packages/eslint-config-zillow-base",
     "eslint-plugin-zillow": "file:packages/eslint-plugin-zillow",
+    "prettier-config-zillow": "file:packages/prettier-config-zillow",
     "zillow-browser-shims": "file:packages/zillow-browser-shims",
     "zillow-js-shims": "file:packages/zillow-js-shims"
   }
