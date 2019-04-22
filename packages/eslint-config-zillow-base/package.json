@@ -40,6 +40,7 @@
     "prettier": "^1.16.4"
   },
   "dependencies": {
-    "confusing-browser-globals": "^1.0.6"
+    "confusing-browser-globals": "^1.0.6",
+    "prettier-config-zillow": "file:../prettier-config-zillow"
   }
 }
