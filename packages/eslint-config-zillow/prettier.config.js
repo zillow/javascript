@@ -1,1 +1,1 @@
-module.exports = require('eslint-config-zillow-base/prettier.config');
+module.exports = require('prettier-config-zillow');

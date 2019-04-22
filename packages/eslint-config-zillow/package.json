@@ -44,6 +44,7 @@
     "prettier": "^1.16.4"
   },
   "dependencies": {
-    "eslint-config-zillow-base": "file:../eslint-config-zillow-base"
+    "eslint-config-zillow-base": "file:../eslint-config-zillow-base",
+    "prettier-config-zillow": "file:../prettier-config-zillow"
   }
 }
