@@ -22,8 +22,10 @@ module.exports = declare((api, options) => {
 
     const env = api.env();
     const {
+        corejs,
         modules,
         targets = buildTargets(options),
+        useBuiltIns,
         removeDataTestId = env !== 'test',
         removePropTypes = true,
         looseClasses = true,
@@ -53,6 +55,7 @@ module.exports = declare((api, options) => {
             [
                 require('@babel/preset-env'),
                 {
+                    corejs,
                     debug,
                     exclude: isNode
                         ? []
@@ -63,6 +66,7 @@ module.exports = declare((api, options) => {
                           ],
                     modules: modules === false ? false : 'auto',
                     targets,
+                    useBuiltIns,
                 },
             ],
             [require('@babel/preset-react'), { development }],

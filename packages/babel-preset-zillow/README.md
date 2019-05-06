@@ -50,9 +50,9 @@ require("babel-core").transform("code", {
 
 ## Targeting Environments
 
-This module uses `babel-preset-env` to target specific environments.
+This module uses `@babel/preset-env` to target specific environments.
 
-Please refer to [babel-preset-env#targets](https://github.com/babel/babel-preset-env#targets) for a list of available options.
+Please refer to [babel-preset-env#targets](https://babeljs.io/docs/en/babel-preset-env#targets) for a list of available options.
 
 For a list of browsers please see [browserlist](https://github.com/ai/browserslist).
 
@@ -94,6 +94,28 @@ If you wish, you can also inherit our default list of browsers and extend them u
   }]]
 }
 ```
+
+### Configuring Polyfills
+
+This preset also supports passing additional options directly to `@babel/preset-env`:
+
+- [`useBuiltIns`](https://babeljs.io/docs/en/babel-preset-env#usebuiltins)
+- [`corejs`](https://babeljs.io/docs/en/babel-plugin-transform-runtime#corejs)
+
+These options are best suited for applications, not libraries, as they require additional dependencies (like [core-js](https://www.npmjs.com/package/core-js)) that are not recommended for libraries.
+
+For example, the following config would provide all global polyfills necessary for IE11 in an application, based on usage:
+
+```json
+{
+  "presets": [["zillow", {
+    "useBuiltIns": "usage",
+    "corejs": 3
+  }]]
+}
+```
+
+For more examples, please consult the [core-js docs](https://github.com/zloirock/core-js#babelpreset-env).
 
 ## Debugging
 
