@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.3...babel-preset-zillow@4.1.0) (2019-05-06)
+
+
+### Features
+
+* **preset:** Add `useBuiltIns` and `corejs` options, proxied directly to `@babel/preset-env` ([007eb00](https://github.com/zillow/javascript/commit/007eb00))
+
+
+
+
+
 ## [4.0.3](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.2...babel-preset-zillow@4.0.3) (2019-03-22)
 
 
