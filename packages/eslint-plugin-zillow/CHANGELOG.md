@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.2.0...eslint-plugin-zillow@3.3.0) (2019-06-26)
+
+
+### Bug Fixes
+
+* **plugin:** Support stricter pnpm installation ([3628fb8](https://github.com/zillow/javascript/commit/3628fb8))
+
+
+### Features
+
+* **plugin:** Bump eslint-plugin-import ([83f0699](https://github.com/zillow/javascript/commit/83f0699))
+* **plugin:** Bump eslint-plugin-jest ([0a795b4](https://github.com/zillow/javascript/commit/0a795b4))
+* **plugin:** Bump eslint-plugin-prettier ([4c0786b](https://github.com/zillow/javascript/commit/4c0786b))
+* **plugin:** Bump eslint-plugin-react{,-hooks} ([0ae77c0](https://github.com/zillow/javascript/commit/0ae77c0))
+
+
+
+
+
 # [3.2.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.1.0...eslint-plugin-zillow@3.2.0) (2019-04-22)
 
 

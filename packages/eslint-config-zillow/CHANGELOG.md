@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.1.0...eslint-config-zillow@3.2.0) (2019-06-26)
+
+
+### Features
+
+* **plugin:** Bump eslint-plugin-react{,-hooks} ([0ae77c0](https://github.com/zillow/javascript/commit/0ae77c0))
+
+
+
+
+
 # [3.1.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.0.1...eslint-config-zillow@3.1.0) (2019-04-22)
 
 
