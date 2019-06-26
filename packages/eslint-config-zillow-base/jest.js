@@ -24,6 +24,9 @@ module.exports = {
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-alias-methods.md
     'jest/no-alias-methods': 'off',
 
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-commented-out-tests.md
+    'jest/no-commented-out-tests': 'off',
+
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md
     'jest/no-disabled-tests': 'warn',
 
@@ -47,6 +50,9 @@ module.exports = {
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-large-snapshots.md
     'jest/no-large-snapshots': ['warn', { maxSize: 50 }],
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-mocks-import.md
+    'jest/no-mocks-import': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-callback.md
     'jest/no-test-callback': 'error',
