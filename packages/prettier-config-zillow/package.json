@@ -24,8 +24,5 @@
   },
   "engines": {
     "node": ">= 8.9.0"
-  },
-  "peerDependencies": {
-    "prettier": "^1.17.0"
   }
 }
