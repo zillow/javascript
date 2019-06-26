@@ -35,6 +35,7 @@
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "eslint-config-zillow": "file:../eslint-config-zillow",
+    "eslint-import-resolver-node": "^0.3.2",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jest": "^22.7.1",
     "eslint-plugin-jsx-a11y": "^6.2.1",

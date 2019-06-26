@@ -51,7 +51,7 @@ describe('eslint-plugin-zillow', () => {
                 ],
             },
             recommended: {
-                parser: 'babel-eslint',
+                parser: expect.stringContaining('babel-eslint'),
                 rules: {
                     'zillow/react/jsx-indent': ['off', 4],
                     'max-len': ['warn', 100, 4, { ignoreComments: false }],
@@ -68,6 +68,15 @@ describe('eslint-plugin-zillow', () => {
                     ],
                 },
             },
+        });
+
+        const resolverConfigKey = Object.keys(
+            configs.recommended.settings['import/resolver']
+        ).pop();
+
+        expect(resolverConfigKey).toMatch(/eslint-import-resolver-node/);
+        expect(configs.recommended.settings['import/resolver'][resolverConfigKey]).toStrictEqual({
+            extensions: ['.js', '.jsx', '.json'],
         });
     });
 
