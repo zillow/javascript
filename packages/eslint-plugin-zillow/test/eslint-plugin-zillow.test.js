@@ -70,14 +70,19 @@ describe('eslint-plugin-zillow', () => {
             },
         });
 
-        const resolverConfigKey = Object.keys(
-            configs.recommended.settings['import/resolver']
-        ).pop();
+        const importResolverConfig = configs.recommended.settings['import/resolver'];
+        const resolverConfigKeys = Object.keys(importResolverConfig);
 
-        expect(resolverConfigKey).toMatch(/eslint-import-resolver-node/);
-        expect(configs.recommended.settings['import/resolver'][resolverConfigKey]).toStrictEqual({
+        expect(resolverConfigKeys).toEqual([
+            expect.stringMatching(/eslint-import-resolver-node/),
+            'node',
+        ]);
+        expect(importResolverConfig[resolverConfigKeys[0]]).toStrictEqual({
             extensions: ['.js', '.jsx', '.json'],
         });
+        expect(importResolverConfig[resolverConfigKeys[0]]).toStrictEqual(
+            importResolverConfig.node
+        );
     });
 
     test('processors', () => {
