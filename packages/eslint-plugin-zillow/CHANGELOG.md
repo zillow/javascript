@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.2](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.3.1...eslint-plugin-zillow@3.3.2) (2019-07-03)
+
+
+### Bug Fixes
+
+* **plugin:** Ensure pnpm-compatible resolver settings do not break eslint v5 when JSX files are present ([3dab597](https://github.com/zillow/javascript/commit/3dab597))
+
+
+
+
+
 ## [3.3.1](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.3.0...eslint-plugin-zillow@3.3.1) (2019-06-26)
 
 **Note:** Version bump only for package eslint-plugin-zillow
