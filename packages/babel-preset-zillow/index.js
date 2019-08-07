@@ -115,10 +115,11 @@ module.exports = declare((api, options) => {
                           {
                               attributes: ['data-testid', 'data-test-id'],
                           },
-                          removePropTypes
+                          removeDataTestId
                       ),
                   ]
                 : null,
+
             removePropTypes
                 ? [
                       require('babel-plugin-transform-react-remove-prop-types'),
