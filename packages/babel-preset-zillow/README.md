@@ -117,6 +117,25 @@ For example, the following config would provide all global polyfills necessary f
 
 For more examples, please consult the [core-js docs](https://github.com/zloirock/core-js#babelpreset-env).
 
+### Advanced Plugin Exclusions
+
+In some rare cases, it is necessary to explicitly [exclude](https://babeljs.io/docs/en/babel-preset-env#exclude) certain transforms that would otherwise be included by `@babel/preset-env`.
+
+To accomplish this goal, this preset's default exclusions can be extended with the `additionalExcludes` array.
+
+```json
+{
+  "presets": [["babel-preset-zillow", {
+    "additionalExcludes": [
+      "@babel/plugin-transform-classes"
+    ]
+  }]]
+}
+```
+
+You should always pass the fully-qualified transform name, not the shorthand.
+When `targets.node` is configured no exclusions are allowed, as they are generally not necessary anyway.
+
 ## Debugging
 
 You may override our default debug option by providing your own `debug` key.

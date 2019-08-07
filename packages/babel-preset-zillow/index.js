@@ -2,6 +2,15 @@
 
 const { declare } = require('@babel/helper-plugin-utils');
 
+const defaultExcludes = [
+    '@babel/plugin-transform-async-to-generator',
+    '@babel/plugin-transform-regenerator',
+];
+
+function buildExcludes({ additionalExcludes = [] }) {
+    return [...defaultExcludes, ...additionalExcludes];
+}
+
 const defaultTargets = {
     android: 62,
     chrome: 64,
@@ -49,6 +58,9 @@ module.exports = declare((api, options) => {
     // and don't need a significant number of plugins or exclusions
     const isNode = 'node' in targets;
 
+    // use a Set to streamline plugin conditionals
+    const excluding = new Set(isNode ? [] : buildExcludes(options));
+
     /* eslint global-require: off */
     return {
         presets: [
@@ -57,13 +69,7 @@ module.exports = declare((api, options) => {
                 {
                     corejs,
                     debug,
-                    exclude: isNode
-                        ? []
-                        : [
-                              // TODO: use the full names again at some point
-                              'transform-async-to-generator',
-                              'transform-regenerator',
-                          ],
+                    exclude: Array.from(excluding),
                     modules: modules === false ? false : 'auto',
                     targets,
                     useBuiltIns,
@@ -95,16 +101,28 @@ module.exports = declare((api, options) => {
             [require('@babel/plugin-proposal-class-properties'), { loose: true }],
 
             // prettier-ignore
-            !isNode && looseClasses
+            !isNode &&
+            looseClasses &&
+            !excluding.has('@babel/plugin-transform-classes')
                 ? [require('@babel/plugin-transform-classes'), { loose: true }]
                 : null,
-            !isNode && looseComputedProperties
+
+            !isNode &&
+            looseComputedProperties &&
+            !excluding.has('@babel/plugin-transform-computed-properties')
                 ? [require('@babel/plugin-transform-computed-properties'), { loose: true }]
                 : null,
-            !isNode && looseParameters
+
+            // prettier-ignore
+            !isNode &&
+            looseParameters &&
+            !excluding.has('@babel/plugin-transform-parameters')
                 ? [require('@babel/plugin-transform-parameters'), { loose: true }]
                 : null,
-            !isNode && looseTemplateLiterals
+
+            !isNode &&
+            looseTemplateLiterals &&
+            !excluding.has('@babel/plugin-transform-template-literals')
                 ? [require('@babel/plugin-transform-template-literals'), { loose: true }]
                 : null,
 
