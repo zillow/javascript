@@ -30,7 +30,7 @@ npm install --save-dev babel-preset-zillow
 
 ```json
 {
-  "presets": ["zillow"]
+  "presets": ["babel-preset-zillow"]
 }
 ```
 
@@ -44,7 +44,7 @@ babel script.js --presets zillow
 
 ```javascript
 require("babel-core").transform("code", {
-  presets: ["zillow"]
+  presets: ["babel-preset-zillow"]
 });
 ```
 
@@ -60,7 +60,7 @@ You may override our default list of targets by providing your own `targets` key
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "targets": {
       "chrome": 50,
       "explorer": 11,
@@ -74,7 +74,7 @@ The following transpiles only for Node v8.
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "targets": {
       "node": 8
     }
@@ -86,7 +86,7 @@ If you wish, you can also inherit our default list of browsers and extend them u
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "additionalTargets": {
       "chrome": 42,
       "explorer": 8
@@ -108,7 +108,7 @@ For example, the following config would provide all global polyfills necessary f
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "useBuiltIns": "usage",
     "corejs": 3
   }]]
@@ -123,7 +123,7 @@ You may override our default debug option by providing your own `debug` key.
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "debug": true
   }]]
 }
@@ -137,7 +137,7 @@ Disable both optimizations:
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "removeDataTestId": false,
     "removePropTypes": false
   }]]
@@ -148,7 +148,7 @@ Replace the [attributes targeted by remove-data-test-id](https://github.com/code
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "removeDataTestId": {
       "attributes": ["data-selenium-id"]
     }
@@ -160,7 +160,7 @@ Change the [`mode` option of remove-prop-types](https://github.com/oliviertassin
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "removePropTypes": {
       "mode": "remove",
       "removeImport": true
@@ -181,7 +181,7 @@ For example, disable _all_ loose compilation options:
 
 ```json
 {
-  "presets": [["zillow", {
+  "presets": [["babel-preset-zillow", {
     "looseClasses": false,
     "looseComputedProperties": false,
     "looseParameters": false,
