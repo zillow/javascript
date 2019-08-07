@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.1.0...babel-preset-zillow@4.2.0) (2019-08-07)
+
+
+### Bug Fixes
+
+* **preset:** Restore customizability of `removeDataTestId` attributes ([c18c49c](https://github.com/zillow/javascript/commit/c18c49c))
+
+
+### Features
+
+* **preset:** Add `additionalExcludes` config for advanced plugin exclusion ([a04c389](https://github.com/zillow/javascript/commit/a04c389))
+* **preset:** Update dependencies ([feb9349](https://github.com/zillow/javascript/commit/feb9349))
+
+
+
+
+
 # [4.1.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.0.3...babel-preset-zillow@4.1.0) (2019-05-06)
 
 
