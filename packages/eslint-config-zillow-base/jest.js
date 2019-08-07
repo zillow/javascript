@@ -1,22 +1,26 @@
 module.exports = {
   env: {
-    'jest/globals': true
+    'jest/globals': true,
   },
-  plugins: [
-    'jest',
-  ],
+  plugins: ['jest'],
 
   rules: {
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/consistent-test-it.md
-    'jest/consistent-test-it': ['error', {
-      fn: 'test',
-      withinDescribe: 'it',
-    }],
+    'jest/consistent-test-it': [
+      'error',
+      {
+        fn: 'test',
+        withinDescribe: 'it',
+      },
+    ],
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/expect-expect.md
-    'jest/expect-expect': ['error', {
-      assertFunctionNames: ['expect']
-    }],
+    'jest/expect-expect': [
+      'error',
+      {
+        assertFunctionNames: ['expect'],
+      },
+    ],
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/lowercase-name.md
     'jest/lowercase-name': 'off',
@@ -30,17 +34,29 @@ module.exports = {
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md
     'jest/no-disabled-tests': 'warn',
 
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-duplicate-hooks.md
+    'jest/no-duplicate-hooks': 'off',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-empty-title.md
+    'jest/no-empty-title': 'error',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-expect-resolves.md
+    'jest/no-expect-resolves': 'off',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-export.md
+    'jest/no-export': 'error',
+
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md
     'jest/no-focused-tests': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-hooks.md
     'jest/no-hooks': 'off',
 
-    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-empty-title.md
-    'jest/no-empty-title': 'error',
-
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-identical-title.md
     'jest/no-identical-title': 'error',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-if.md
+    'jest/no-if': 'off',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-jasmine-globals.md
     'jest/no-jasmine-globals': 'error',
@@ -54,6 +70,9 @@ module.exports = {
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-mocks-import.md
     'jest/no-mocks-import': 'error',
 
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-standalone-expect.md
+    'jest/no-standalone-expect': 'error',
+
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-callback.md
     'jest/no-test-callback': 'error',
 
@@ -65,6 +84,9 @@ module.exports = {
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md
     'jest/no-truthy-falsy': 'error',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-try-expect.md
+    'jest/no-try-expect': 'off',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-called-with.md
     'jest/prefer-called-with': 'off',
