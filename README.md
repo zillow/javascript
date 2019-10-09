@@ -1318,7 +1318,7 @@ Other Code Conventions:
   <a name="modules--prefer-default-export"></a>
   - [10.6](#modules--prefer-default-export) In modules with a single export, prefer default export over named export.
  eslint: [`import/prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md)
-    > Why? To encourage more files that only ever export one thing, which is better for readability and maintainability.
+    > Declaring a default should not be required regardless of the number of exports in your module. Default exports allow consumers to rename it and that makes bulk refactoring more difficult. By using named exports consumers will use that name providing consistent naming everywhere. Default exports are necessary for CommonJS modules. If your project must support consumers that use CommonJS you should consider enabling this rule.
 
     ```javascript
     // bad
