@@ -55,7 +55,7 @@ describe('eslint-plugin-zillow', () => {
                 rules: {
                     'zillow/react/jsx-indent': ['off', 4],
                     'max-len': ['warn', 100, 4, { ignoreComments: false }],
-                    'zillow/import/prefer-default-export': 'error',
+                    'zillow/import/prefer-default-export': 'off',
                 },
             },
         });
