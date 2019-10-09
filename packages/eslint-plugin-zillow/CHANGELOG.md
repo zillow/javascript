@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.1](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.4.0...eslint-plugin-zillow@3.4.1) (2019-10-09)
+
+
+### Bug Fixes
+
+* **config:** Remove deprecated `jsx-a11y/label-has-for` ([#5](https://github.com/zillow/javascript/issues/5)) ([f035d57](https://github.com/zillow/javascript/commit/f035d57))
+
+
+
+
+
 # [3.4.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.3.2...eslint-plugin-zillow@3.4.0) (2019-08-07)
 
 
