@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.4.1...eslint-plugin-zillow@3.5.0) (2019-10-10)
+
+
+### Features
+
+* **config:** Turn off `import/prefer-default-export` ([#6](https://github.com/zillow/javascript/issues/6)) ([f662ddc](https://github.com/zillow/javascript/commit/f662ddce0d870a6edf0ce78c296127d8c606e0eb))
+* **plugin:** Bump eslint-plugin-jest ([b8506fd](https://github.com/zillow/javascript/commit/b8506fdcd547fec222320ba042056160dc51369c))
+* **plugin:** Bump eslint-plugin-prettier ([75a9011](https://github.com/zillow/javascript/commit/75a90111f9d0d5550539ca72ebcb16ea05f19737))
+* **plugin:** Bump eslint-plugin-react ([de7d07c](https://github.com/zillow/javascript/commit/de7d07cc7a7896e1ce99e20eaea1954177148736))
+* **plugin:** Upgrade eslint-plugin-mocha to 6.x ([ffa6a08](https://github.com/zillow/javascript/commit/ffa6a08893f408d34fb32116bf883267e70dee3e))
+* **plugin:** Upgrade eslint-plugin-react-hooks to 2.x ([ea2e964](https://github.com/zillow/javascript/commit/ea2e9643bc8fdb3e8aa911157524e884c1e9f682))
+
+
+
+
+
 ## [3.4.1](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.4.0...eslint-plugin-zillow@3.4.1) (2019-10-09)
 
 

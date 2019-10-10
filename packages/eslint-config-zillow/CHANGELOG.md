@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.2.3...eslint-config-zillow@3.3.0) (2019-10-10)
+
+
+### Features
+
+* **config:** Add config for `react/jsx-no-useless-fragment` ([d0a7baf](https://github.com/zillow/javascript/commit/d0a7baf013b299fbf4165754eb9ef7cebdf63a38))
+* **config:** Expand peer range of eslint-plugin-mocha to 6.x ([40f5654](https://github.com/zillow/javascript/commit/40f5654e61d2f022208d948a801eb243829f92ee))
+* **config:** Expand peer range of eslint-plugin-react-hooks to 2.x ([79cf046](https://github.com/zillow/javascript/commit/79cf046d762fe1a6a348096ef58becf336b537b4))
+
+
+
+
+
 ## [3.2.3](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.2.2...eslint-config-zillow@3.2.3) (2019-10-09)
 
 

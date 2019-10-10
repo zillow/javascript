@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.4.0...eslint-config-zillow-base@3.5.0) (2019-10-10)
+
+
+### Features
+
+* **base:** Add config for `jest/require-top-level-describe` ([36d46f1](https://github.com/zillow/javascript/commit/36d46f1dae0f600ecc5d8763204309b1244b4fb5))
+* **base:** Add config for `mocha/no-return-from-async` ([9781e8c](https://github.com/zillow/javascript/commit/9781e8c409acf4ea6a5b5da8a3b8f16f2fcef69e))
+* **base:** Expand peer range of eslint-plugin-mocha to 6.x ([ac32540](https://github.com/zillow/javascript/commit/ac325405e3f65a43f338aa83d0f00102b8f87711))
+* **config:** Turn off `import/prefer-default-export` ([#6](https://github.com/zillow/javascript/issues/6)) ([f662ddc](https://github.com/zillow/javascript/commit/f662ddce0d870a6edf0ce78c296127d8c606e0eb))
+
+
+
+
+
 # [3.4.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.3.1...eslint-config-zillow-base@3.4.0) (2019-08-07)
 
 
