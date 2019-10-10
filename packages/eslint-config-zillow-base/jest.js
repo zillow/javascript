@@ -120,6 +120,9 @@ module.exports = {
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-todo.md
     'jest/prefer-todo': 'error',
 
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-top-level-describe.md
+    'jest/require-top-level-describe': 'off',
+
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-tothrow-message.md
     'jest/require-tothrow-message': 'warn',
 
