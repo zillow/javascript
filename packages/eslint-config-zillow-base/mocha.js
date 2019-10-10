@@ -43,6 +43,9 @@ module.exports = {
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-and-callback.md
     'mocha/no-return-and-callback': 'error',
 
+    // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-return-from-async.md
+    'mocha/no-return-from-async': 'error',
+
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-setup-in-describe.md
     'mocha/no-setup-in-describe': 'off',
 
