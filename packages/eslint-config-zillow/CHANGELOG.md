@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.3.0...eslint-config-zillow@3.3.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* **config:** Updates the jsx-a11y/label-has-associated-control ([#7](https://github.com/zillow/javascript/issues/7)) ([bb947fb](https://github.com/zillow/javascript/commit/bb947fb7131f85d35e10fad841728ada8a8ffcb5))
+
+
+
+
+
 # [3.3.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.2.3...eslint-config-zillow@3.3.0) (2019-10-10)
 
 
