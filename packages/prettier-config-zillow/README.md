@@ -18,4 +18,4 @@ Reference in `package.json`:
 }
 ```
 
-Please consule the [Prettier documentation](https://prettier.io/docs/en/configuration.html#sharing-configurations) for further options.
+Please consult the [Prettier documentation](https://prettier.io/docs/en/configuration.html#sharing-configurations) for further options.
