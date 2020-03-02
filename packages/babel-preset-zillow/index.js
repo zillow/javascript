@@ -100,6 +100,8 @@ module.exports = declare((api, options) => {
             // need to hoist this above (possible) class transformer, otherwise it explodes
             [require('@babel/plugin-proposal-class-properties'), { loose: true }],
 
+            require('@babel/plugin-proposal-optional-chaining'),
+
             // prettier-ignore
             !isNode &&
             looseClasses &&
