@@ -41,7 +41,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0 || ^2.1.2",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4 || ^2.0.5"
   },
   "dependencies": {
     "eslint-config-zillow-base": "file:../eslint-config-zillow-base",
