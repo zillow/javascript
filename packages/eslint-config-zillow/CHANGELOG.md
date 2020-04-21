@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.3.1...eslint-config-zillow@3.4.0) (2020-04-21)
+
+
+### Features
+
+* Expand peer range of prettier to 2.x ([07ddbef](https://github.com/zillow/javascript/commit/07ddbef53cd636f2dd459227c09577fa4d366259))
+
+
+
+
+
 ## [3.3.1](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.3.0...eslint-config-zillow@3.3.1) (2019-10-17)
 
 
