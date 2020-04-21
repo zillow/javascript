@@ -40,7 +40,12 @@ module.exports = {
             },
         },
         {
-            files: ['*.yaml', '*.yml'],
+            files: [
+                '*.yaml',
+                '*.yml',
+                // tsc --init outputs 2-space indent, but it is _not_ "pure" JSON
+                'tsconfig.json',
+            ],
             options: {
                 tabWidth: 2,
             },
