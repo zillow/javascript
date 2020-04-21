@@ -4,6 +4,7 @@ module.exports = {
     $schema: 'http://json.schemastore.org/prettierrc',
 
     // defaults
+    // TODO: (major) match v2 "arrowParens" default "always"
     arrowParens: 'avoid',
     bracketSpacing: true,
     jsxBracketSameLine: false,
@@ -42,6 +43,17 @@ module.exports = {
             files: ['*.yaml', '*.yml'],
             options: {
                 tabWidth: 2,
+            },
+        },
+        {
+            /**
+             * Prettier v2 changed the default of arrowParens to "always".
+             * This is very nice for TypeScript,but would cause dramatic diffs
+             * with JS(X), so we're gonna avoid that for now.
+             */
+            files: ['*.ts', '*.tsx'],
+            options: {
+                arrowParens: 'always',
             },
         },
     ],
