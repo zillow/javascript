@@ -8,6 +8,7 @@
     "jest.js",
     "mocha.js",
     "prettier.config.js",
+    "typescript.js",
     "rules"
   ],
   "scripts": {
