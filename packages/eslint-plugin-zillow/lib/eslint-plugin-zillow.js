@@ -4,9 +4,11 @@ const { getPluginProcessors, getPluginRules } = require('./plugins');
 const jestConfig = require('./configs/jest.json');
 const mochaConfig = require('./configs/mocha.json');
 const recommendedConfig = require('./configs/recommended.json');
+const typescriptConfig = require('./configs/typescript.json');
 
 // resolve parser to support pnpm strict linking
 recommendedConfig.parser = require.resolve(recommendedConfig.parser);
+typescriptConfig.overrides[0].parser = require.resolve(typescriptConfig.overrides[0].parser);
 
 // ditto, but for import plugin resolver
 const importResolverNodeSettings = {
@@ -24,6 +26,7 @@ module.exports = {
         jest: jestConfig,
         mocha: mochaConfig,
         recommended: recommendedConfig,
+        typescript: typescriptConfig,
     },
     // TODO: environments
     processors: getPluginProcessors(),

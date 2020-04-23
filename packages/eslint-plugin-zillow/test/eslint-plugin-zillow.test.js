@@ -68,7 +68,18 @@ describe('eslint-plugin-zillow', () => {
             'node',
         ]);
         expect(importResolverConfig[resolverConfigKeys[0]]).toStrictEqual({
-            extensions: ['.js', '.jsx', '.json'],
+            extensions: [
+                // first three match react's override
+                '.js',
+                '.jsx',
+                '.json',
+                // the remainder from base imports spec
+                '.ts',
+                '.tsx',
+                '.d.ts',
+                '.cjs',
+                '.mjs',
+            ],
         });
         expect(importResolverConfig[resolverConfigKeys[0]]).toStrictEqual(
             importResolverConfig.node

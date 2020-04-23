@@ -41,6 +41,15 @@ renderConfig('recommended', {
     parser: 'babel-eslint',
 });
 
+renderConfig(
+    'typescript',
+    {
+        extends: ['zillow/typescript'],
+        parser: '@typescript-eslint/parser',
+    },
+    ['**/*.ts?(x)']
+);
+
 function renderConfig(name, config, overrides) {
     const computedConfig = getComputedConfig(config);
     const wrappedConfig = wrapInPlugin(computedConfig, overrides);

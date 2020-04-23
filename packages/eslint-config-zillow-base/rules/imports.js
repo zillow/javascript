@@ -13,13 +13,39 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.mjs', '.js', '.json']
+        extensions: [
+          // first three must match react's extensions list
+          '.js',
+          '.jsx',
+          '.json',
+          // because eslint merges arrays, whoops!
+          '.ts',
+          '.tsx',
+          '.d.ts',
+          '.cjs',
+          '.mjs',
+        ]
       }
     },
+    'import/parsers': {
+      '@typescript-eslint/parser': [
+        '.ts',
+        '.tsx',
+        '.d.ts',
+      ],
+    },
     'import/extensions': [
+      '.ts',
+      '.tsx',
+      '.d.ts',
+      '.cjs',
       '.js',
       '.mjs',
       '.jsx',
+    ],
+    'import/external-module-folders': [
+      'node_modules',
+      'node_modules/@types',
     ],
     'import/core-modules': [
     ],
@@ -142,8 +168,11 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
     'import/extensions': ['error', 'ignorePackages', {
       js: 'never',
+      ts: 'never',
       mjs: 'never',
+      cjs: 'never',
       jsx: 'never',
+      tsx: 'never',
     }],
 
     // Enforce a convention in module import order

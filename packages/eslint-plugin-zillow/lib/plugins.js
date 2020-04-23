@@ -13,6 +13,7 @@ plugins.set('mocha', require('eslint-plugin-mocha'));
 plugins.set('react', require('eslint-plugin-react'));
 plugins.set('react-hooks', require('eslint-plugin-react-hooks'));
 plugins.set('prettier', require('eslint-plugin-prettier'));
+plugins.set('@typescript-eslint', require('@typescript-eslint/eslint-plugin'));
 
 /**
  * Create an environments object from plugin environments.
