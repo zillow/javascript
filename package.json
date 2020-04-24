@@ -13,6 +13,7 @@
     "lint:rules:jest": "eslint-find-rules --unused packages/eslint-config-zillow-base/jest.js --no-core",
     "lint:rules:main": "eslint-find-rules --unused packages/eslint-config-zillow/index.js",
     "lint:rules:mocha": "eslint-find-rules --unused packages/eslint-config-zillow-base/mocha.js --no-core",
+    "lint:rules:typescript": "eslint-find-rules --unused packages/eslint-config-zillow-base/typescript.js --no-core",
     "lint:prettier": "eslint --print-config packages/eslint-config-zillow/index.js | eslint-config-prettier-check",
     "pretest": "lerna run prepare --loglevel error && npm run --silent lint",
     "test": "jest",
