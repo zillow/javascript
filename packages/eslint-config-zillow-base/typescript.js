@@ -71,13 +71,13 @@ module.exports = {
     '@typescript-eslint/ban-types': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/camelcase.md
-    // DEPRECATED (TODO: use naming-convention)
+    // DEPRECATED (using naming-convention)
     'camelcase': 'off',
-    '@typescript-eslint/camelcase': 'error',
+    '@typescript-eslint/camelcase': 'off',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-name-casing.md
-    // DEPRECATED (TODO: use naming-convention)
-    '@typescript-eslint/class-name-casing': 'error',
+    // DEPRECATED (using naming-convention)
+    '@typescript-eslint/class-name-casing': 'off',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
     '@typescript-eslint/consistent-type-assertions': 'error',
@@ -87,8 +87,8 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/interface-name-prefix.md
-    // DEPRECATED (TODO: use naming-convention)
-    '@typescript-eslint/interface-name-prefix': 'error',
+    // DEPRECATED (using naming-convention)
+    '@typescript-eslint/interface-name-prefix': 'off',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
     'no-array-constructor': 'off',
@@ -249,7 +249,51 @@ module.exports = {
     '@typescript-eslint/method-signature-style': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
-    '@typescript-eslint/naming-convention': 'error',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'default',
+        format: ['camelCase'],
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
+      },
+      {
+        selector: 'function',
+        format: ['camelCase', 'PascalCase'],
+      },
+      {
+        selector: 'parameter',
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+      },
+      {
+        selector: 'memberLike',
+        format: ['camelCase'],
+        modifiers: ['private'],
+        leadingUnderscore: 'require',
+      },
+      {
+        selector: 'typeLike',
+        format: ['PascalCase'],
+      },
+      // Prohibit "I" prefix on interfaces
+      {
+        selector: 'interface',
+        custom: {
+          regex: '^I[A-Z]',
+          match: false,
+        },
+        format: ['PascalCase'],
+      },
+      // Allow unsafe React lifecycle methods, for now
+      {
+        selector: 'method',
+        filter: '^UNSAFE_',
+        format: null,
+      },
+    ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
     '@typescript-eslint/no-base-to-string': 'error',
