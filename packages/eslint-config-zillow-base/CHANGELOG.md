@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.3](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.2...eslint-config-zillow-base@3.7.3) (2020-04-24)
+
+
+### Bug Fixes
+
+* **typescript:** Configure explicit-member-accessibility rule to omit public modifiers ([201bc36](https://github.com/zillow/javascript/commit/201bc36ad6722b87479aaa5ca619b1f37175f257))
+* **typescript:** Replace deprecated rules with fully-configured naming-convention ([e824145](https://github.com/zillow/javascript/commit/e82414591ab796afa0dd2894782c51a25d286007))
+* **typescript:** Turn off react/sort-comp in TSX files, it doesn't cooperate with class properties ([46c8ecc](https://github.com/zillow/javascript/commit/46c8ecc9bc4f745e967b42e57bd5a8c05ceb8d78))
+
+
+
+
+
 ## [3.7.2](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.1...eslint-config-zillow-base@3.7.2) (2020-04-24)
 
 
