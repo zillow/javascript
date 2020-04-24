@@ -326,6 +326,9 @@ module.exports = {
     'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': 'error',
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars-experimental.md
+    '@typescript-eslint/no-unused-vars-experimental': 'off',
+
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-useless-constructor.md
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
