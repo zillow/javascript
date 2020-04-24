@@ -7,3 +7,7 @@
     indent: [error, 2]
     # far too many disagreements to be useful
     prettier/prettier: off
+  overrides:
+    - files: './typescript.js'
+      rules:
+        prettier/prettier: [error, { tabWidth: 2 }]
