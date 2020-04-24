@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.2](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.1...eslint-config-zillow-base@3.7.2) (2020-04-24)
+
+
+### Bug Fixes
+
+* **typescript:** Add missing rule config ([89085b1](https://github.com/zillow/javascript/commit/89085b1617b139e0a7607f8abd3e8ec4a5b65737))
+
+
+
+
+
 ## [3.7.1](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.0...eslint-config-zillow-base@3.7.1) (2020-04-23)
 
 
