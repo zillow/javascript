@@ -422,7 +422,12 @@ module.exports = {
      * Root Plugin Overrides
      */
 
+    // TSX is JSX, too!
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.tsx'] }],
+
+    // typescript parser doesn't play nicely with react plugin
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
+    'react/sort-comp': 'off',
   },
 };
