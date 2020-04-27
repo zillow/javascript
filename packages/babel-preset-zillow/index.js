@@ -154,7 +154,14 @@ module.exports = declare((api, options) => {
 
             isNode
                 ? null
-                : [require('@babel/plugin-proposal-object-rest-spread'), { useBuiltIns: true }],
+                : [
+                      require('@babel/plugin-proposal-object-rest-spread'),
+                      {
+                          loose: true,
+                          useBuiltIns: true,
+                      },
+                  ],
+
             isNode ? null : [require('fast-async'), { spec: true }],
             require('babel-plugin-lodash'),
         ].filter(Boolean),
