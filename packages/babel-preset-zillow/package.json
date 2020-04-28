@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-zillow",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "description": "A Babel preset for transpiling JavaScript following our code conventions",
   "keywords": [
     "babel",

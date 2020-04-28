@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.2.0...babel-preset-zillow@4.3.0) (2020-04-28)
+
+
+### Features
+
+* **preset:** Pass loose:true to object-rest-spread plugin ([6413205](https://github.com/zillow/javascript/commit/6413205bb92b681477333cd6009145cdaa65c054))
+* **preset:** Support nested configuration overrides ([51d9130](https://github.com/zillow/javascript/commit/51d913092105f985ea039cb5ef4544b6da4f2e3b))
+* **preset:** Update dependencies ([c1a856f](https://github.com/zillow/javascript/commit/c1a856f12e3c6a4933b1bc32c1995c9069deb53e))
+
+
+
+
+
 # [4.2.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.1.0...babel-preset-zillow@4.2.0) (2019-08-07)
 
 
