@@ -136,6 +136,36 @@ To accomplish this goal, this preset's default exclusions can be extended with t
 You should always pass the fully-qualified transform name, not the shorthand.
 When `targets.node` is configured no exclusions are allowed, as they are generally not necessary anyway.
 
+## Nested Configuration Overrides
+
+For advanced use cases, configuration for many of the presets and plugins employed by this module can be passed as sub-keys of the top-level options object. These configuration objects are spread into the internal configuration objects, _overriding_ any keys already set. The currently supported preset option keys are:
+
+- [`preset-env`](https://babeljs.io/docs/en/babel-preset-env#options)
+- [`preset-react`](https://babeljs.io/docs/en/babel-preset-react#options)
+- [`styled-components`](https://styled-components.com/docs/tooling#babel-plugin)
+- [`object-rest-spread`](https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread#options)
+
+```json
+{
+  "presets": [["babel-preset-zillow", {
+    "preset-env": {
+      "loose": true
+    },
+    "preset-react": {
+      "runtime": "automatic"
+    },
+    "styled-components": {
+      "pure": true
+    },
+    "object-rest-spread": {
+      "useBuiltIns": false
+    }
+  }]]
+}
+```
+
+**Note:** Any options passed under the `preset-env` key will _override_ top-level options such as `modules`, `additionalExcludes` or `additionalTargets` (as both of the "additional" keys are extending the non-prefixed option name). For the time being, you should use one or the other configuration patterns, not both.
+
 ## Debugging
 
 You may override our default debug option by providing your own `debug` key.

@@ -73,9 +73,16 @@ module.exports = declare((api, options) => {
                     modules: modules === false ? false : 'auto',
                     targets,
                     useBuiltIns,
+                    ...options['preset-env'],
                 },
             ],
-            [require('@babel/preset-react'), { development }],
+            [
+                require('@babel/preset-react'),
+                {
+                    development,
+                    ...options['preset-react'],
+                },
+            ],
         ],
         plugins: [
             [
@@ -87,9 +94,11 @@ module.exports = declare((api, options) => {
                           pure: true,
                           // remove dev-mode noise
                           displayName: false,
+                          ...options['styled-components'],
                       }
                     : {
                           // use defaults
+                          ...options['styled-components'],
                       },
             ],
 
@@ -159,6 +168,7 @@ module.exports = declare((api, options) => {
                       {
                           loose: true,
                           useBuiltIns: true,
+                          ...options['object-rest-spread'],
                       },
                   ],
 
