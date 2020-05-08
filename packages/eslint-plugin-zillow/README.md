@@ -47,6 +47,34 @@ Mocha-specific rules and environment added to the default export.
   },
 ```
 
+### TypeScript
+
+Enable TypeScript-specific linting rules.
+
+```json
+  "eslintConfig": {
+    "extends": ["plugin:zillow/recommended", "plugin:zillow/typescript"]
+  },
+```
+
+This config expects your `tsconfig.json` to be in the current working directory (relative to your eslint config), which is extremely common. If it is elsewhere (say, a monorepo leaf), you will need to override various [`parserOptions`](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md):
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: ['plugin:zillow/recommended', 'plugin:zillow/typescript'],
+  overrides: [
+    {
+      test: '**/*.ts?(x)',
+      parserOptions: {
+        tsconfigRootDir: __dirname,
+        project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
+      },
+    },
+  ],
+};
+```
+
 ### Customizing Rules
 
 You can configure the rules like every other `eslint` plugin.
@@ -84,3 +112,4 @@ We currently encapsulate the following plugins:
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
 - [eslint-plugin-react-hooks](https://reactjs.org/docs/hooks-rules.html)
+- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#readme)
