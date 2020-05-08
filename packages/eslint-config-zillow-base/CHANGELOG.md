@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.4](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.3...eslint-config-zillow-base@3.7.4) (2020-05-08)
+
+
+### Bug Fixes
+
+* **base:** Add typescript peer, docs ([f577ee5](https://github.com/zillow/javascript/commit/f577ee5afc123b63f3125d8f0415ddb8fc5207a5))
+
+
+
+
+
 ## [3.7.3](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.2...eslint-config-zillow-base@3.7.3) (2020-04-24)
 
 
