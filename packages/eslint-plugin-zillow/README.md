@@ -78,6 +78,9 @@ module.exports = require('prettier-config-zillow');
 We currently encapsulate the following plugins:
 
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
+- [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest#readme)
 - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
+- [eslint-plugin-mocha](https://github.com/lo1tuma/eslint-plugin-mocha)
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
+- [eslint-plugin-react-hooks](https://reactjs.org/docs/hooks-rules.html)
