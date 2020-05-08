@@ -36,6 +36,23 @@ Jest-specific rules and environment added to the default export.
 
 Mocha-specific rules and environment added to the default export.
 
+### `"extends": ["zillow", "zillow/typescript]`
+
+TypeScript-specific rules and environment added to the default export.
+
+This config expects your `tsconfig.json` to be in the current working directory (relative to your eslint config), which is extremely common. If it is elsewhere (say, a monorepo leaf), you will need to override varios [`parserOptions`](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md):
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: ['zillow', 'zillow/typescript'],
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
+  },
+};
+```
+
 ### `prettier` Editor Plugin Integration
 
 Unfortunately, super-useful editor plugins like `prettier-atom` and `prettier-vscode` do not load Prettier settings from ESLint config, which is where we load our Prettier options from. To workaround this, add a `.prettierrc.js` or `prettier.config.js` file to your root with the following content:
