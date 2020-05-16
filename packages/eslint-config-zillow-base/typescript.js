@@ -364,7 +364,7 @@ module.exports = {
       {
         // TODO: get an informed opinion about this config
         allowAliases: 'always',
-        allowCallbacks: 'never',
+        allowCallbacks: 'always',
         allowConditionalTypes: 'never',
         allowConstructors: 'never',
         allowLiterals: 'in-intersections',
