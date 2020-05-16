@@ -331,7 +331,20 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
     'no-magic-numbers': 'off',
-    '@typescript-eslint/no-magic-numbers': 'error',
+    '@typescript-eslint/no-magic-numbers': [
+      // TODO: enable?
+      'off',
+      {
+        // eslint core
+        ignore: [],
+        ignoreArrayIndexes: true,
+        enforceConst: true,
+        detectObjects: false,
+        // this plugin
+        ignoreNumericLiteralTypes: true,
+        ignoreReadonlyClassProperties: true,
+      },
+    ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
