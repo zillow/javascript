@@ -259,6 +259,12 @@ module.exports = {
         selector: 'variable',
         format: ['camelCase', 'UPPER_CASE'],
       },
+      // allow arrow function React components to use PascalCase
+      {
+        selector: 'variable',
+        types: ['function'],
+        format: ['camelCase', 'PascalCase'],
+      },
       {
         selector: 'function',
         format: ['camelCase', 'PascalCase'],
