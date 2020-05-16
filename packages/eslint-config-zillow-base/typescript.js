@@ -291,10 +291,11 @@ module.exports = {
         format: ['PascalCase'],
       },
       // Prohibit "I" prefix on interfaces
+      // (but allow acronyms that begin with "I")
       {
         selector: 'interface',
         custom: {
-          regex: '^I[A-Z]',
+          regex: '^I[A-Z](?![A-Z])',
           match: false,
         },
         format: ['PascalCase'],
