@@ -280,6 +280,12 @@ module.exports = {
         modifiers: ['private'],
         leadingUnderscore: 'require',
       },
+      // allow Next.js context PascalCase properties
+      {
+        selector: 'property',
+        filter: '^(Component|AppTree)$',
+        format: null,
+      },
       {
         selector: 'typeLike',
         format: ['PascalCase'],
