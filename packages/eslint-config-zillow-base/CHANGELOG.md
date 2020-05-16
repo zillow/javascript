@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.5](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.4...eslint-config-zillow-base@3.7.5) (2020-05-16)
+
+
+### Bug Fixes
+
+* **typescript:** Allow callbacks in type aliases ([aac8344](https://github.com/zillow/javascript/commit/aac8344bc9144a896c462b8ae230e5b64efbb674))
+* **typescript:** Allow function expressions to use PascalCase ([409939a](https://github.com/zillow/javascript/commit/409939a77f8ca048d75ed0c9bfd5c05cae6e2119))
+* **typescript:** Allow Next.js context properties to be PascalCase ([730fa7d](https://github.com/zillow/javascript/commit/730fa7d539a2d235fbb50c97b15c8028ff73be4f))
+* **typescript:** Only prevent I- prefix on interfaces, allow acronyms that start with I ([a389036](https://github.com/zillow/javascript/commit/a389036111899e66babe415e9503152028c632a8))
+* **typescript:** Turn off no-magic-numbers rule (but flesh out config) ([020cd54](https://github.com/zillow/javascript/commit/020cd54321b24fbd7f6b7e0c54984e2a88967e9f))
+
+
+
+
+
 ## [3.7.4](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.3...eslint-config-zillow-base@3.7.4) (2020-05-08)
 
 
