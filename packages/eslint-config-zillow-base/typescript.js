@@ -280,10 +280,10 @@ module.exports = {
         modifiers: ['private'],
         leadingUnderscore: 'require',
       },
-      // allow Next.js context PascalCase properties
+      // allow Next.js context PascalCase and "TODO" properties
       {
         selector: 'property',
-        filter: '^(Component|AppTree)$',
+        filter: '^(Component|AppTree|TODO)$',
         format: null,
       },
       {
