@@ -2,8 +2,8 @@
 if: tag IS blank
 language: node_js
 node_js:
+  - "12"
   - "10"
-  - "8"
 cache:
   directories:
   - $HOME/.npm
