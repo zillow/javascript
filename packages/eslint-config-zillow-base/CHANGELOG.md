@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.7](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.6...eslint-config-zillow-base@3.7.7) (2020-05-18)
+
+
+### Bug Fixes
+
+* **typescript:** Allow TODO methods, too ([b2e5b4e](https://github.com/zillow/javascript/commit/b2e5b4e0ae816766c0a7ba899ab40b5ca45961ef))
+
+
+
+
+
 ## [3.7.6](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.5...eslint-config-zillow-base@3.7.6) (2020-05-18)
 
 
