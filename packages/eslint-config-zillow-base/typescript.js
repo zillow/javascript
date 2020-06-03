@@ -1,3 +1,11 @@
+const prettierConfig = require('./prettier.config');
+
+const amendedPrettierConfig = {
+  ...prettierConfig,
+  ...prettierConfig.overrides[2].options,
+  overrides: undefined,
+};
+
 module.exports = {
   parser: require.resolve('@typescript-eslint/parser'),
 
@@ -7,9 +15,16 @@ module.exports = {
     project: ['./tsconfig.json'],
   },
 
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'prettier'],
 
   rules: {
+    /**
+     * Override prettier rules because prettier overrides aren't eslint overrides
+     */
+    'prettier/prettier': ['error', amendedPrettierConfig, {
+      usePrettierrc: false
+    }],
+
     /**
      * Prettier overrides
      * @see https://github.com/prettier/eslint-config-prettier/blob/7cad28d0/%40typescript-eslint.js#L5-L17
