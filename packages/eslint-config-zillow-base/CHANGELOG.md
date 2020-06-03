@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.8](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.7...eslint-config-zillow-base@3.7.8) (2020-06-03)
+
+
+### Bug Fixes
+
+* **typescript:** Use correct prettier options in eslint-plugin-prettier rule ([d7562b2](https://github.com/zillow/javascript/commit/d7562b2d31f07af5cb7c72140882e1033cf77cc5))
+
+
+
+
+
 ## [3.7.7](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.6...eslint-config-zillow-base@3.7.7) (2020-05-18)
 
 

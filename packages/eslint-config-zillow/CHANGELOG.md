@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.8](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.5.7...eslint-config-zillow@3.5.8) (2020-06-03)
+
+**Note:** Version bump only for package eslint-config-zillow
+
+
+
+
+
 ## [3.5.7](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.5.6...eslint-config-zillow@3.5.7) (2020-05-18)
 
 **Note:** Version bump only for package eslint-config-zillow
