@@ -44,6 +44,12 @@ module.exports = {
       'input[type="image"]': [],
     }],
 
+    // Ensure the autocomplete attribute is correct and suitable for the form field it is used with
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/autocomplete-valid.md
+    'jsx-a11y/autocomplete-valid': ['off', {
+      inputComponents: ['Input']
+    }],
+
     // Prevent img alt text from containing redundant words like "image", "picture", or "photo"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md
     'jsx-a11y/img-redundant-alt': 'error',
