@@ -122,6 +122,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md
     '@typescript-eslint/no-inferrable-types': 'error',
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-void-type.md
+    '@typescript-eslint/no-invalid-void-type': ['error', {
+      allowInGenericTypeArguments: true,
+    }],
+
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-new.md
     '@typescript-eslint/no-misused-new': 'error',
 
@@ -241,6 +246,13 @@ module.exports = {
     'default-param-last': 'off',
     '@typescript-eslint/default-param-last': 'off',
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md
+    'dot-notation': 'off',
+    '@typescript-eslint/dot-notation': ['error', {
+      allowKeywords: true,
+      allowPrivateClassPropertyAccess: false,
+    }],
+
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
@@ -256,6 +268,13 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/init-declarations.md
     'init-declarations': 'off',
     '@typescript-eslint/init-declarations': 'error',
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
+    'lines-between-class-members': 'off',
+    '@typescript-eslint/lines-between-class-members': ['error', 'always', {
+      'exceptAfterSingleLine': false,
+      'exceptAfterOverload': true
+    }],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md
     '@typescript-eslint/member-ordering': 'error',
@@ -349,6 +368,10 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
     '@typescript-eslint/no-implied-eval': 'error',
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-this.md
+    'no-invalid-this': 'off',
+    '@typescript-eslint/no-invalid-this': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
     'no-magic-numbers': 'off',
