@@ -451,6 +451,10 @@ module.exports = {
     // TODO: enable when it is less naïve about shadowing outer scopes
     'react/destructuring-assignment': ['off', 'always'],
 
+    // Prevent adjacent inline elements not separated by whitespace
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-adjacent-inline-elements.md
+    'react/no-adjacent-inline-elements': 'off',
+
     // Prevent using this.state within a this.setState
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/no-access-state-in-setstate.md
     'react/no-access-state-in-setstate': 'error',
@@ -470,6 +474,14 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/no-this-in-sfc.md
     'react/no-this-in-sfc': 'error',
 
+    // Enforce a specific function type for function components
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
+    // TODO: fixable, but yikes the bikeshedding
+    'react/function-component-definition': ['off', {
+      namedComponents: 'function-declaration',
+      unnamedComponents: 'arrow-function',
+    }],
+
     // Enforce shorthand or standard form for React fragments
     // https://github.com/yannickcr/eslint-plugin-react/blob/9497745e1946c8e0a30c60d5df8fdb06a52494a3/docs/rules/jsx-fragments.md
     'react/jsx-fragments': ['error', 'element'],
@@ -477,6 +489,10 @@ module.exports = {
     // Validate JSX maximum depth
     // https://github.com/yannickcr/eslint-plugin-react/blob/abe8381c0d6748047224c430ce47f02e40160ed0/docs/rules/jsx-max-depth.md
     'react/jsx-max-depth': 'off',
+
+    // Prevent usage of javascript: URLs (this will throw in a future version of React)
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md
+    'react/jsx-no-script-url': 'error',
 
     // Disallow multiple spaces between inline JSX props
     // https://github.com/yannickcr/eslint-plugin-react/blob/ac102885765be5ff37847a871f239c6703e1c7cc/docs/rules/jsx-props-no-multi-spaces.md
