@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.5.8...eslint-config-zillow@3.6.0) (2020-09-23)
+
+
+### Features
+
+* **config:** Add new React A11y rules ([a20ca45](https://github.com/zillow/javascript/commit/a20ca4520c17a802fcf256b6040420face2069dc))
+* **config:** Add new React rules ([3b038ca](https://github.com/zillow/javascript/commit/3b038ca8ca8ec293f5ba90c254e8bed73618b8c3))
+
+
+
+
+
 ## [3.5.8](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.5.7...eslint-config-zillow@3.5.8) (2020-06-03)
 
 **Note:** Version bump only for package eslint-config-zillow

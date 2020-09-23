@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.7.8...eslint-plugin-zillow@3.8.0) (2020-09-23)
+
+
+### Features
+
+* **plugin:** Bump dependencies ([f2992b7](https://github.com/zillow/javascript/commit/f2992b7b8b1ec3a5cbbd5c29c6b78b87cb5b5e88))
+* **plugin:** Expand dependency range of TypeScript to encompass ^4.0.2 ([bf56011](https://github.com/zillow/javascript/commit/bf56011530042f5527bd005dd8f2ae55182df051))
+
+
+
+
+
 ## [3.7.8](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.7.7...eslint-plugin-zillow@3.7.8) (2020-06-03)
 
 **Note:** Version bump only for package eslint-plugin-zillow

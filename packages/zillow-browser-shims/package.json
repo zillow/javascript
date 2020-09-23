@@ -1,6 +1,6 @@
 {
   "name": "zillow-browser-shims",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browser and JS shims used by Zillow",
   "main": "zillow-browser-shims.js",
   "files": [

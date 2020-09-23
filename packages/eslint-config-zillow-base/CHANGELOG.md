@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.8...eslint-config-zillow-base@3.8.0) (2020-09-23)
+
+
+### Features
+
+* **base:** Add new Jest rules ([2b1f25a](https://github.com/zillow/javascript/commit/2b1f25a7d5610db5525e68b63010b3779ef665bb))
+* **base:** Add new TypeScript rules ([5ab97fc](https://github.com/zillow/javascript/commit/5ab97fc8953c92937f2ed075260fa4f1cea199be))
+
+
+
+
+
 ## [3.7.8](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@3.7.7...eslint-config-zillow-base@3.7.8) (2020-06-03)
 
 
