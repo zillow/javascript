@@ -104,7 +104,7 @@
     "eslint-plugin-react": "^7.21.1",
     "eslint-plugin-react-hooks": "^2.5.1",
     "fast-async": "^7.0.6",
-    "jest": "^24.9.0",
+    "jest": "^26.4.2",
     "jsx-ast-utils": "2.4.1",
     "lerna": "^3.22.1",
     "markdownlint-cli": "^0.15.0",
