@@ -94,6 +94,9 @@ module.exports = {
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-expect-assertions.md
     'jest/prefer-expect-assertions': 'off',
 
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-hooks-on-top.md
+    'jest/prefer-hooks-on-top': 'error',
+
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-inline-snapshots.md
     // TODO: enable?
     'jest/prefer-inline-snapshots': 'off',
@@ -131,6 +134,9 @@ module.exports = {
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-expect.md
     'jest/valid-expect': 'error',
+
+    // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-title.md
+    'jest/valid-title': 'error',
 
     // https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-expect-in-promise.md
     'jest/valid-expect-in-promise': 'error',
