@@ -13,9 +13,7 @@ describe('target', () => {
     const targetsPath = path.join(__dirname, '../target');
     const targets = fs.readdirSync(targetsPath);
 
-    targets.forEach(target => {
-        test(target, () => {
-            expect(() => require(path.join(targetsPath, target))).not.toThrow();
-        });
+    it.each(targets)('%s', target => {
+        expect(() => require(path.join(targetsPath, target))).not.toThrow();
     });
 });
