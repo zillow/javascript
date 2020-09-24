@@ -43,7 +43,7 @@
     "eslint-config-zillow-typescript": "file:../eslint-config-zillow-typescript",
     "eslint-import-resolver-node": "^0.3.4",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^22.21.0",
+    "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.4",
