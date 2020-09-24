@@ -8,7 +8,6 @@
     "jest.js",
     "mocha.js",
     "prettier.config.js",
-    "typescript.js",
     "rules"
   ],
   "scripts": {
@@ -33,8 +32,6 @@
     "node": ">= 10.17"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
     "babel-eslint": "^10.0.1",
     "eslint": ">= 5.0.0",
     "eslint-plugin-import": "^2.16.0",
@@ -44,8 +41,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0 || ^2.1.2",
-    "prettier": "^2.1.2",
-    "typescript": "^3.8.3"
+    "prettier": "^2.1.2"
   },
   "dependencies": {
     "eslint-config-zillow-base": "file:../eslint-config-zillow-base",
