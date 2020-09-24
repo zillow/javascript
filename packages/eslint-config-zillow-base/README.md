@@ -61,9 +61,9 @@ module.exports = require('prettier-config-zillow');
 
 ## Related
 
-- [Zillow's overarching ESLint config](https://npmjs.com/eslint-config-zillow)
-- [Zillow's Prettier config](https://npmjs.com/prettier-config-zillow)
-- [Zillow's Javascript code conventions](https://github.com/zillow/javascript)
+  - [Zillow's overarching ESLint config](https://npmjs.com/eslint-config-zillow)
+  - [Zillow's Prettier config](https://npmjs.com/prettier-config-zillow)
+  - [Zillow's Javascript code conventions](https://github.com/zillow/javascript)
 
 ## Development
 

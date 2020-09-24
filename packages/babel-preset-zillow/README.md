@@ -99,8 +99,8 @@ If you wish, you can also inherit our default list of browsers and extend them u
 
 This preset also supports passing additional options directly to `@babel/preset-env`:
 
-- [`useBuiltIns`](https://babeljs.io/docs/en/babel-preset-env#usebuiltins)
-- [`corejs`](https://babeljs.io/docs/en/babel-plugin-transform-runtime#corejs)
+  - [`useBuiltIns`](https://babeljs.io/docs/en/babel-preset-env#usebuiltins)
+  - [`corejs`](https://babeljs.io/docs/en/babel-plugin-transform-runtime#corejs)
 
 These options are best suited for applications, not libraries, as they require additional dependencies (like [core-js](https://www.npmjs.com/package/core-js)) that are not recommended for libraries.
 
@@ -140,10 +140,10 @@ When `targets.node` is configured no exclusions are allowed, as they are general
 
 For advanced use cases, configuration for many of the presets and plugins employed by this module can be passed as sub-keys of the top-level options object. These configuration objects are spread into the internal configuration objects, _overriding_ any keys already set. The currently supported preset option keys are:
 
-- [`preset-env`](https://babeljs.io/docs/en/babel-preset-env#options)
-- [`preset-react`](https://babeljs.io/docs/en/babel-preset-react#options)
-- [`styled-components`](https://styled-components.com/docs/tooling#babel-plugin)
-- [`object-rest-spread`](https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread#options)
+  - [`preset-env`](https://babeljs.io/docs/en/babel-preset-env#options)
+  - [`preset-react`](https://babeljs.io/docs/en/babel-preset-react#options)
+  - [`styled-components`](https://styled-components.com/docs/tooling#babel-plugin)
+  - [`object-rest-spread`](https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread#options)
 
 ```json
 {
