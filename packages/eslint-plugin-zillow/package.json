@@ -14,6 +14,9 @@
   ],
   "author": "Daniel Stockman <daniel.stockman@gmail.com> (https://twitter.com/@evocateur)",
   "homepage": "https://github.com/zillow/javascript/tree/latest/packages/eslint-plugin-zillow#readme",
+  "engines": {
+    "node": ">= 10.17"
+  },
   "license": "MIT",
   "main": "lib/eslint-plugin-zillow.js",
   "files": [

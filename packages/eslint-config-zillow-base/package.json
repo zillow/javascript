@@ -30,7 +30,7 @@
   "license": "MIT",
   "homepage": "https://github.com/zillow/javascript/tree/latest/packages/eslint-config-zillow-base#readme",
   "engines": {
-    "node": ">= 8.9.0"
+    "node": ">= 10.17"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.29.0",
