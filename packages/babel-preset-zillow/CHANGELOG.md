@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.3.0...babel-preset-zillow@4.4.0) (2020-09-24)
+
+
+### Bug Fixes
+
+* **preset:** Do not transform lodash during tests ([a41af7d](https://github.com/zillow/javascript/commit/a41af7db49c7917f0da939c4ea79d2ce18428e73))
+
+
+### Features
+
+* **preset:** Update dependencies ([1bb9030](https://github.com/zillow/javascript/commit/1bb9030c79bc6b5f58a192acca261106339341d4))
+
+
+
+
+
 # [4.3.0](https://github.com/zillow/javascript/compare/babel-preset-zillow@4.2.0...babel-preset-zillow@4.3.0) (2020-04-28)
 
 
