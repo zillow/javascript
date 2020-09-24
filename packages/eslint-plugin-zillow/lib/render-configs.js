@@ -44,7 +44,7 @@ renderConfig('recommended', {
 renderConfig(
     'typescript',
     {
-        extends: ['zillow/typescript'],
+        extends: ['zillow-typescript'],
         parser: '@typescript-eslint/parser',
     },
     ['**/*.ts?(x)']
