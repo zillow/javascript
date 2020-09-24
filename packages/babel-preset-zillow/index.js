@@ -173,7 +173,9 @@ module.exports = declare((api, options) => {
                   ],
 
             isNode ? null : [require('fast-async'), { spec: true }],
-            require('babel-plugin-lodash'),
+            // avoid corrupting istanbul coverage during tests
+            // https://github.com/istanbuljs/babel-plugin-istanbul/issues/116
+            env !== 'test' ? require('babel-plugin-lodash') : null,
         ].filter(Boolean),
     };
 });
