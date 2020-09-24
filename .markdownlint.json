@@ -26,6 +26,7 @@
 
   "comment": "MD007: Unordered list indentation: 2 spaces",
   "ul-indent": {
+    "start_indented": true,
     "indent": 2
   },
 
