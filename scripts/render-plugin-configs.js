@@ -8,6 +8,7 @@ const writeFile = require('util').promisify(fs.writeFile);
 /* eslint-disable import/no-extraneous-dependencies */
 const { ESLint } = require('eslint');
 const ConfigValidator = require('@eslint/eslintrc/lib/shared/config-validator');
+const BuiltInEnvironments = require('@eslint/eslintrc/conf/environments');
 /* eslint-enable import/no-extraneous-dependencies */
 const { getPluginEnvironments } = require('eslint-plugin-zillow/lib/plugins');
 
@@ -84,8 +85,8 @@ async function renderConfig(name, config, overrides) {
         wrappedConfig,
         config.extends[0],
         () => {},
-        // (less) horrible cheese to avoid exploding
-        envName => PLUGIN_ENVIRONMENTS.get(envName)
+        // (slightly less) horrible cheese to avoid exploding
+        envName => PLUGIN_ENVIRONMENTS.get(envName.replace('zillow/', ''))
     );
 
     /* istanbul ignore if */
@@ -134,6 +135,24 @@ function wrapInPlugin(config, files) {
         // The rules from third-party plugins need to be prefixed so they reference our namespace.
         rules: prefixRuleConfigs('zillow', config.rules),
     };
+
+    // if non-builtin envs are passed, make sure they're properly prefixed
+    if (pluginConfig.env) {
+        const ourEnv = {};
+
+        // eslint-disable-next-line no-restricted-syntax
+        for (const envName of Object.keys(pluginConfig.env)) {
+            if (BuiltInEnvironments.has(envName)) {
+                // pass through builtin environments
+                ourEnv[envName] = pluginConfig.env[envName];
+            } else {
+                // needs prefix to find our wrapper
+                ourEnv[`zillow/${envName}`] = pluginConfig.env[envName];
+            }
+        }
+
+        pluginConfig.env = ourEnv;
+    }
 
     if (files) {
         // https://eslint.org/docs/user-guide/configuring#configuration-based-on-glob-patterns

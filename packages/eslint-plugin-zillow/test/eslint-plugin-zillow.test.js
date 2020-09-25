@@ -14,7 +14,7 @@ describe('eslint-plugin-zillow', () => {
                 overrides: [
                     {
                         env: {
-                            'jest/globals': true,
+                            'zillow/jest/globals': true,
                         },
                         files: [
                             '**/*{-,.}test.js',
@@ -96,6 +96,14 @@ describe('eslint-plugin-zillow', () => {
         expect(importResolverConfig[resolverConfigKeys[0]]).toStrictEqual(
             importResolverConfig.node
         );
+    });
+
+    test('environments', () => {
+        const { environments } = require('..');
+
+        expect(environments).toStrictEqual({
+            'jest/globals': require('eslint-plugin-jest').environments.globals,
+        });
     });
 
     test('processors', () => {

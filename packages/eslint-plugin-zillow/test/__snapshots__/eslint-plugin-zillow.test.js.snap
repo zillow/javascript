@@ -5,7 +5,7 @@ Object {
   "overrides": Array [
     Object {
       "env": Object {
-        "jest/globals": true,
+        "zillow/jest/globals": true,
       },
       "files": Array [
         "**/*{-,.}test.js",
