@@ -56,7 +56,7 @@ async function main() {
 }
 
 async function renderConfig(name, config, overrides) {
-    const computedConfig = getComputedConfig(config);
+    const computedConfig = await getComputedConfig(config);
     const wrappedConfig = wrapInPlugin(computedConfig, overrides);
     const targetPath = path.join(__dirname, `configs/${name}.json`);
 

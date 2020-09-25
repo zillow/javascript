@@ -1,17 +1,17 @@
 'use strict';
 
-const { CLIEngine } = require('eslint');
+const { ESLint } = require('eslint');
 
 module.exports = getComputedConfig;
 
-function getComputedConfig(baseConfig) {
-    const cli = new CLIEngine({
+async function getComputedConfig(baseConfig) {
+    const engine = new ESLint({
         useEslintrc: false,
         allowInlineConfig: false,
         baseConfig,
     });
 
-    const computed = cli.getConfigForFile('index.js');
+    const computed = await engine.calculateConfigForFile('index.js');
 
     // remove unnecessary fields
     delete computed.filePath;
