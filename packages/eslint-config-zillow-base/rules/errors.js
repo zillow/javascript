@@ -29,6 +29,9 @@ module.exports = {
     // disallow use of constant expressions in conditions
     'no-constant-condition': 'warn',
 
+    // https://eslint.org/docs/rules/no-constructor-return
+    'no-constructor-return': 'error',
+
     // disallow control characters in regular expressions
     'no-control-regex': 'error',
 
@@ -37,6 +40,9 @@ module.exports = {
 
     // disallow duplicate arguments in functions
     'no-dupe-args': 'error',
+
+    // https://eslint.org/docs/rules/no-dupe-else-if
+    'no-dupe-else-if': 'error',
 
     // disallow duplicate keys when creating object literals
     'no-dupe-keys': 'error',
@@ -74,6 +80,9 @@ module.exports = {
     // disallow overwriting functions written as function declarations
     'no-func-assign': 'error',
 
+    // https://eslint.org/docs/rules/no-import-assign
+    'no-import-assign': 'error',
+
     // disallow function or variable declarations in nested blocks
     'no-inner-declarations': 'error',
 
@@ -83,6 +92,9 @@ module.exports = {
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 'error',
 
+    // https://eslint.org/docs/rules/no-loss-of-precision
+    'no-loss-of-precision': 'error',
+
     // Disallow characters which are made with multiple code points in character class syntax
     // https://eslint.org/docs/rules/no-misleading-character-class
     'no-misleading-character-class': 'error',
@@ -90,12 +102,21 @@ module.exports = {
     // disallow the use of object properties of the global object (Math and JSON) as functions
     'no-obj-calls': 'error',
 
+    // https://eslint.org/docs/rules/no-promise-executor-return
+    'no-promise-executor-return': 'error',
+
     // disallow use of Object.prototypes builtins directly
     // https://eslint.org/docs/rules/no-prototype-builtins
     'no-prototype-builtins': 'error',
 
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': 'error',
+
+    // https://eslint.org/docs/rules/no-restricted-exports
+    'no-restricted-exports': 'off',
+
+    // https://eslint.org/docs/rules/no-setter-return
+    'no-setter-return': 'error',
 
     // disallow sparse arrays
     'no-sparse-arrays': 'error',
@@ -112,6 +133,9 @@ module.exports = {
     // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unreachable': 'error',
 
+    // https://eslint.org/docs/rules/no-unreachable-loop
+    'no-unreachable-loop': 'error',
+
     // disallow return/throw/break/continue inside finally blocks
     // https://eslint.org/docs/rules/no-unsafe-finally
     'no-unsafe-finally': 'error',
@@ -119,6 +143,9 @@ module.exports = {
     // disallow negating the left operand of relational operators
     // https://eslint.org/docs/rules/no-unsafe-negation
     'no-unsafe-negation': 'error',
+
+    // https://eslint.org/docs/rules/no-useless-backreference
+    'no-useless-backreference': 'error',
 
     // disallow negation of the left operand of an in expression
     // deprecated in favor of no-unsafe-negation

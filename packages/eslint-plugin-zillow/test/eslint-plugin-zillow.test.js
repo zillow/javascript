@@ -11,6 +11,9 @@ describe('eslint-plugin-zillow', () => {
             jest: {
                 overrides: [
                     {
+                        env: {
+                            'jest/globals': true,
+                        },
                         files: [
                             '**/*{-,.}test.js',
                             '**/*.stories.js',
@@ -18,13 +21,9 @@ describe('eslint-plugin-zillow', () => {
                             '**/__mocks__/**/*.js',
                             '**/test/**/*.js',
                         ],
-                        globals: {
-                            it: false,
-                            jest: false,
-                        },
                         plugins: ['zillow'],
                         rules: {
-                            'zillow/jest/no-focused-tests': 'error',
+                            'zillow/jest/no-focused-tests': ['error'],
                         },
                     },
                 ],
@@ -32,20 +31,19 @@ describe('eslint-plugin-zillow', () => {
             mocha: {
                 overrides: [
                     {
+                        env: {
+                            mocha: true,
+                        },
                         files: [
                             // prettier-ignore
                             '**/*-test.js',
                             '**/test/**/*.js',
                         ],
-                        globals: {
-                            it: false,
-                            mocha: false,
-                        },
                         plugins: ['zillow'],
                         rules: {
-                            'zillow/mocha/no-exclusive-tests': 'error',
-                            'prefer-arrow-callback': 'off',
-                            'func-names': 'off',
+                            'zillow/mocha/no-exclusive-tests': ['error'],
+                            'prefer-arrow-callback': ['off'],
+                            'func-names': ['off'],
                         },
                     },
                 ],
@@ -55,7 +53,7 @@ describe('eslint-plugin-zillow', () => {
                 rules: {
                     'zillow/react/jsx-indent': ['off', 4],
                     'max-len': ['warn', 100, 4, { ignoreComments: false }],
-                    'zillow/import/prefer-default-export': 'off',
+                    'zillow/import/prefer-default-export': ['off'],
                 },
             },
         });

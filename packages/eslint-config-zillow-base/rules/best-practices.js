@@ -29,6 +29,12 @@ module.exports = {
     // require default case in switch statements
     'default-case': ['error', { commentPattern: '^no default$' }],
 
+    // https://eslint.org/docs/rules/default-case-last
+    'default-case-last': 'error',
+
+    // https://eslint.org/docs/rules/default-param-last
+    'default-param-last': 'error',
+
     // encourages use of dot notation whenever possible
     'dot-notation': ['error', { allowKeywords: true }],
 
@@ -42,6 +48,9 @@ module.exports = {
 
     // make sure for-in loops have an if statement
     'guard-for-in': 'error',
+
+    // https://eslint.org/docs/rules/grouped-accessor-pairs
+    'grouped-accessor-pairs': 'off',
 
     // enforce a maximum number of classes per file
     // https://eslint.org/docs/rules/max-classes-per-file
@@ -239,10 +248,6 @@ module.exports = {
     }, {
       property: '__defineSetter__',
       message: 'Please use Object.defineProperty instead.',
-    }, {
-      object: 'Math',
-      property: 'pow',
-      message: 'Use the exponentiation operator (**) instead.',
     }],
 
     // disallow use of assignment in return statement
@@ -313,6 +318,9 @@ module.exports = {
     // disallow use of the with statement
     'no-with': 'error',
 
+    // https://eslint.org/docs/rules/prefer-exponentiation-operator
+    'prefer-exponentiation-operator': 'error',
+
     // require using Error objects as Promise rejection reasons
     // https://eslint.org/docs/rules/prefer-promise-reject-errors
     'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
@@ -320,6 +328,9 @@ module.exports = {
     // Suggest using named capture group in regular expression
     // https://eslint.org/docs/rules/prefer-named-capture-group
     'prefer-named-capture-group': 'off',
+
+    // https://eslint.org/docs/rules/prefer-regex-literals
+    'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
 
     // require use of the second argument for parseInt()
     radix: 'error',
