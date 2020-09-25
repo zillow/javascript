@@ -7,6 +7,7 @@ const path = require('path');
 const writeFile = require('util').promisify(fs.writeFile);
 /* eslint-disable import/no-extraneous-dependencies */
 const { ESLint } = require('eslint');
+const ConfigValidator = require('@eslint/eslintrc/lib/shared/config-validator');
 /* eslint-enable import/no-extraneous-dependencies */
 
 async function main() {
@@ -51,7 +52,14 @@ async function main() {
         ['**/*.ts?(x)']
     );
 
-    return Promise.all([jestTask, mochaTask, recommendedTask, typescriptTask]);
+    /* istanbul ignore next (catch doesn't need coverage) */
+    try {
+        await Promise.all([jestTask, mochaTask, recommendedTask, typescriptTask]);
+    } catch (error) {
+        // eslint-disable-next-line no-console
+        console.error(error);
+        process.exitCode = 1;
+    }
 }
 
 /**
@@ -61,11 +69,20 @@ async function main() {
  * @param {string[]} [overrides] List of override file globs
  */
 async function renderConfig(name, config, overrides) {
+    const validator = new ConfigValidator();
     const computedConfig = await getComputedConfig(config);
     const wrappedConfig = wrapInPlugin(computedConfig, overrides);
     const targetPath = path.resolve(
         __dirname,
         `../packages/eslint-plugin-zillow/lib/configs/${name}.json`
+    );
+
+    validator.validate(
+        wrappedConfig,
+        config.extends[0],
+        () => {},
+        // horrible cheese to avoid exploding
+        envName => envName === 'jest/globals'
     );
 
     /* istanbul ignore if */
@@ -118,6 +135,7 @@ function wrapInPlugin(config, files) {
     if (files) {
         // https://eslint.org/docs/user-guide/configuring#configuration-based-on-glob-patterns
         delete pluginConfig.extends;
+        delete pluginConfig.ignorePatterns;
         delete pluginConfig.overrides;
         delete pluginConfig.root;
 
@@ -127,6 +145,9 @@ function wrapInPlugin(config, files) {
 
         return { overrides: [pluginConfig] };
     }
+
+    // "files" only valid in overrides
+    delete pluginConfig.files;
 
     return pluginConfig;
 }

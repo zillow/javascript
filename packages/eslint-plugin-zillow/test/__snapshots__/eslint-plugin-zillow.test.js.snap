@@ -15,7 +15,6 @@ Object {
         "**/test/**/*.js",
       ],
       "globals": Object {},
-      "ignorePatterns": Array [],
       "parser": null,
       "plugins": Array [
         "zillow",
@@ -184,7 +183,6 @@ Object {
         "**/test/**/*.js",
       ],
       "globals": Object {},
-      "ignorePatterns": Array [],
       "parser": null,
       "plugins": Array [
         "zillow",
@@ -2885,7 +2883,6 @@ Object {
         "**/*.ts?(x)",
       ],
       "globals": Object {},
-      "ignorePatterns": Array [],
       "parser": "@typescript-eslint/parser",
       "parserOptions": Object {
         "ecmaVersion": 2018,
