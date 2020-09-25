@@ -10,7 +10,7 @@ const { ESLint } = require('eslint');
 const ConfigValidator = require('@eslint/eslintrc/lib/shared/config-validator');
 const BuiltInEnvironments = require('@eslint/eslintrc/conf/environments');
 /* eslint-enable import/no-extraneous-dependencies */
-const { getPluginEnvironments } = require('eslint-plugin-zillow/lib/plugins');
+const { getPluginEnvironments } = require('./plugins');
 
 const PLUGIN_ENVIRONMENTS = new Map(Object.entries(getPluginEnvironments()));
 
@@ -76,10 +76,7 @@ async function renderConfig(name, config, overrides) {
     const validator = new ConfigValidator();
     const computedConfig = await getComputedConfig(config);
     const wrappedConfig = wrapInPlugin(computedConfig, overrides);
-    const targetPath = path.resolve(
-        __dirname,
-        `../packages/eslint-plugin-zillow/lib/configs/${name}.json`
-    );
+    const targetPath = path.resolve(__dirname, `./configs/${name}.json`);
 
     validator.validate(
         wrappedConfig,
