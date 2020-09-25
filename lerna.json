@@ -3,7 +3,7 @@
     "create": {
       "license": "MIT"
     },
-    "publish": {
+    "version": {
       "allowBranch": "latest",
       "conventionalCommits": true,
       "message": "chore(release): Publish"
