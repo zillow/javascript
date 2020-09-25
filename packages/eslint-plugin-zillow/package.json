@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-zillow",
-  "version": "3.8.0",
+  "version": "4.0.0-alpha.0",
   "description": "Zillow's ESLint config bundled into a \"zero-conf\" plugin",
   "keywords": [
     "eslint",
