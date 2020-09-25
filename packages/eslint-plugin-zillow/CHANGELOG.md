@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.1](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.0...eslint-plugin-zillow@4.0.0-alpha.1) (2020-09-25)
+
+
+### Bug Fixes
+
+* **plugin:** Expose environments from nested plugins ([ca16099](https://github.com/zillow/javascript/commit/ca160992910afaf7250628d0c712fd3b76091998))
+* **plugin:** Validate config during generation ([8f02325](https://github.com/zillow/javascript/commit/8f02325cb99fa3797bd14cfb94cba3a6bbe2e8e9))
+
+
+
+
+
 # [4.0.0-alpha.0](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@3.8.0...eslint-plugin-zillow@4.0.0-alpha.0) (2020-09-25)
 
 
