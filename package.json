@@ -19,8 +19,7 @@
     "pretest": "npm run build:plugin && npm run --silent lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prerelease": "npm test",
-    "release": "lerna publish"
+    "preversion": "npm test"
   },
   "repository": {
     "type": "git",
