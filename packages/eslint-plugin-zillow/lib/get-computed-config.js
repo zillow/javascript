@@ -17,5 +17,10 @@ function getComputedConfig(baseConfig) {
     delete computed.filePath;
     delete computed.baseDirectory;
 
+    // un-resolve parser (re-resolved during re-export)
+    if (computed.parser && baseConfig.parser && computed.parser !== baseConfig.parser) {
+        computed.parser = baseConfig.parser;
+    }
+
     return computed;
 }
