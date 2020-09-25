@@ -9,6 +9,9 @@ const writeFile = require('util').promisify(fs.writeFile);
 const { ESLint } = require('eslint');
 const ConfigValidator = require('@eslint/eslintrc/lib/shared/config-validator');
 /* eslint-enable import/no-extraneous-dependencies */
+const { getPluginEnvironments } = require('eslint-plugin-zillow/lib/plugins');
+
+const PLUGIN_ENVIRONMENTS = new Map(Object.entries(getPluginEnvironments()));
 
 async function main() {
     const jestTask = renderConfig('jest', { extends: ['zillow/jest'] }, [
@@ -81,8 +84,8 @@ async function renderConfig(name, config, overrides) {
         wrappedConfig,
         config.extends[0],
         () => {},
-        // horrible cheese to avoid exploding
-        envName => envName === 'jest/globals'
+        // (less) horrible cheese to avoid exploding
+        envName => PLUGIN_ENVIRONMENTS.get(envName)
     );
 
     /* istanbul ignore if */

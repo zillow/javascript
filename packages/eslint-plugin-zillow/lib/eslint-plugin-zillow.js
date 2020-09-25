@@ -1,6 +1,6 @@
 'use strict';
 
-const { getPluginProcessors, getPluginRules } = require('./plugins');
+const { getPluginEnvironments, getPluginProcessors, getPluginRules } = require('./plugins');
 const jestConfig = require('./configs/jest.json');
 const mochaConfig = require('./configs/mocha.json');
 const recommendedConfig = require('./configs/recommended.json');
@@ -28,7 +28,7 @@ module.exports = {
         recommended: recommendedConfig,
         typescript: typescriptConfig,
     },
-    // TODO: environments
+    environments: getPluginEnvironments(),
     processors: getPluginProcessors(),
     rules: getPluginRules(),
 };
