@@ -4,6 +4,7 @@
   "private": true,
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
+    "build:plugin": "node ./scripts/render-plugin-configs.js",
     "check:prettier:parser": "prettier --debug-check --ignore-path ./.gitignore 'packages/**/*.@(js|md)'",
     "lint": "npm-run-all --silent lint:*",
     "lint:js": "eslint ./packages --cache --cache-location ./node_modules/.cache/eslint --report-unused-disable-directives",
@@ -15,7 +16,7 @@
     "lint:rules:mocha": "eslint-find-rules --unused packages/eslint-config-zillow-base/mocha.js --no-core",
     "lint:rules:typescript": "eslint-find-rules --unused packages/eslint-config-zillow-typescript/index.js --no-core",
     "lint:prettier": "eslint --print-config packages/eslint-config-zillow/index.js | eslint-config-prettier-check",
-    "pretest": "lerna run prepare --loglevel error && npm run --silent lint",
+    "pretest": "npm run build:plugin && npm run --silent lint",
     "test": "jest",
     "test:watch": "jest --watch",
     "prerelease": "npm test",

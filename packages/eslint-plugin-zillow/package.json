@@ -28,7 +28,6 @@
     "url": "git+https://github.com/zillow/javascript.git"
   },
   "scripts": {
-    "prepare": "node ./lib/render-configs.js",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "peerDependencies": {

@@ -3,7 +3,7 @@
 /* eslint-disable global-require -- awaiting global beforeAll() */
 
 // ensure up-to-date JSON
-beforeAll(() => require('../lib/render-configs')());
+beforeAll(() => require('../../../scripts/render-plugin-configs')());
 
 describe('eslint-plugin-zillow', () => {
     test('configs', () => {
