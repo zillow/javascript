@@ -128,30 +128,10 @@ describe('rendered config', () => {
         jest.resetModules();
     });
 
-    describe('recommended.json', () => {
-        let renderedConfigRecommended;
-
-        beforeAll(() => {
-            renderedConfigRecommended = require('../lib/configs/recommended.json');
-        });
-
-        it('has unresolved parser', () => {
-            expect(renderedConfigRecommended).toHaveProperty('parser', 'babel-eslint');
-        });
-    });
-
-    describe('typescript.json', () => {
-        let renderedConfigTypescript;
-
-        beforeAll(() => {
-            renderedConfigTypescript = require('../lib/configs/typescript.json');
-        });
-
-        it('has unresolved parser', () => {
-            expect(renderedConfigTypescript.overrides[0]).toHaveProperty(
-                'parser',
-                '@typescript-eslint/parser'
-            );
+    describe.each(['jest', 'mocha', 'recommended', 'typescript'])('%s.json', name => {
+        it('matches snapshot', () => {
+            // eslint-disable-next-line import/no-dynamic-require
+            expect(require(`../lib/configs/${name}.json`)).toMatchSnapshot();
         });
     });
 });
