@@ -40,6 +40,7 @@
     "node": ">= 10.17"
   },
   "jest": {
+    "testRunner": "jest-circus/runner",
     "testEnvironment": "node",
     "testMatch": [
       "<rootDir>/packages/**/test/**/*.js"
@@ -104,6 +105,7 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "fast-async": "^7.0.6",
     "jest": "^26.4.2",
+    "jest-circus": "^26.4.2",
     "jsx-ast-utils": "2.4.1",
     "lerna": "^3.22.1",
     "markdownlint-cli": "^0.23.2",
