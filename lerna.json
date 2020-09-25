@@ -6,6 +6,7 @@
     "version": {
       "allowBranch": "latest",
       "conventionalCommits": true,
+      "exact": true,
       "message": "chore(release): Publish"
     }
   },
