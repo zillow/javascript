@@ -1,15 +1,14 @@
 'use strict';
 
+/* eslint-disable global-require -- awaiting global beforeAll() */
+
 // ensure up-to-date JSON
-require('../lib/render-configs');
-
-const fs = require('fs');
-const path = require('path');
-
-const { configs, processors, rules } = require('..');
+beforeAll(() => require('../lib/render-configs')());
 
 describe('eslint-plugin-zillow', () => {
     test('configs', () => {
+        const { configs } = require('..');
+
         expect(configs).toMatchObject({
             jest: {
                 overrides: [
@@ -100,12 +99,16 @@ describe('eslint-plugin-zillow', () => {
     });
 
     test('processors', () => {
+        const { processors } = require('..');
+
         expect(processors).toMatchObject({
             '.snap': {},
         });
     });
 
     test('rules', () => {
+        const { rules } = require('..');
+
         expect(rules).toMatchObject({
             'import/prefer-default-export': {
                 meta: {},
@@ -120,12 +123,17 @@ describe('eslint-plugin-zillow', () => {
 });
 
 describe('rendered config', () => {
-    // can't use require() because entry mutates those modules :P
-    const readJSON = filePath =>
-        JSON.parse(fs.readFileSync(path.resolve(__dirname, filePath), 'utf8'));
+    // module entry mutates required JSON :P
+    beforeAll(() => {
+        jest.resetModules();
+    });
 
     describe('recommended.json', () => {
-        const renderedConfigRecommended = readJSON('../lib/configs/recommended.json');
+        let renderedConfigRecommended;
+
+        beforeAll(() => {
+            renderedConfigRecommended = require('../lib/configs/recommended.json');
+        });
 
         it('has unresolved parser', () => {
             expect(renderedConfigRecommended).toHaveProperty('parser', 'babel-eslint');
@@ -133,7 +141,11 @@ describe('rendered config', () => {
     });
 
     describe('typescript.json', () => {
-        const renderedConfigTypescript = readJSON('../lib/configs/typescript.json');
+        let renderedConfigTypescript;
+
+        beforeAll(() => {
+            renderedConfigTypescript = require('../lib/configs/typescript.json');
+        });
 
         it('has unresolved parser', () => {
             expect(renderedConfigTypescript.overrides[0]).toHaveProperty(
