@@ -2,13 +2,11 @@ module.exports = {
   rules: {
     // enforce line breaks after opening and before closing array brackets
     // https://eslint.org/docs/rules/array-bracket-newline
-    // TODO: enable? semver-major
     // object option alternative: { multiline: true, minItems: 3 }
     'array-bracket-newline': ['off', 'consistent'],
 
     // enforce line breaks between array elements
     // https://eslint.org/docs/rules/array-element-newline
-    // TODO: enable? semver-major
     'array-element-newline': ['off', { multiline: true, minItems: 3 }],
 
     // enforce spacing inside array brackets
