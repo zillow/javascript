@@ -3274,7 +3274,7 @@ Object {
           "error",
         ],
         "zillow/@typescript-eslint/no-implicit-any-catch": Array [
-          "warn",
+          "off",
           Object {
             "allowExplicitAny": false,
           },

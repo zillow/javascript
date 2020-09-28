@@ -177,8 +177,8 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md
     '@typescript-eslint/no-implicit-any-catch': [
-      // TODO:: error?
-      'warn',
+      // TODO: move to "strict" variant, enable?
+      'off',
       {
         allowExplicitAny: false,
       },
