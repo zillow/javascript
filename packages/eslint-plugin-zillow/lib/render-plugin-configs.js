@@ -15,14 +15,23 @@ const { getPluginEnvironments } = require('./plugins');
 const PLUGIN_ENVIRONMENTS = new Map(Object.entries(getPluginEnvironments()));
 
 async function main() {
-    const jestTask = renderConfig('jest', { extends: ['zillow/jest'] }, [
-        // prettier-ignore
-        '**/*{-,.}test.js',
-        '**/*.stories.js',
-        '**/__tests__/**/*.js',
-        '**/__mocks__/**/*.js',
-        '**/test/**/*.js',
-    ]);
+    const jestTask = renderConfig(
+        'jest',
+        {
+            extends: ['zillow/jest'],
+            rules: {
+                // plugin-specific rules that hamper effective testing
+            },
+        },
+        [
+            // prettier-ignore
+            '**/*{-,.}test.js',
+            '**/*.stories.js',
+            '**/__tests__/**/*.js',
+            '**/__mocks__/**/*.js',
+            '**/test/**/*.js',
+        ]
+    );
 
     const mochaTask = renderConfig(
         'mocha',
