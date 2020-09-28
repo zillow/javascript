@@ -20,6 +20,9 @@ Object {
         "zillow",
       ],
       "rules": Object {
+        "zillow/@typescript-eslint/no-invalid-void-type": Array [
+          "off",
+        ],
         "zillow/jest/consistent-test-it": Array [
           "error",
           Object {

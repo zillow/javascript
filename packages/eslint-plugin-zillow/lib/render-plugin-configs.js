@@ -21,6 +21,7 @@ async function main() {
             extends: ['zillow/jest'],
             rules: {
                 // plugin-specific rules that hamper effective testing
+                '@typescript-eslint/no-invalid-void-type': ['off'],
             },
         },
         [
