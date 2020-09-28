@@ -2722,7 +2722,7 @@ Object {
       },
     ],
     "zillow/react/prop-types": Array [
-      "error",
+      "off",
       Object {
         "customValidators": Array [],
         "ignore": Array [],

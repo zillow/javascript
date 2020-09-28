@@ -45,6 +45,10 @@ async function main() {
     const recommendedTask = renderConfig('recommended', {
         extends: ['zillow'],
         parser: 'babel-eslint',
+        rules: {
+            // TODO: re-enable when https://github.com/yannickcr/eslint-plugin-react/commit/2b0d70c is released
+            'react/prop-types': ['off'],
+        },
     });
 
     const typescriptTask = renderConfig(
