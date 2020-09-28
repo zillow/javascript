@@ -3548,6 +3548,9 @@ Object {
             ],
           },
         ],
+        "zillow/react/prop-types": Array [
+          "off",
+        ],
         "zillow/react/sort-comp": Array [
           "off",
         ],
