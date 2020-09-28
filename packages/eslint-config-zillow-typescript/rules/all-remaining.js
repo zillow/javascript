@@ -34,8 +34,9 @@ module.exports = {
     ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/default-param-last.md
+    // TODO: enable when it is configurable (breaks valid redux reducers)
     'default-param-last': 'off',
-    '@typescript-eslint/default-param-last': 'error',
+    '@typescript-eslint/default-param-last': 'off',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md
     'dot-notation': 'off',

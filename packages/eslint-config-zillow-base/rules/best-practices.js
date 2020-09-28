@@ -33,7 +33,8 @@ module.exports = {
     'default-case-last': 'error',
 
     // https://eslint.org/docs/rules/default-param-last
-    'default-param-last': 'error',
+    // TODO: enable when it is configurable (breaks valid redux reducers)
+    'default-param-last': 'off',
 
     // encourages use of dot notation whenever possible
     'dot-notation': ['error', { allowKeywords: true }],

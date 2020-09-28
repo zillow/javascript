@@ -478,7 +478,7 @@ Object {
       "error",
     ],
     "default-param-last": Array [
-      "error",
+      "off",
     ],
     "dot-location": Array [
       "off",
@@ -3081,7 +3081,7 @@ Object {
           },
         ],
         "zillow/@typescript-eslint/default-param-last": Array [
-          "error",
+          "off",
         ],
         "zillow/@typescript-eslint/dot-notation": Array [
           "error",
