@@ -1172,7 +1172,13 @@ Object {
       "error",
     ],
     "no-restricted-exports": Array [
-      "off",
+      "error",
+      Object {
+        "restrictedNamedExports": Array [
+          "default",
+          "then",
+        ],
+      },
     ],
     "no-restricted-globals": Array [
       "error",

@@ -112,9 +112,6 @@ module.exports = {
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': 'error',
 
-    // https://eslint.org/docs/rules/no-restricted-exports
-    'no-restricted-exports': 'off',
-
     // https://eslint.org/docs/rules/no-setter-return
     'no-setter-return': 'error',
 

@@ -63,6 +63,17 @@ module.exports = {
     // https://eslint.org/docs/rules/no-new-symbol
     'no-new-symbol': 'error',
 
+    // Disallow specified names in exports
+    // https://eslint.org/docs/rules/no-restricted-exports
+    'no-restricted-exports': ['error', {
+      restrictedNamedExports: [
+        // use `export default` to provide a default export
+        'default',
+        // this will cause tons of confusion when your module is dynamically `import()`ed
+        'then',
+      ],
+    }],
+
     // disallow specific imports
     // https://eslint.org/docs/rules/no-restricted-imports
     'no-restricted-imports': ['off', {
