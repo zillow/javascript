@@ -3101,7 +3101,7 @@ Object {
           },
         ],
         "zillow/@typescript-eslint/explicit-module-boundary-types": Array [
-          "warn",
+          "off",
           Object {
             "allowArgumentsExplicitlyTypedAsAny": false,
             "allowDirectConstAssertionInArrowFunctions": true,

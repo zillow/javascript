@@ -24,8 +24,8 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
     '@typescript-eslint/explicit-module-boundary-types': [
-      // TODO: error?
-      'warn',
+      // TODO: move to "strict" variant, enable?
+      'off',
       {
         allowArgumentsExplicitlyTypedAsAny: false,
         allowDirectConstAssertionInArrowFunctions: true,
