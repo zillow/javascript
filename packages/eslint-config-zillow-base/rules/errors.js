@@ -153,7 +153,8 @@ module.exports = {
 
     // Disallow assignments that can lead to race conditions due to usage of await or yield
     // https://eslint.org/docs/rules/require-atomic-updates
-    'require-atomic-updates': 'error',
+    // NOTE: not enabled because it is very buggy
+    'require-atomic-updates': 'off',
 
     // disallow comparisons with the value NaN
     'use-isnan': 'error',

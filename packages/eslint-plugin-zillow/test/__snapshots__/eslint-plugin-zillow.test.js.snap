@@ -1668,7 +1668,7 @@ Object {
       "error",
     ],
     "require-atomic-updates": Array [
-      "error",
+      "off",
     ],
     "require-await": Array [
       "off",
