@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.4](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.3...eslint-plugin-zillow@4.0.0-alpha.4) (2020-09-28)
+
+**Note:** Version bump only for package eslint-plugin-zillow
+
+
+
+
+
 # [4.0.0-alpha.3](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.2...eslint-plugin-zillow@4.0.0-alpha.3) (2020-09-28)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.1](https://github.com/zillow/javascript/compare/eslint-config-zillow@4.0.0-alpha.0...eslint-config-zillow@4.0.0-alpha.1) (2020-09-28)
+
+
+### Bug Fixes
+
+* **peer:** Loosen eslint-plugin-react range to allow for silly workaround ([069f822](https://github.com/zillow/javascript/commit/069f822da44bc867e1a8c9a1994a1d3ce9339eb3))
+
+
+
+
+
 # [4.0.0-alpha.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.6.0...eslint-config-zillow@4.0.0-alpha.0) (2020-09-25)
 
 
