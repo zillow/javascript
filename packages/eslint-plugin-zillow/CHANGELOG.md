@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.3](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.2...eslint-plugin-zillow@4.0.0-alpha.3) (2020-09-28)
+
+
+### Bug Fixes
+
+* **deps:** Hard-pin eslint-plugin-zillow@7.21.0 to workaround destructured prop-types bug ([1d7c002](https://github.com/zillow/javascript/commit/1d7c00275d39f88f0e50e5245de8ff34e7081e6b))
+
+
+### Features
+
+* **deps:** eslint-plugin-import@^2.22.1 ([c6bd7ff](https://github.com/zillow/javascript/commit/c6bd7ff283bed6f526f576d118d536d5c00bf805))
+
+
+
+
+
 # [4.0.0-alpha.2](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.1...eslint-plugin-zillow@4.0.0-alpha.2) (2020-09-25)
 
 
