@@ -553,9 +553,6 @@ Object {
     "handle-callback-err": Array [
       "off",
     ],
-    "id-blacklist": Array [
-      "off",
-    ],
     "id-denylist": Array [
       "off",
     ],

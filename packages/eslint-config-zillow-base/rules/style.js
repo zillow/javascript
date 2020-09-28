@@ -115,7 +115,6 @@ module.exports = {
 
     // List certain identifiers to prevent them being used
     // https://eslint.org/docs/rules/id-denylist
-    'id-blacklist': 'off',
     'id-denylist': 'off',
 
     // this option enforces minimum and maximum identifier lengths

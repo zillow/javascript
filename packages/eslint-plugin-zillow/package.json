@@ -31,7 +31,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "peerDependencies": {
-    "eslint": ">= 7.0.0",
+    "eslint": ">= 7.4.0",
     "prettier": "^2.1.2"
   },
   "dependencies": {
