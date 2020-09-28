@@ -3238,6 +3238,13 @@ Object {
         ],
         "zillow/@typescript-eslint/no-empty-function": Array [
           "error",
+          Object {
+            "allow": Array [
+              "arrowFunctions",
+              "functions",
+              "methods",
+            ],
+          },
         ],
         "zillow/@typescript-eslint/no-empty-interface": Array [
           "error",

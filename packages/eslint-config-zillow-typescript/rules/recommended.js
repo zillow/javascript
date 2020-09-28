@@ -41,7 +41,23 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
     'no-empty-function': 'off',
-    '@typescript-eslint/no-empty-function': 'error',
+    '@typescript-eslint/no-empty-function': [
+      'error',
+      {
+        allow: [
+          // built-in: https://eslint.org/docs/rules/no-empty-function
+          'arrowFunctions',
+          'functions',
+          'methods',
+          // this plugin
+          /*
+          'private-constructors',
+          'protected-constructors',
+          'decoratedFunctions',
+          */
+        ],
+      },
+    ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md
     '@typescript-eslint/no-empty-interface': 'error',
