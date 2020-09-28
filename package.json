@@ -102,7 +102,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-mocha": "^8.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "7.21.0",
+    "eslint-plugin-react": "^7.21.2",
     "eslint-plugin-react-hooks": "^4.1.2",
     "fast-async": "^7.0.6",
     "jest": "^26.4.2",
