@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zillow-typescript",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Zillow's ESLint config for TypeScript, following our code conventions",
   "main": "index.js",
   "files": [

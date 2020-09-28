@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.5](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.4...eslint-plugin-zillow@4.0.0-alpha.5) (2020-09-28)
+
+
+### Bug Fixes
+
+* **react:** Revert silly workaround, it didn't work ([10542c7](https://github.com/zillow/javascript/commit/10542c71deb66ab6702ea8bf6d2c3307069a2c13))
+* **react:** Turn off react/prop-types until upstream bug is fixed ([3ba39d5](https://github.com/zillow/javascript/commit/3ba39d5204fe7bee86780cda342d687da295fe30))
+
+
+### Features
+
+* **prettier:** Add embeddedLanguageFormatting default to config ([99708d0](https://github.com/zillow/javascript/commit/99708d0df097e455897583a9a17a907e8671a0d9))
+
+
+
+
+
 # [4.0.0-alpha.4](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.3...eslint-plugin-zillow@4.0.0-alpha.4) (2020-09-28)
 
 **Note:** Version bump only for package eslint-plugin-zillow
