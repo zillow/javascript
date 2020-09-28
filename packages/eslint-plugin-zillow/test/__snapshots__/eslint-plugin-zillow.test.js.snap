@@ -3339,7 +3339,10 @@ Object {
         "zillow/@typescript-eslint/no-shadow": Array [
           "error",
           Object {
-            "allow": Array [],
+            "allow": Array [
+              "fetch",
+              "global",
+            ],
             "builtinGlobals": true,
             "hoist": "functions",
             "ignoreFunctionTypeParameterNameValueShadow": true,

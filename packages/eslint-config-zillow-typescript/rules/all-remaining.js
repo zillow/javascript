@@ -245,7 +245,12 @@ module.exports = {
         // eslint core
         builtinGlobals: true,
         hoist: 'functions',
-        allow: [],
+        allow: [
+          // ponyfills
+          'fetch',
+          // namespace declaration merging
+          'global',
+        ],
         // this plugin
         ignoreTypeValueShadow: true,
         ignoreFunctionTypeParameterNameValueShadow: true,
