@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.2](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@4.0.0-alpha.1...eslint-config-zillow-base@4.0.0-alpha.2) (2020-09-29)
+
+
+### Bug Fixes
+
+* **errors:** Move no-restricted-exports to es6 rules, enable ([b9845de](https://github.com/zillow/javascript/commit/b9845de293732b01d8c9c6221deccbcdd700fd42))
+* **errors:** Turn off require-atomic-updates, it is very buggy ([abb2346](https://github.com/zillow/javascript/commit/abb23464c22aeb83236775501629c3f7dd2a5d36))
+* **rules:** Turn off default-param-last until it is configurable ([c05d872](https://github.com/zillow/javascript/commit/c05d872f553c368b571f9babd82764a21189019a))
+
+
+### Features
+
+* **peer:** eslint >= 7.4.0 ([828ce5a](https://github.com/zillow/javascript/commit/828ce5a7fa03d72e84976f679d8c582a77a4b987))
+
+
+### BREAKING CHANGES
+
+* **peer:** The minimum peer version of eslint is now 7.4.0.
+
+
+
+
+
 # [4.0.0-alpha.1](https://github.com/zillow/javascript/compare/eslint-config-zillow-base@4.0.0-alpha.0...eslint-config-zillow-base@4.0.0-alpha.1) (2020-09-28)
 
 **Note:** Version bump only for package eslint-config-zillow-base

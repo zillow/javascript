@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.3](https://github.com/zillow/javascript/compare/eslint-config-zillow@4.0.0-alpha.2...eslint-config-zillow@4.0.0-alpha.3) (2020-09-29)
+
+
+### Features
+
+* **peer:** eslint >= 7.4.0 ([828ce5a](https://github.com/zillow/javascript/commit/828ce5a7fa03d72e84976f679d8c582a77a4b987))
+
+
+### BREAKING CHANGES
+
+* **peer:** The minimum peer version of eslint is now 7.4.0.
+
+
+
+
+
 # [4.0.0-alpha.2](https://github.com/zillow/javascript/compare/eslint-config-zillow@4.0.0-alpha.1...eslint-config-zillow@4.0.0-alpha.2) (2020-09-28)
 
 
