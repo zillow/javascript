@@ -167,6 +167,9 @@ Object {
         "zillow/jest/valid-title": Array [
           "error",
         ],
+        "zillow/react/prop-types": Array [
+          "off",
+        ],
       },
       "settings": Object {},
     },
@@ -265,6 +268,9 @@ Object {
           "off",
         ],
         "zillow/mocha/valid-test-description": Array [
+          "off",
+        ],
+        "zillow/react/prop-types": Array [
           "off",
         ],
       },
