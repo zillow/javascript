@@ -244,7 +244,7 @@ module.exports = {
       'error',
       {
         // eslint core
-        builtinGlobals: true,
+        builtinGlobals: false,
         hoist: 'functions',
         allow: [
           // ponyfills

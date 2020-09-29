@@ -3356,7 +3356,7 @@ Consider using \`Record<string, unknown>\` instead, as it allows you to more eas
               "fetch",
               "global",
             ],
-            "builtinGlobals": true,
+            "builtinGlobals": false,
             "hoist": "functions",
             "ignoreFunctionTypeParameterNameValueShadow": true,
             "ignoreTypeValueShadow": true,
