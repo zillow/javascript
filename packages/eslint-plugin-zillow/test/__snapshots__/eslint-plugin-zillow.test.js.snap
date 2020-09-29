@@ -3466,7 +3466,7 @@ Consider using \`Record<string, unknown>\` instead, as it allows you to more eas
           "error",
         ],
         "zillow/@typescript-eslint/prefer-readonly-parameter-types": Array [
-          "warn",
+          "off",
         ],
         "zillow/@typescript-eslint/prefer-reduce-type-parameter": Array [
           "error",

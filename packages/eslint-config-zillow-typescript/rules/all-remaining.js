@@ -327,8 +327,7 @@ module.exports = {
     '@typescript-eslint/prefer-readonly': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md
-    // TODO: Turn off entirely? Seriously, this is the most annoying rule.
-    '@typescript-eslint/prefer-readonly-parameter-types': 'warn',
+    '@typescript-eslint/prefer-readonly-parameter-types': 'off',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-reduce-type-parameter.md
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
