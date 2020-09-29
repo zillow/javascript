@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.3](https://github.com/zillow/javascript/compare/eslint-config-zillow-typescript@1.0.0-alpha.2...eslint-config-zillow-typescript@1.0.0-alpha.3) (2020-09-29)
+
+
+### Bug Fixes
+
+* **typescript:** Restore no-shadow builtinGlobals default ([06d4337](https://github.com/zillow/javascript/commit/06d4337227a754dc636a6b38100b9691c89c5848))
+* **typescript:** Turn off prefer-readonly-parameter-types, too many bugs for too little benefit ([da2306e](https://github.com/zillow/javascript/commit/da2306e9f25bd00c4326d562f7a866264be8f514))
+
+
+
+
+
 # [1.0.0-alpha.2](https://github.com/zillow/javascript/compare/eslint-config-zillow-typescript@1.0.0-alpha.1...eslint-config-zillow-typescript@1.0.0-alpha.2) (2020-09-29)
 
 

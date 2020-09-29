@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.7](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.6...eslint-plugin-zillow@4.0.0-alpha.7) (2020-09-29)
+
+
+### Bug Fixes
+
+* **plugin:** Target .ts(x) files for Jest & Mocha, too ([c676979](https://github.com/zillow/javascript/commit/c676979e97e9bdf5397ba40de323d79bdbac67ab))
+* **plugin:** Turn off react/prop-types in test files ([b18789b](https://github.com/zillow/javascript/commit/b18789b89a782deaa33c446a86f79b71e390b4aa))
+* **typescript:** Restore no-shadow builtinGlobals default ([06d4337](https://github.com/zillow/javascript/commit/06d4337227a754dc636a6b38100b9691c89c5848))
+* **typescript:** Turn off prefer-readonly-parameter-types, too many bugs for too little benefit ([da2306e](https://github.com/zillow/javascript/commit/da2306e9f25bd00c4326d562f7a866264be8f514))
+
+
+
+
+
 # [4.0.0-alpha.6](https://github.com/zillow/javascript/compare/eslint-plugin-zillow@4.0.0-alpha.5...eslint-plugin-zillow@4.0.0-alpha.6) (2020-09-29)
 
 
