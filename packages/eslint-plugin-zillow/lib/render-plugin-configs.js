@@ -26,11 +26,11 @@ async function main() {
         },
         [
             // prettier-ignore
-            '**/*{-,.}test.js',
-            '**/*.stories.js',
-            '**/__tests__/**/*.js',
-            '**/__mocks__/**/*.js',
-            '**/test/**/*.js',
+            '**/*{-,.}test.[jt]s?(x)',
+            '**/*.stories.[jt]s?(x)',
+            '**/__tests__/**/*.[jt]s?(x)',
+            '**/__mocks__/**/*.[jt]s?(x)',
+            '**/test/**/*.[jt]s?(x)',
         ]
     );
 
@@ -47,8 +47,8 @@ async function main() {
         },
         [
             // prettier-ignore
-            '**/*-test.js',
-            '**/test/**/*.js',
+            '**/*-test.[jt]s?(x)',
+            '**/test/**/*.[jt]s?(x)',
         ]
     );
 
