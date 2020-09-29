@@ -3054,6 +3054,16 @@ Object {
         ],
         "zillow/@typescript-eslint/ban-types": Array [
           "error",
+          Object {
+            "extendDefaults": true,
+            "types": Object {
+              "object": Object {
+                "fixWith": "Record<string, unknown>",
+                "message": "The \`object\` type is currently hard to use ([see this issue](https://github.com/microsoft/TypeScript/issues/21732)).
+Consider using \`Record<string, unknown>\` instead, as it allows you to more easily inspect and use the keys.",
+              },
+            },
+          },
         ],
         "zillow/@typescript-eslint/brace-style": Array [
           "off",

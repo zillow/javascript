@@ -20,7 +20,22 @@ module.exports = {
     ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
-    '@typescript-eslint/ban-types': 'error',
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        extendDefaults: true,
+        types: {
+          // make default 'object' rule fixable
+          object: {
+            fixWith: 'Record<string, unknown>',
+            message: [
+              'The `object` type is currently hard to use ([see this issue](https://github.com/microsoft/TypeScript/issues/21732)).',
+              'Consider using `Record<string, unknown>` instead, as it allows you to more easily inspect and use the keys.',
+            ].join('\n'),
+          },
+        },
+      },
+    ],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
     '@typescript-eslint/explicit-module-boundary-types': [
