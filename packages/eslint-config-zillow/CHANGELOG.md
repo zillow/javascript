@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.3](https://github.com/zillow/javascript/compare/eslint-config-zillow@4.0.0-alpha.2...eslint-config-zillow@4.0.0-alpha.3) (2020-09-29)
+
+
+### Features
+
+* **peer:** eslint >= 7.4.0 ([828ce5a](https://github.com/zillow/javascript/commit/828ce5a7fa03d72e84976f679d8c582a77a4b987))
+
+
+### BREAKING CHANGES
+
+* **peer:** The minimum peer version of eslint is now 7.4.0.
+
+
+
+
+
+# [4.0.0-alpha.2](https://github.com/zillow/javascript/compare/eslint-config-zillow@4.0.0-alpha.1...eslint-config-zillow@4.0.0-alpha.2) (2020-09-28)
+
+
+### Bug Fixes
+
+* **react:** Revert silly workaround, it didn't work ([10542c7](https://github.com/zillow/javascript/commit/10542c71deb66ab6702ea8bf6d2c3307069a2c13))
+
+
+
+
+
+# [4.0.0-alpha.1](https://github.com/zillow/javascript/compare/eslint-config-zillow@4.0.0-alpha.0...eslint-config-zillow@4.0.0-alpha.1) (2020-09-28)
+
+
+### Bug Fixes
+
+* **peer:** Loosen eslint-plugin-react range to allow for silly workaround ([069f822](https://github.com/zillow/javascript/commit/069f822da44bc867e1a8c9a1994a1d3ce9339eb3))
+
+
+
+
+
+# [4.0.0-alpha.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.6.0...eslint-config-zillow@4.0.0-alpha.0) (2020-09-25)
+
+
+### Features
+
+* Drop support for Node v8.x ([0121df0](https://github.com/zillow/javascript/commit/0121df05ca213ccd82022ebd673b080b3e513753))
+* **peer:** Drop support for prettier@1 ([64ed709](https://github.com/zillow/javascript/commit/64ed70992d63764eff1e2501b87686ea259fefb3))
+* Remove typescript re-export & peer ([284dcdd](https://github.com/zillow/javascript/commit/284dcdd3507e63081435dabd0754a698c01ad6b0))
+* Support eslint v7 ([6f3e765](https://github.com/zillow/javascript/commit/6f3e7655bb1dbaae345a19dcb2b6addf2f90cee9))
+* Upgrade eslint-plugin-jest to ^24.0.2 ([dd3462b](https://github.com/zillow/javascript/commit/dd3462b21570f3d4caf426e61de18c0267991482))
+* Upgrade eslint-plugin-mocha to ^8.0.0 ([127d636](https://github.com/zillow/javascript/commit/127d63672740d923feec13a3e41765fff9875f4e))
+* Upgrade eslint-plugin-react-hooks to ^4.1.2 ([016257b](https://github.com/zillow/javascript/commit/016257b963172c37ffe31dab178f506e80ef751d))
+* **peer:** Update minimum version ranges ([4dd1ae4](https://github.com/zillow/javascript/commit/4dd1ae48172983462f1403f43b0731f0ff2554fa))
+
+
+### BREAKING CHANGES
+
+* **peer:** The minimum version range of all peerDependencies have been bumped to their latest versions. Technically a breaking change, you only need re-install the peers to receive compatible updates.
+* eslint v7 is now the minimum peer. Please upgrade.
+* The version of eslint-plugin-mocha has been bumped two majors (6 -> 8), there are very likely new errors exposed. See https://github.com/lo1tuma/eslint-plugin-mocha/releases for details.
+* The version of eslint-plugin-jest has been bumped two majors (22 -> 24), there are very likely new errors exposed. See https://github.com/jest-community/eslint-plugin-jest/releases/tag/v23.0.0 and https://github.com/jest-community/eslint-plugin-jest/releases/tag/v24.0.0 for details.
+* The version of eslint-plugin-react-hooks has been bumped two majors (2 -> 4), there are many new validations that may expose new lint errors. See https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/CHANGELOG.md for details.
+* TypeScript config is no longer provided by this module, please switch to eslint-config-zillow-typescript.
+* **peer:** The minimum peer range for prettier is now ^2.1.2.
+* The minimum supported version of Node is now v10.17.0 (v10 LTS).
+
+
+
+
+
 # [3.6.0](https://github.com/zillow/javascript/compare/eslint-config-zillow@3.5.8...eslint-config-zillow@3.6.0) (2020-09-23)
 
 

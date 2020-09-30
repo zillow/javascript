@@ -19,6 +19,9 @@ module.exports = {
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exclusive-tests.md
     'mocha/no-exclusive-tests': 'error',
 
+    // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-exports.md
+    'mocha/no-exports': 'error',
+
     // https://github.com/lo1tuma/eslint-plugin-mocha/blob/master/docs/rules/no-global-tests.md
     'mocha/no-global-tests': 'off',
 

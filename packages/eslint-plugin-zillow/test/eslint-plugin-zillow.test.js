@@ -1,30 +1,31 @@
 'use strict';
 
-// ensure up-to-date JSON
-require('../lib/render-configs');
+/* eslint-disable global-require -- awaiting global beforeAll() */
 
-const { configs, processors, rules } = require('..');
+// ensure up-to-date JSON
+beforeAll(() => require('../lib/render-plugin-configs')());
 
 describe('eslint-plugin-zillow', () => {
     test('configs', () => {
+        const { configs } = require('..');
+
         expect(configs).toMatchObject({
             jest: {
                 overrides: [
                     {
-                        files: [
-                            '**/*{-,.}test.js',
-                            '**/*.stories.js',
-                            '**/__tests__/**/*.js',
-                            '**/__mocks__/**/*.js',
-                            '**/test/**/*.js',
-                        ],
-                        globals: {
-                            it: false,
-                            jest: false,
+                        env: {
+                            'zillow/jest/globals': true,
                         },
+                        files: [
+                            '**/*{-,.}test.[jt]s?(x)',
+                            '**/*.stories.[jt]s?(x)',
+                            '**/__tests__/**/*.[jt]s?(x)',
+                            '**/__mocks__/**/*.[jt]s?(x)',
+                            '**/test/**/*.[jt]s?(x)',
+                        ],
                         plugins: ['zillow'],
                         rules: {
-                            'zillow/jest/no-focused-tests': 'error',
+                            'zillow/jest/no-focused-tests': ['error'],
                         },
                     },
                 ],
@@ -32,31 +33,42 @@ describe('eslint-plugin-zillow', () => {
             mocha: {
                 overrides: [
                     {
+                        env: {
+                            mocha: true,
+                        },
                         files: [
                             // prettier-ignore
-                            '**/*-test.js',
-                            '**/test/**/*.js',
+                            '**/*-test.[jt]s?(x)',
+                            '**/test/**/*.[jt]s?(x)',
                         ],
-                        globals: {
-                            it: false,
-                            mocha: false,
-                        },
                         plugins: ['zillow'],
                         rules: {
-                            'zillow/mocha/no-exclusive-tests': 'error',
-                            'prefer-arrow-callback': 'off',
-                            'func-names': 'off',
+                            'zillow/mocha/no-exclusive-tests': ['error'],
+                            'prefer-arrow-callback': ['off'],
+                            'func-names': ['off'],
                         },
                     },
                 ],
             },
             recommended: {
-                parser: expect.stringContaining('babel-eslint'),
+                parser: require.resolve('babel-eslint'),
                 rules: {
                     'zillow/react/jsx-indent': ['off', 4],
                     'max-len': ['warn', 100, 4, { ignoreComments: false }],
-                    'zillow/import/prefer-default-export': 'off',
+                    'zillow/import/prefer-default-export': ['off'],
                 },
+            },
+            typescript: {
+                overrides: [
+                    {
+                        files: ['**/*.ts?(x)'],
+                        parser: require.resolve('@typescript-eslint/parser'),
+                        plugins: ['zillow'],
+                        rules: {
+                            'zillow/@typescript-eslint/await-thenable': ['error'],
+                        },
+                    },
+                ],
             },
         });
 
@@ -86,13 +98,25 @@ describe('eslint-plugin-zillow', () => {
         );
     });
 
+    test('environments', () => {
+        const { environments } = require('..');
+
+        expect(environments).toStrictEqual({
+            'jest/globals': require('eslint-plugin-jest').environments.globals,
+        });
+    });
+
     test('processors', () => {
+        const { processors } = require('..');
+
         expect(processors).toMatchObject({
             '.snap': {},
         });
     });
 
     test('rules', () => {
+        const { rules } = require('..');
+
         expect(rules).toMatchObject({
             'import/prefer-default-export': {
                 meta: {},
@@ -102,6 +126,20 @@ describe('eslint-plugin-zillow', () => {
                 meta: {},
                 create: expect.any(Function),
             },
+        });
+    });
+});
+
+describe('rendered config', () => {
+    // module entry mutates required JSON :P
+    beforeAll(() => {
+        jest.resetModules();
+    });
+
+    describe.each(['jest', 'mocha', 'recommended', 'typescript'])('%s.json', name => {
+        it('matches snapshot', () => {
+            // eslint-disable-next-line import/no-dynamic-require
+            expect(require(`../lib/configs/${name}.json`)).toMatchSnapshot();
         });
     });
 });

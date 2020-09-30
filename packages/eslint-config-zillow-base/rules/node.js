@@ -1,3 +1,4 @@
+// FIXME: Remove when eslint v8.x supported: https://github.com/eslint/eslint/pull/12898
 module.exports = {
   env: {
     node: true

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/zillow/javascript/compare/prettier-config-zillow@1.2.0...prettier-config-zillow@1.3.0) (2020-09-28)
+
+
+### Features
+
+* **prettier:** Add embeddedLanguageFormatting default to config ([99708d0](https://github.com/zillow/javascript/commit/99708d0df097e455897583a9a17a907e8671a0d9))
+
+
+
+
+
 # [1.2.0](https://github.com/zillow/javascript/compare/prettier-config-zillow@1.1.1...prettier-config-zillow@1.2.0) (2020-04-21)
 
 

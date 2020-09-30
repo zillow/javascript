@@ -1,0 +1,3591 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered config jest.json matches snapshot 1`] = `
+Object {
+  "overrides": Array [
+    Object {
+      "env": Object {
+        "zillow/jest/globals": true,
+      },
+      "files": Array [
+        "**/*{-,.}test.[jt]s?(x)",
+        "**/*.stories.[jt]s?(x)",
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/__mocks__/**/*.[jt]s?(x)",
+        "**/test/**/*.[jt]s?(x)",
+      ],
+      "globals": Object {},
+      "parser": null,
+      "plugins": Array [
+        "zillow",
+      ],
+      "rules": Object {
+        "zillow/@typescript-eslint/no-invalid-void-type": Array [
+          "off",
+        ],
+        "zillow/jest/consistent-test-it": Array [
+          "error",
+          Object {
+            "fn": "test",
+            "withinDescribe": "it",
+          },
+        ],
+        "zillow/jest/expect-expect": Array [
+          "error",
+          Object {
+            "assertFunctionNames": Array [
+              "expect",
+            ],
+          },
+        ],
+        "zillow/jest/lowercase-name": Array [
+          "off",
+        ],
+        "zillow/jest/no-alias-methods": Array [
+          "off",
+        ],
+        "zillow/jest/no-commented-out-tests": Array [
+          "off",
+        ],
+        "zillow/jest/no-conditional-expect": Array [
+          "error",
+        ],
+        "zillow/jest/no-deprecated-functions": Array [
+          "error",
+        ],
+        "zillow/jest/no-disabled-tests": Array [
+          "warn",
+        ],
+        "zillow/jest/no-done-callback": Array [
+          "error",
+        ],
+        "zillow/jest/no-duplicate-hooks": Array [
+          "off",
+        ],
+        "zillow/jest/no-expect-resolves": Array [
+          "off",
+        ],
+        "zillow/jest/no-export": Array [
+          "error",
+        ],
+        "zillow/jest/no-focused-tests": Array [
+          "error",
+        ],
+        "zillow/jest/no-hooks": Array [
+          "off",
+        ],
+        "zillow/jest/no-identical-title": Array [
+          "error",
+        ],
+        "zillow/jest/no-if": Array [
+          "off",
+        ],
+        "zillow/jest/no-interpolation-in-snapshots": Array [
+          "error",
+        ],
+        "zillow/jest/no-jasmine-globals": Array [
+          "error",
+        ],
+        "zillow/jest/no-jest-import": Array [
+          "error",
+        ],
+        "zillow/jest/no-large-snapshots": Array [
+          "warn",
+          Object {
+            "maxSize": 50,
+          },
+        ],
+        "zillow/jest/no-mocks-import": Array [
+          "error",
+        ],
+        "zillow/jest/no-restricted-matchers": Array [
+          "off",
+        ],
+        "zillow/jest/no-standalone-expect": Array [
+          "error",
+        ],
+        "zillow/jest/no-test-prefixes": Array [
+          "error",
+        ],
+        "zillow/jest/no-test-return-statement": Array [
+          "error",
+        ],
+        "zillow/jest/no-truthy-falsy": Array [
+          "error",
+        ],
+        "zillow/jest/no-try-expect": Array [
+          "off",
+        ],
+        "zillow/jest/prefer-called-with": Array [
+          "off",
+        ],
+        "zillow/jest/prefer-expect-assertions": Array [
+          "off",
+        ],
+        "zillow/jest/prefer-hooks-on-top": Array [
+          "error",
+        ],
+        "zillow/jest/prefer-inline-snapshots": Array [
+          "off",
+        ],
+        "zillow/jest/prefer-spy-on": Array [
+          "off",
+        ],
+        "zillow/jest/prefer-strict-equal": Array [
+          "error",
+        ],
+        "zillow/jest/prefer-to-be-null": Array [
+          "error",
+        ],
+        "zillow/jest/prefer-to-be-undefined": Array [
+          "error",
+        ],
+        "zillow/jest/prefer-to-contain": Array [
+          "error",
+        ],
+        "zillow/jest/prefer-to-have-length": Array [
+          "error",
+        ],
+        "zillow/jest/prefer-todo": Array [
+          "error",
+        ],
+        "zillow/jest/require-to-throw-message": Array [
+          "warn",
+        ],
+        "zillow/jest/require-top-level-describe": Array [
+          "off",
+        ],
+        "zillow/jest/valid-describe": Array [
+          "error",
+        ],
+        "zillow/jest/valid-expect": Array [
+          "error",
+        ],
+        "zillow/jest/valid-expect-in-promise": Array [
+          "error",
+        ],
+        "zillow/jest/valid-title": Array [
+          "error",
+        ],
+        "zillow/react/prop-types": Array [
+          "off",
+        ],
+      },
+      "settings": Object {},
+    },
+  ],
+}
+`;
+
+exports[`rendered config mocha.json matches snapshot 1`] = `
+Object {
+  "overrides": Array [
+    Object {
+      "env": Object {
+        "mocha": true,
+      },
+      "files": Array [
+        "**/*-test.[jt]s?(x)",
+        "**/test/**/*.[jt]s?(x)",
+      ],
+      "globals": Object {},
+      "parser": null,
+      "plugins": Array [
+        "zillow",
+      ],
+      "rules": Object {
+        "func-names": Array [
+          "off",
+        ],
+        "prefer-arrow-callback": Array [
+          "off",
+        ],
+        "zillow/mocha/handle-done-callback": Array [
+          "error",
+        ],
+        "zillow/mocha/max-top-level-suites": Array [
+          "off",
+        ],
+        "zillow/mocha/no-async-describe": Array [
+          "error",
+        ],
+        "zillow/mocha/no-exclusive-tests": Array [
+          "error",
+        ],
+        "zillow/mocha/no-exports": Array [
+          "error",
+        ],
+        "zillow/mocha/no-global-tests": Array [
+          "off",
+        ],
+        "zillow/mocha/no-hooks": Array [
+          "off",
+        ],
+        "zillow/mocha/no-hooks-for-single-case": Array [
+          "off",
+        ],
+        "zillow/mocha/no-identical-title": Array [
+          "error",
+        ],
+        "zillow/mocha/no-mocha-arrows": Array [
+          "error",
+        ],
+        "zillow/mocha/no-nested-tests": Array [
+          "error",
+        ],
+        "zillow/mocha/no-pending-tests": Array [
+          "warn",
+        ],
+        "zillow/mocha/no-return-and-callback": Array [
+          "error",
+        ],
+        "zillow/mocha/no-return-from-async": Array [
+          "error",
+        ],
+        "zillow/mocha/no-setup-in-describe": Array [
+          "off",
+        ],
+        "zillow/mocha/no-sibling-hooks": Array [
+          "off",
+        ],
+        "zillow/mocha/no-skipped-tests": Array [
+          "warn",
+        ],
+        "zillow/mocha/no-synchronous-tests": Array [
+          "off",
+        ],
+        "zillow/mocha/no-top-level-hooks": Array [
+          "off",
+        ],
+        "zillow/mocha/prefer-arrow-callback": Array [
+          "error",
+          Object {
+            "allowNamedFunctions": false,
+            "allowUnboundThis": true,
+          },
+        ],
+        "zillow/mocha/valid-suite-description": Array [
+          "off",
+        ],
+        "zillow/mocha/valid-test-description": Array [
+          "off",
+        ],
+        "zillow/react/prop-types": Array [
+          "off",
+        ],
+      },
+      "settings": Object {},
+    },
+  ],
+}
+`;
+
+exports[`rendered config recommended.json matches snapshot 1`] = `
+Object {
+  "env": Object {
+    "es6": true,
+    "node": true,
+  },
+  "extends": Array [],
+  "globals": Object {},
+  "ignorePatterns": Array [],
+  "parser": "babel-eslint",
+  "parserOptions": Object {
+    "ecmaFeatures": Object {
+      "generators": false,
+      "jsx": true,
+      "objectLiteralDuplicateProperties": false,
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+  },
+  "plugins": Array [
+    "zillow",
+  ],
+  "rules": Object {
+    "accessor-pairs": Array [
+      "off",
+    ],
+    "array-bracket-newline": Array [
+      "off",
+      "consistent",
+    ],
+    "array-bracket-spacing": Array [
+      "off",
+      "never",
+    ],
+    "array-callback-return": Array [
+      "error",
+      Object {
+        "allowImplicit": true,
+        "checkForEach": false,
+      },
+    ],
+    "array-element-newline": Array [
+      "off",
+      Object {
+        "minItems": 3,
+        "multiline": true,
+      },
+    ],
+    "arrow-body-style": Array [
+      "error",
+      "as-needed",
+      Object {
+        "requireReturnForObjectLiteral": false,
+      },
+    ],
+    "arrow-parens": Array [
+      "off",
+      "as-needed",
+      Object {
+        "requireForBlockBody": true,
+      },
+    ],
+    "arrow-spacing": Array [
+      "off",
+      Object {
+        "after": true,
+        "before": true,
+      },
+    ],
+    "block-scoped-var": Array [
+      "error",
+    ],
+    "block-spacing": Array [
+      "off",
+      "always",
+    ],
+    "brace-style": Array [
+      "off",
+      "1tbs",
+      Object {
+        "allowSingleLine": true,
+      },
+    ],
+    "callback-return": Array [
+      "off",
+    ],
+    "camelcase": Array [
+      "error",
+      Object {
+        "allow": Array [
+          "^UNSAFE_",
+        ],
+        "ignoreDestructuring": true,
+        "ignoreGlobals": false,
+        "ignoreImports": false,
+        "properties": "never",
+      },
+    ],
+    "capitalized-comments": Array [
+      "off",
+      "never",
+      Object {
+        "block": Object {
+          "ignoreConsecutiveComments": true,
+          "ignoreInlineComments": true,
+          "ignorePattern": ".*",
+        },
+        "line": Object {
+          "ignoreConsecutiveComments": true,
+          "ignoreInlineComments": true,
+          "ignorePattern": ".*",
+        },
+      },
+    ],
+    "class-methods-use-this": Array [
+      "error",
+      Object {
+        "exceptMethods": Array [
+          "render",
+          "getInitialState",
+          "getDefaultProps",
+          "getChildContext",
+          "componentWillMount",
+          "UNSAFE_componentWillMount",
+          "componentDidMount",
+          "componentWillReceiveProps",
+          "UNSAFE_componentWillReceiveProps",
+          "shouldComponentUpdate",
+          "componentWillUpdate",
+          "UNSAFE_componentWillUpdate",
+          "componentDidUpdate",
+          "componentWillUnmount",
+          "componentDidCatch",
+          "getSnapshotBeforeUpdate",
+        ],
+      },
+    ],
+    "comma-dangle": Array [
+      "off",
+      Object {
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline",
+        "imports": "always-multiline",
+        "objects": "always-multiline",
+      },
+    ],
+    "comma-spacing": Array [
+      "off",
+      Object {
+        "after": true,
+        "before": false,
+      },
+    ],
+    "comma-style": Array [
+      "off",
+      "last",
+      Object {
+        "exceptions": Object {
+          "ArrayExpression": false,
+          "ArrayPattern": false,
+          "ArrowFunctionExpression": false,
+          "CallExpression": false,
+          "FunctionDeclaration": false,
+          "FunctionExpression": false,
+          "ImportDeclaration": false,
+          "NewExpression": false,
+          "ObjectExpression": false,
+          "ObjectPattern": false,
+          "VariableDeclaration": false,
+        },
+      },
+    ],
+    "complexity": Array [
+      "off",
+      11,
+    ],
+    "computed-property-spacing": Array [
+      "off",
+      "never",
+    ],
+    "consistent-return": Array [
+      "error",
+    ],
+    "consistent-this": Array [
+      "off",
+    ],
+    "constructor-super": Array [
+      "error",
+    ],
+    "curly": Array [
+      "error",
+      "all",
+    ],
+    "default-case": Array [
+      "error",
+      Object {
+        "commentPattern": "^no default$",
+      },
+    ],
+    "default-case-last": Array [
+      "error",
+    ],
+    "default-param-last": Array [
+      "off",
+    ],
+    "dot-location": Array [
+      "off",
+      "property",
+    ],
+    "dot-notation": Array [
+      "error",
+      Object {
+        "allowKeywords": true,
+        "allowPattern": "",
+      },
+    ],
+    "eol-last": Array [
+      "off",
+      "always",
+    ],
+    "eqeqeq": Array [
+      "error",
+      "always",
+      Object {
+        "null": "ignore",
+      },
+    ],
+    "for-direction": Array [
+      "error",
+    ],
+    "func-call-spacing": Array [
+      "off",
+      "never",
+    ],
+    "func-name-matching": Array [
+      "error",
+      "always",
+      Object {
+        "considerPropertyDescriptor": true,
+        "includeCommonJSModuleExports": false,
+      },
+    ],
+    "func-names": Array [
+      "warn",
+    ],
+    "func-style": Array [
+      "off",
+      "expression",
+    ],
+    "function-call-argument-newline": Array [
+      "off",
+    ],
+    "function-paren-newline": Array [
+      "off",
+      "multiline",
+    ],
+    "generator-star-spacing": Array [
+      "off",
+      Object {
+        "after": true,
+        "before": false,
+      },
+    ],
+    "getter-return": Array [
+      "error",
+      Object {
+        "allowImplicit": true,
+      },
+    ],
+    "global-require": Array [
+      "error",
+    ],
+    "grouped-accessor-pairs": Array [
+      "off",
+    ],
+    "guard-for-in": Array [
+      "error",
+    ],
+    "handle-callback-err": Array [
+      "off",
+    ],
+    "id-denylist": Array [
+      "off",
+    ],
+    "id-length": Array [
+      "off",
+    ],
+    "id-match": Array [
+      "off",
+    ],
+    "implicit-arrow-linebreak": Array [
+      "off",
+      "beside",
+    ],
+    "indent": Array [
+      "off",
+      4,
+      Object {
+        "ArrayExpression": 1,
+        "CallExpression": Object {
+          "arguments": 1,
+        },
+        "FunctionDeclaration": Object {
+          "body": 1,
+          "parameters": 1,
+        },
+        "FunctionExpression": Object {
+          "body": 1,
+          "parameters": 1,
+        },
+        "ImportDeclaration": 1,
+        "ObjectExpression": 1,
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "flatTernaryExpressions": false,
+        "ignoreComments": false,
+        "ignoredNodes": Array [
+          "JSXElement",
+          "JSXElement > *",
+          "JSXAttribute",
+          "JSXIdentifier",
+          "JSXNamespacedName",
+          "JSXMemberExpression",
+          "JSXSpreadAttribute",
+          "JSXExpressionContainer",
+          "JSXOpeningElement",
+          "JSXClosingElement",
+          "JSXText",
+          "JSXEmptyExpression",
+          "JSXSpreadChild",
+        ],
+        "outerIIFEBody": 1,
+      },
+    ],
+    "init-declarations": Array [
+      "off",
+    ],
+    "jsx-quotes": Array [
+      "off",
+      "prefer-double",
+    ],
+    "key-spacing": Array [
+      "off",
+      Object {
+        "afterColon": true,
+        "beforeColon": false,
+      },
+    ],
+    "keyword-spacing": Array [
+      "off",
+      Object {
+        "after": true,
+        "before": true,
+        "overrides": Object {
+          "case": Object {
+            "after": true,
+          },
+          "return": Object {
+            "after": true,
+          },
+          "throw": Object {
+            "after": true,
+          },
+        },
+      },
+    ],
+    "line-comment-position": Array [
+      "warn",
+      Object {
+        "applyDefaultIgnorePatterns": true,
+        "ignorePattern": "",
+        "position": "above",
+      },
+    ],
+    "linebreak-style": Array [
+      "off",
+      "unix",
+    ],
+    "lines-around-comment": Array [
+      "off",
+    ],
+    "lines-around-directive": Array [
+      "error",
+      Object {
+        "after": "always",
+        "before": "always",
+      },
+    ],
+    "lines-between-class-members": Array [
+      "error",
+      "always",
+      Object {
+        "exceptAfterSingleLine": false,
+      },
+    ],
+    "max-classes-per-file": Array [
+      "error",
+      1,
+    ],
+    "max-depth": Array [
+      "off",
+      4,
+    ],
+    "max-len": Array [
+      "warn",
+      100,
+      4,
+      Object {
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true,
+      },
+    ],
+    "max-lines": Array [
+      "off",
+      Object {
+        "max": 300,
+        "skipBlankLines": true,
+        "skipComments": true,
+      },
+    ],
+    "max-lines-per-function": Array [
+      "off",
+      Object {
+        "IIFEs": true,
+        "max": 50,
+        "skipBlankLines": true,
+        "skipComments": true,
+      },
+    ],
+    "max-nested-callbacks": Array [
+      "off",
+    ],
+    "max-params": Array [
+      "off",
+      3,
+    ],
+    "max-statements": Array [
+      "off",
+      10,
+    ],
+    "max-statements-per-line": Array [
+      "off",
+      Object {
+        "max": 1,
+      },
+    ],
+    "multiline-comment-style": Array [
+      "off",
+      "starred-block",
+    ],
+    "multiline-ternary": Array [
+      "off",
+      "never",
+    ],
+    "new-cap": Array [
+      "error",
+      Object {
+        "capIsNew": false,
+        "capIsNewExceptions": Array [
+          "Immutable.Map",
+          "Immutable.Set",
+          "Immutable.List",
+        ],
+        "newIsCap": true,
+        "newIsCapExceptions": Array [],
+        "properties": true,
+      },
+    ],
+    "new-parens": Array [
+      "off",
+    ],
+    "newline-after-var": Array [
+      "off",
+    ],
+    "newline-before-return": Array [
+      "off",
+    ],
+    "newline-per-chained-call": Array [
+      "off",
+      Object {
+        "ignoreChainWithDepth": 4,
+      },
+    ],
+    "no-alert": Array [
+      "warn",
+    ],
+    "no-array-constructor": Array [
+      "error",
+    ],
+    "no-async-promise-executor": Array [
+      "error",
+    ],
+    "no-await-in-loop": Array [
+      "error",
+    ],
+    "no-bitwise": Array [
+      "error",
+    ],
+    "no-buffer-constructor": Array [
+      "error",
+    ],
+    "no-caller": Array [
+      "error",
+    ],
+    "no-case-declarations": Array [
+      "error",
+    ],
+    "no-catch-shadow": Array [
+      "off",
+    ],
+    "no-class-assign": Array [
+      "error",
+    ],
+    "no-compare-neg-zero": Array [
+      "error",
+    ],
+    "no-cond-assign": Array [
+      "error",
+      "always",
+    ],
+    "no-confusing-arrow": Array [
+      "warn",
+      Object {
+        "allowParens": false,
+      },
+    ],
+    "no-console": Array [
+      "warn",
+    ],
+    "no-const-assign": Array [
+      "error",
+    ],
+    "no-constant-condition": Array [
+      "warn",
+    ],
+    "no-constructor-return": Array [
+      "error",
+    ],
+    "no-continue": Array [
+      "error",
+    ],
+    "no-control-regex": Array [
+      "error",
+    ],
+    "no-debugger": Array [
+      "error",
+    ],
+    "no-delete-var": Array [
+      "error",
+    ],
+    "no-div-regex": Array [
+      "off",
+    ],
+    "no-dupe-args": Array [
+      "error",
+    ],
+    "no-dupe-class-members": Array [
+      "error",
+    ],
+    "no-dupe-else-if": Array [
+      "error",
+    ],
+    "no-dupe-keys": Array [
+      "error",
+    ],
+    "no-duplicate-case": Array [
+      "error",
+    ],
+    "no-duplicate-imports": Array [
+      "off",
+    ],
+    "no-else-return": Array [
+      "error",
+      Object {
+        "allowElseIf": false,
+      },
+    ],
+    "no-empty": Array [
+      "error",
+    ],
+    "no-empty-character-class": Array [
+      "error",
+    ],
+    "no-empty-function": Array [
+      "error",
+      Object {
+        "allow": Array [
+          "arrowFunctions",
+          "functions",
+          "methods",
+        ],
+      },
+    ],
+    "no-empty-pattern": Array [
+      "error",
+    ],
+    "no-eq-null": Array [
+      "off",
+    ],
+    "no-eval": Array [
+      "error",
+    ],
+    "no-ex-assign": Array [
+      "error",
+    ],
+    "no-extend-native": Array [
+      "error",
+    ],
+    "no-extra-bind": Array [
+      "error",
+    ],
+    "no-extra-boolean-cast": Array [
+      "error",
+    ],
+    "no-extra-label": Array [
+      "error",
+    ],
+    "no-extra-parens": Array [
+      "off",
+      "all",
+      Object {
+        "conditionalAssign": true,
+        "enforceForArrowConditionals": false,
+        "ignoreJSX": "all",
+        "nestedBinaryExpressions": false,
+        "returnAssign": false,
+      },
+    ],
+    "no-extra-semi": Array [
+      "off",
+    ],
+    "no-fallthrough": Array [
+      "error",
+    ],
+    "no-floating-decimal": Array [
+      "off",
+    ],
+    "no-func-assign": Array [
+      "error",
+    ],
+    "no-global-assign": Array [
+      "error",
+      Object {
+        "exceptions": Array [],
+      },
+    ],
+    "no-implicit-coercion": Array [
+      "off",
+      Object {
+        "allow": Array [],
+        "boolean": false,
+        "number": true,
+        "string": true,
+      },
+    ],
+    "no-implicit-globals": Array [
+      "off",
+    ],
+    "no-implied-eval": Array [
+      "error",
+    ],
+    "no-import-assign": Array [
+      "error",
+    ],
+    "no-inline-comments": Array [
+      "off",
+    ],
+    "no-inner-declarations": Array [
+      "error",
+    ],
+    "no-invalid-regexp": Array [
+      "error",
+    ],
+    "no-invalid-this": Array [
+      "off",
+    ],
+    "no-irregular-whitespace": Array [
+      "error",
+    ],
+    "no-iterator": Array [
+      "error",
+    ],
+    "no-label-var": Array [
+      "error",
+    ],
+    "no-labels": Array [
+      "error",
+      Object {
+        "allowLoop": false,
+        "allowSwitch": false,
+      },
+    ],
+    "no-lone-blocks": Array [
+      "error",
+    ],
+    "no-lonely-if": Array [
+      "error",
+    ],
+    "no-loop-func": Array [
+      "error",
+    ],
+    "no-loss-of-precision": Array [
+      "error",
+    ],
+    "no-magic-numbers": Array [
+      "off",
+      Object {
+        "detectObjects": false,
+        "enforceConst": true,
+        "ignore": Array [],
+        "ignoreArrayIndexes": true,
+      },
+    ],
+    "no-misleading-character-class": Array [
+      "error",
+    ],
+    "no-mixed-operators": Array [
+      "warn",
+      Object {
+        "allowSamePrecedence": false,
+        "groups": Array [
+          Array [
+            "%",
+            "**",
+          ],
+          Array [
+            "%",
+            "+",
+          ],
+          Array [
+            "%",
+            "-",
+          ],
+          Array [
+            "%",
+            "*",
+          ],
+          Array [
+            "%",
+            "/",
+          ],
+          Array [
+            "**",
+            "+",
+          ],
+          Array [
+            "**",
+            "-",
+          ],
+          Array [
+            "**",
+            "*",
+          ],
+          Array [
+            "**",
+            "/",
+          ],
+          Array [
+            "&",
+            "|",
+            "^",
+            "~",
+            "<<",
+            ">>",
+            ">>>",
+          ],
+          Array [
+            "==",
+            "!=",
+            "===",
+            "!==",
+            ">",
+            ">=",
+            "<",
+            "<=",
+          ],
+          Array [
+            "&&",
+            "||",
+          ],
+          Array [
+            "in",
+            "instanceof",
+          ],
+        ],
+      },
+    ],
+    "no-mixed-requires": Array [
+      "off",
+      false,
+    ],
+    "no-mixed-spaces-and-tabs": Array [
+      "off",
+    ],
+    "no-multi-assign": Array [
+      "error",
+    ],
+    "no-multi-spaces": Array [
+      "off",
+      Object {
+        "ignoreEOLComments": false,
+      },
+    ],
+    "no-multi-str": Array [
+      "error",
+    ],
+    "no-multiple-empty-lines": Array [
+      "off",
+      Object {
+        "max": 2,
+        "maxEOF": 1,
+      },
+    ],
+    "no-native-reassign": Array [
+      "off",
+    ],
+    "no-negated-condition": Array [
+      "off",
+    ],
+    "no-negated-in-lhs": Array [
+      "off",
+    ],
+    "no-nested-ternary": Array [
+      "error",
+    ],
+    "no-new": Array [
+      "error",
+    ],
+    "no-new-func": Array [
+      "error",
+    ],
+    "no-new-object": Array [
+      "error",
+    ],
+    "no-new-require": Array [
+      "error",
+    ],
+    "no-new-symbol": Array [
+      "error",
+    ],
+    "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-obj-calls": Array [
+      "error",
+    ],
+    "no-octal": Array [
+      "error",
+    ],
+    "no-octal-escape": Array [
+      "error",
+    ],
+    "no-param-reassign": Array [
+      "error",
+      Object {
+        "ignorePropertyModificationsFor": Array [
+          "acc",
+          "accumulator",
+          "e",
+          "ctx",
+          "req",
+          "request",
+          "res",
+          "response",
+          "$scope",
+        ],
+        "props": true,
+      },
+    ],
+    "no-path-concat": Array [
+      "error",
+    ],
+    "no-plusplus": Array [
+      "error",
+    ],
+    "no-process-env": Array [
+      "off",
+    ],
+    "no-process-exit": Array [
+      "off",
+    ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
+    "no-proto": Array [
+      "error",
+    ],
+    "no-prototype-builtins": Array [
+      "error",
+    ],
+    "no-redeclare": Array [
+      "error",
+    ],
+    "no-regex-spaces": Array [
+      "error",
+    ],
+    "no-restricted-exports": Array [
+      "error",
+      Object {
+        "restrictedNamedExports": Array [
+          "default",
+          "then",
+        ],
+      },
+    ],
+    "no-restricted-globals": Array [
+      "error",
+      "isFinite",
+      "isNaN",
+      "addEventListener",
+      "blur",
+      "close",
+      "closed",
+      "confirm",
+      "defaultStatus",
+      "defaultstatus",
+      "event",
+      "external",
+      "find",
+      "focus",
+      "frameElement",
+      "frames",
+      "history",
+      "innerHeight",
+      "innerWidth",
+      "length",
+      "location",
+      "locationbar",
+      "menubar",
+      "moveBy",
+      "moveTo",
+      "name",
+      "onblur",
+      "onerror",
+      "onfocus",
+      "onload",
+      "onresize",
+      "onunload",
+      "open",
+      "opener",
+      "opera",
+      "outerHeight",
+      "outerWidth",
+      "pageXOffset",
+      "pageYOffset",
+      "parent",
+      "print",
+      "removeEventListener",
+      "resizeBy",
+      "resizeTo",
+      "screen",
+      "screenLeft",
+      "screenTop",
+      "screenX",
+      "screenY",
+      "scroll",
+      "scrollbars",
+      "scrollBy",
+      "scrollTo",
+      "scrollX",
+      "scrollY",
+      "self",
+      "status",
+      "statusbar",
+      "stop",
+      "toolbar",
+      "top",
+    ],
+    "no-restricted-imports": Array [
+      "off",
+      Object {
+        "paths": Array [],
+        "patterns": Array [],
+      },
+    ],
+    "no-restricted-modules": Array [
+      "off",
+    ],
+    "no-restricted-properties": Array [
+      "error",
+      Object {
+        "message": "arguments.callee is deprecated",
+        "object": "arguments",
+        "property": "callee",
+      },
+      Object {
+        "message": "Please use Number.isFinite instead",
+        "object": "global",
+        "property": "isFinite",
+      },
+      Object {
+        "message": "Please use Number.isFinite instead",
+        "object": "self",
+        "property": "isFinite",
+      },
+      Object {
+        "message": "Please use Number.isFinite instead",
+        "object": "window",
+        "property": "isFinite",
+      },
+      Object {
+        "message": "Please use Number.isNaN instead",
+        "object": "global",
+        "property": "isNaN",
+      },
+      Object {
+        "message": "Please use Number.isNaN instead",
+        "object": "self",
+        "property": "isNaN",
+      },
+      Object {
+        "message": "Please use Number.isNaN instead",
+        "object": "window",
+        "property": "isNaN",
+      },
+      Object {
+        "message": "Please use Object.defineProperty instead.",
+        "property": "__defineGetter__",
+      },
+      Object {
+        "message": "Please use Object.defineProperty instead.",
+        "property": "__defineSetter__",
+      },
+    ],
+    "no-restricted-syntax": Array [
+      "error",
+      Object {
+        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.",
+        "selector": "ForInStatement",
+      },
+      Object {
+        "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.",
+        "selector": "ForOfStatement",
+      },
+      Object {
+        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.",
+        "selector": "LabeledStatement",
+      },
+      Object {
+        "message": "\`with\` is disallowed in strict mode because it makes code impossible to predict and optimize.",
+        "selector": "WithStatement",
+      },
+    ],
+    "no-return-assign": Array [
+      "error",
+      "always",
+    ],
+    "no-return-await": Array [
+      "error",
+    ],
+    "no-script-url": Array [
+      "error",
+    ],
+    "no-self-assign": Array [
+      "error",
+      Object {
+        "props": true,
+      },
+    ],
+    "no-self-compare": Array [
+      "error",
+    ],
+    "no-sequences": Array [
+      "error",
+    ],
+    "no-setter-return": Array [
+      "error",
+    ],
+    "no-shadow": Array [
+      "error",
+    ],
+    "no-shadow-restricted-names": Array [
+      "error",
+    ],
+    "no-spaced-func": Array [
+      "off",
+    ],
+    "no-sparse-arrays": Array [
+      "error",
+    ],
+    "no-sync": Array [
+      "off",
+    ],
+    "no-tabs": Array [
+      "warn",
+    ],
+    "no-template-curly-in-string": Array [
+      "error",
+    ],
+    "no-ternary": Array [
+      "off",
+    ],
+    "no-this-before-super": Array [
+      "error",
+    ],
+    "no-throw-literal": Array [
+      "error",
+    ],
+    "no-trailing-spaces": Array [
+      "off",
+      Object {
+        "ignoreComments": false,
+        "skipBlankLines": false,
+      },
+    ],
+    "no-undef": Array [
+      "error",
+    ],
+    "no-undef-init": Array [
+      "error",
+    ],
+    "no-undefined": Array [
+      "off",
+    ],
+    "no-underscore-dangle": Array [
+      "error",
+      Object {
+        "allow": Array [],
+        "allowAfterSuper": false,
+        "allowAfterThis": false,
+        "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
+        "enforceInMethodNames": false,
+      },
+    ],
+    "no-unexpected-multiline": Array [
+      "warn",
+    ],
+    "no-unmodified-loop-condition": Array [
+      "off",
+    ],
+    "no-unneeded-ternary": Array [
+      "error",
+      Object {
+        "defaultAssignment": false,
+      },
+    ],
+    "no-unreachable": Array [
+      "error",
+    ],
+    "no-unreachable-loop": Array [
+      "error",
+    ],
+    "no-unsafe-finally": Array [
+      "error",
+    ],
+    "no-unsafe-negation": Array [
+      "error",
+    ],
+    "no-unused-expressions": Array [
+      "error",
+      Object {
+        "allowShortCircuit": false,
+        "allowTaggedTemplates": false,
+        "allowTernary": false,
+      },
+    ],
+    "no-unused-labels": Array [
+      "error",
+    ],
+    "no-unused-vars": Array [
+      "error",
+      Object {
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "vars": "all",
+      },
+    ],
+    "no-use-before-define": Array [
+      "error",
+      Object {
+        "classes": true,
+        "functions": false,
+        "variables": true,
+      },
+    ],
+    "no-useless-backreference": Array [
+      "error",
+    ],
+    "no-useless-call": Array [
+      "off",
+    ],
+    "no-useless-catch": Array [
+      "error",
+    ],
+    "no-useless-computed-key": Array [
+      "error",
+    ],
+    "no-useless-concat": Array [
+      "error",
+    ],
+    "no-useless-constructor": Array [
+      "error",
+    ],
+    "no-useless-escape": Array [
+      "error",
+    ],
+    "no-useless-rename": Array [
+      "error",
+      Object {
+        "ignoreDestructuring": false,
+        "ignoreExport": false,
+        "ignoreImport": false,
+      },
+    ],
+    "no-useless-return": Array [
+      "error",
+    ],
+    "no-var": Array [
+      "error",
+    ],
+    "no-void": Array [
+      "error",
+    ],
+    "no-warning-comments": Array [
+      "off",
+      Object {
+        "location": "start",
+        "terms": Array [
+          "todo",
+          "fixme",
+          "xxx",
+        ],
+      },
+    ],
+    "no-whitespace-before-property": Array [
+      "off",
+    ],
+    "no-with": Array [
+      "error",
+    ],
+    "nonblock-statement-body-position": Array [
+      "off",
+      "beside",
+      Object {
+        "overrides": Object {},
+      },
+    ],
+    "object-curly-newline": Array [
+      "off",
+      Object {
+        "ExportDeclaration": Object {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+        "ImportDeclaration": Object {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+        "ObjectExpression": Object {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+        "ObjectPattern": Object {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+      },
+    ],
+    "object-curly-spacing": Array [
+      "off",
+      "always",
+    ],
+    "object-property-newline": Array [
+      "off",
+      Object {
+        "allowAllPropertiesOnSameLine": true,
+      },
+    ],
+    "object-shorthand": Array [
+      "error",
+      "always",
+      Object {
+        "avoidQuotes": true,
+        "ignoreConstructors": false,
+      },
+    ],
+    "one-var": Array [
+      "error",
+      "never",
+    ],
+    "one-var-declaration-per-line": Array [
+      "off",
+      "always",
+    ],
+    "operator-assignment": Array [
+      "error",
+      "always",
+    ],
+    "operator-linebreak": Array [
+      "off",
+      "before",
+      Object {
+        "overrides": Object {
+          "=": "none",
+        },
+      },
+    ],
+    "padded-blocks": Array [
+      "off",
+      Object {
+        "blocks": "never",
+        "classes": "never",
+        "switches": "never",
+      },
+    ],
+    "padding-line-between-statements": Array [
+      "off",
+    ],
+    "prefer-arrow-callback": Array [
+      "error",
+      Object {
+        "allowNamedFunctions": false,
+        "allowUnboundThis": true,
+      },
+    ],
+    "prefer-const": Array [
+      "error",
+      Object {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": true,
+      },
+    ],
+    "prefer-destructuring": Array [
+      "warn",
+      Object {
+        "AssignmentExpression": Object {
+          "array": true,
+          "object": true,
+        },
+        "VariableDeclarator": Object {
+          "array": false,
+          "object": true,
+        },
+      },
+      Object {
+        "enforceForRenamedProperties": false,
+      },
+    ],
+    "prefer-exponentiation-operator": Array [
+      "error",
+    ],
+    "prefer-named-capture-group": Array [
+      "off",
+    ],
+    "prefer-numeric-literals": Array [
+      "error",
+    ],
+    "prefer-object-spread": Array [
+      "error",
+    ],
+    "prefer-promise-reject-errors": Array [
+      "error",
+      Object {
+        "allowEmptyReject": true,
+      },
+    ],
+    "prefer-reflect": Array [
+      "off",
+    ],
+    "prefer-regex-literals": Array [
+      "error",
+      Object {
+        "disallowRedundantWrapping": true,
+      },
+    ],
+    "prefer-rest-params": Array [
+      "error",
+    ],
+    "prefer-spread": Array [
+      "error",
+    ],
+    "prefer-template": Array [
+      "error",
+    ],
+    "quote-props": Array [
+      "off",
+      "as-needed",
+      Object {
+        "keywords": false,
+        "numbers": false,
+        "unnecessary": true,
+      },
+    ],
+    "quotes": Array [
+      "off",
+      "single",
+      Object {
+        "avoidEscape": true,
+      },
+    ],
+    "radix": Array [
+      "error",
+    ],
+    "require-atomic-updates": Array [
+      "off",
+    ],
+    "require-await": Array [
+      "off",
+    ],
+    "require-jsdoc": Array [
+      "off",
+    ],
+    "require-unicode-regexp": Array [
+      "off",
+    ],
+    "require-yield": Array [
+      "error",
+    ],
+    "rest-spread-spacing": Array [
+      "off",
+      "never",
+    ],
+    "semi": Array [
+      "off",
+      "always",
+    ],
+    "semi-spacing": Array [
+      "off",
+      Object {
+        "after": true,
+        "before": false,
+      },
+    ],
+    "semi-style": Array [
+      "off",
+      "last",
+    ],
+    "sort-imports": Array [
+      "off",
+      Object {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": Array [
+          "none",
+          "all",
+          "multiple",
+          "single",
+        ],
+      },
+    ],
+    "sort-keys": Array [
+      "off",
+      "asc",
+      Object {
+        "caseSensitive": false,
+        "natural": true,
+      },
+    ],
+    "sort-vars": Array [
+      "off",
+    ],
+    "space-before-blocks": Array [
+      "off",
+    ],
+    "space-before-function-paren": Array [
+      "off",
+      Object {
+        "anonymous": "always",
+        "asyncArrow": "always",
+        "named": "never",
+      },
+    ],
+    "space-in-parens": Array [
+      "off",
+      "never",
+    ],
+    "space-infix-ops": Array [
+      "off",
+    ],
+    "space-unary-ops": Array [
+      "off",
+      Object {
+        "nonwords": false,
+        "overrides": Object {},
+        "words": true,
+      },
+    ],
+    "spaced-comment": Array [
+      "error",
+      "always",
+      Object {
+        "block": Object {
+          "balanced": true,
+          "exceptions": Array [
+            "-",
+            "+",
+          ],
+          "markers": Array [
+            "=",
+            "!",
+          ],
+        },
+        "line": Object {
+          "exceptions": Array [
+            "-",
+            "+",
+          ],
+          "markers": Array [
+            "=",
+            "!",
+          ],
+        },
+      },
+    ],
+    "strict": Array [
+      "error",
+      "never",
+    ],
+    "switch-colon-spacing": Array [
+      "off",
+      Object {
+        "after": true,
+        "before": false,
+      },
+    ],
+    "symbol-description": Array [
+      "error",
+    ],
+    "template-curly-spacing": Array [
+      "off",
+    ],
+    "template-tag-spacing": Array [
+      "off",
+      "never",
+    ],
+    "unicode-bom": Array [
+      "off",
+      "never",
+    ],
+    "use-isnan": Array [
+      "error",
+    ],
+    "valid-jsdoc": Array [
+      "off",
+    ],
+    "valid-typeof": Array [
+      "error",
+      Object {
+        "requireStringLiterals": true,
+      },
+    ],
+    "vars-on-top": Array [
+      "error",
+    ],
+    "wrap-iife": Array [
+      "off",
+      "outside",
+      Object {
+        "functionPrototypeMethods": false,
+      },
+    ],
+    "wrap-regex": Array [
+      "off",
+    ],
+    "yield-star-spacing": Array [
+      "off",
+      "after",
+    ],
+    "yoda": Array [
+      "error",
+    ],
+    "zillow/import/default": Array [
+      "off",
+    ],
+    "zillow/import/dynamic-import-chunkname": Array [
+      "off",
+      Object {
+        "importFunctions": Array [],
+        "webpackChunknameFormat": "[0-9a-zA-Z-_/.]+",
+      },
+    ],
+    "zillow/import/export": Array [
+      "error",
+    ],
+    "zillow/import/exports-last": Array [
+      "off",
+    ],
+    "zillow/import/extensions": Array [
+      "error",
+      "ignorePackages",
+      Object {
+        "cjs": "never",
+        "js": "never",
+        "jsx": "never",
+        "mjs": "never",
+        "ts": "never",
+        "tsx": "never",
+      },
+    ],
+    "zillow/import/first": Array [
+      "error",
+      "absolute-first",
+    ],
+    "zillow/import/group-exports": Array [
+      "off",
+    ],
+    "zillow/import/imports-first": Array [
+      "off",
+    ],
+    "zillow/import/max-dependencies": Array [
+      "off",
+      Object {
+        "max": 10,
+      },
+    ],
+    "zillow/import/named": Array [
+      "error",
+    ],
+    "zillow/import/namespace": Array [
+      "off",
+    ],
+    "zillow/import/newline-after-import": Array [
+      "error",
+    ],
+    "zillow/import/no-absolute-path": Array [
+      "error",
+    ],
+    "zillow/import/no-amd": Array [
+      "error",
+    ],
+    "zillow/import/no-anonymous-default-export": Array [
+      "off",
+      Object {
+        "allowAnonymousClass": false,
+        "allowAnonymousFunction": false,
+        "allowArray": false,
+        "allowArrowFunction": false,
+        "allowLiteral": false,
+        "allowObject": false,
+      },
+    ],
+    "zillow/import/no-commonjs": Array [
+      "off",
+    ],
+    "zillow/import/no-cycle": Array [
+      "off",
+      Object {
+        "maxDepth": 10,
+      },
+    ],
+    "zillow/import/no-default-export": Array [
+      "off",
+    ],
+    "zillow/import/no-deprecated": Array [
+      "off",
+    ],
+    "zillow/import/no-duplicates": Array [
+      "error",
+    ],
+    "zillow/import/no-dynamic-require": Array [
+      "error",
+    ],
+    "zillow/import/no-extraneous-dependencies": Array [
+      "error",
+      Object {
+        "devDependencies": Array [
+          "test/**",
+          "tests/**",
+          "spec/**",
+          "**/__tests__/**",
+          "**/__mocks__/**",
+          "test.{js,jsx}",
+          "test-*.{js,jsx}",
+          "**/*.{test,spec}.{js,jsx}",
+          "**/jest.config.js",
+          "**/jest.setup.js",
+          "**/webpack.config.js",
+          "**/webpack.config.*.js",
+          "**/rollup.config.js",
+          "**/rollup.config.*.js",
+          "**/gulpfile.js",
+          "**/gulpfile.*.js",
+          "**/Gruntfile{,.js}",
+          "**/protractor.conf.js",
+          "**/protractor.conf.*.js",
+        ],
+        "optionalDependencies": false,
+      },
+    ],
+    "zillow/import/no-internal-modules": Array [
+      "off",
+      Object {
+        "allow": Array [],
+      },
+    ],
+    "zillow/import/no-mutable-exports": Array [
+      "error",
+    ],
+    "zillow/import/no-named-as-default": Array [
+      "error",
+    ],
+    "zillow/import/no-named-as-default-member": Array [
+      "error",
+    ],
+    "zillow/import/no-named-default": Array [
+      "error",
+    ],
+    "zillow/import/no-named-export": Array [
+      "off",
+    ],
+    "zillow/import/no-namespace": Array [
+      "off",
+    ],
+    "zillow/import/no-nodejs-modules": Array [
+      "off",
+    ],
+    "zillow/import/no-relative-parent-imports": Array [
+      "off",
+    ],
+    "zillow/import/no-restricted-paths": Array [
+      "off",
+    ],
+    "zillow/import/no-self-import": Array [
+      "error",
+    ],
+    "zillow/import/no-unassigned-import": Array [
+      "off",
+    ],
+    "zillow/import/no-unresolved": Array [
+      "error",
+      Object {
+        "caseSensitive": true,
+        "commonjs": true,
+      },
+    ],
+    "zillow/import/no-unused-modules": Array [
+      "off",
+    ],
+    "zillow/import/no-useless-path-segments": Array [
+      "error",
+    ],
+    "zillow/import/no-webpack-loader-syntax": Array [
+      "error",
+    ],
+    "zillow/import/order": Array [
+      "off",
+      Object {
+        "groups": Array [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        "newlines-between": "never",
+      },
+    ],
+    "zillow/import/prefer-default-export": Array [
+      "off",
+    ],
+    "zillow/import/unambiguous": Array [
+      "off",
+    ],
+    "zillow/jsx-a11y/accessible-emoji": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/alt-text": Array [
+      "error",
+      Object {
+        "area": Array [],
+        "elements": Array [
+          "img",
+          "object",
+          "area",
+          "input[type=\\"image\\"]",
+        ],
+        "img": Array [],
+        "input[type=\\"image\\"]": Array [],
+        "object": Array [],
+      },
+    ],
+    "zillow/jsx-a11y/anchor-has-content": Array [
+      "error",
+      Object {
+        "components": Array [],
+      },
+    ],
+    "zillow/jsx-a11y/anchor-is-valid": Array [
+      "error",
+      Object {
+        "aspects": Array [
+          "noHref",
+          "invalidHref",
+          "preferButton",
+        ],
+        "components": Array [
+          "Link",
+        ],
+        "specialLink": Array [
+          "to",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/aria-activedescendant-has-tabindex": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/aria-props": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/aria-proptypes": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/aria-role": Array [
+      "error",
+      Object {
+        "ignoreNonDOM": false,
+        "ignoreNonDom": false,
+      },
+    ],
+    "zillow/jsx-a11y/aria-unsupported-elements": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/autocomplete-valid": Array [
+      "off",
+      Object {
+        "inputComponents": Array [
+          "Input",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/click-events-have-key-events": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/control-has-associated-label": Array [
+      "error",
+      Object {
+        "controlComponents": Array [],
+        "depth": 25,
+        "ignoreElements": Array [
+          "audio",
+          "canvas",
+          "embed",
+          "input",
+          "textarea",
+          "tr",
+          "video",
+        ],
+        "ignoreRoles": Array [
+          "grid",
+          "listbox",
+          "menu",
+          "menubar",
+          "radiogroup",
+          "row",
+          "tablist",
+          "toolbar",
+          "tree",
+          "treegrid",
+        ],
+        "includeRoles": Array [
+          "alert",
+          "dialog",
+        ],
+        "labelAttributes": Array [],
+      },
+    ],
+    "zillow/jsx-a11y/heading-has-content": Array [
+      "error",
+      Object {
+        "components": Array [
+          "",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/html-has-lang": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/iframe-has-title": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/img-redundant-alt": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/interactive-supports-focus": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/label-has-associated-control": Array [
+      "error",
+      Object {
+        "assert": "either",
+        "controlComponents": Array [],
+        "depth": 25,
+        "labelAttributes": Array [],
+        "labelComponents": Array [],
+      },
+    ],
+    "zillow/jsx-a11y/lang": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/media-has-caption": Array [
+      "off",
+      Object {
+        "audio": Array [],
+        "track": Array [],
+        "video": Array [],
+      },
+    ],
+    "zillow/jsx-a11y/mouse-events-have-key-events": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/no-access-key": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/no-autofocus": Array [
+      "error",
+      Object {
+        "ignoreNonDOM": true,
+      },
+    ],
+    "zillow/jsx-a11y/no-distracting-elements": Array [
+      "error",
+      Object {
+        "elements": Array [
+          "marquee",
+          "blink",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/no-interactive-element-to-noninteractive-role": Array [
+      "error",
+      Object {
+        "tr": Array [
+          "none",
+          "presentation",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/no-noninteractive-element-interactions": Array [
+      "error",
+      Object {
+        "handlers": Array [
+          "onClick",
+          "onMouseDown",
+          "onMouseUp",
+          "onKeyPress",
+          "onKeyDown",
+          "onKeyUp",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/no-noninteractive-element-to-interactive-role": Array [
+      "error",
+      Object {
+        "li": Array [
+          "menuitem",
+          "option",
+          "row",
+          "tab",
+          "treeitem",
+        ],
+        "ol": Array [
+          "listbox",
+          "menu",
+          "menubar",
+          "radiogroup",
+          "tablist",
+          "tree",
+          "treegrid",
+        ],
+        "table": Array [
+          "grid",
+        ],
+        "td": Array [
+          "gridcell",
+        ],
+        "ul": Array [
+          "listbox",
+          "menu",
+          "menubar",
+          "radiogroup",
+          "tablist",
+          "tree",
+          "treegrid",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/no-noninteractive-tabindex": Array [
+      "error",
+      Object {
+        "roles": Array [
+          "tabpanel",
+        ],
+        "tags": Array [],
+      },
+    ],
+    "zillow/jsx-a11y/no-onchange": Array [
+      "off",
+    ],
+    "zillow/jsx-a11y/no-redundant-roles": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/no-static-element-interactions": Array [
+      "error",
+      Object {
+        "handlers": Array [
+          "onClick",
+          "onMouseDown",
+          "onMouseUp",
+          "onKeyPress",
+          "onKeyDown",
+          "onKeyUp",
+        ],
+      },
+    ],
+    "zillow/jsx-a11y/role-has-required-aria-props": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/role-supports-aria-props": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/scope": Array [
+      "error",
+    ],
+    "zillow/jsx-a11y/tabindex-no-positive": Array [
+      "error",
+    ],
+    "zillow/prettier/prettier": Array [
+      "error",
+      Object {
+        "$schema": "http://json.schemastore.org/prettierrc",
+        "arrowParens": "avoid",
+        "bracketSpacing": true,
+        "embeddedLanguageFormatting": "auto",
+        "endOfLine": "lf",
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxBracketSameLine": false,
+        "overrides": Array [
+          Object {
+            "files": Array [
+              ".eslintrc.json",
+              "lerna.json",
+              "package.json",
+              "package-lock.json",
+              "npm-shrinkwrap.json",
+            ],
+            "options": Object {
+              "parser": "json-stringify",
+              "tabWidth": 2,
+              "trailingComma": "none",
+            },
+          },
+          Object {
+            "files": Array [
+              "*.yaml",
+              "*.yml",
+              "tsconfig.json",
+            ],
+            "options": Object {
+              "tabWidth": 2,
+            },
+          },
+          Object {
+            "files": Array [
+              "*.ts",
+              "*.tsx",
+            ],
+            "options": Object {
+              "arrowParens": "always",
+            },
+          },
+        ],
+        "printWidth": 100,
+        "proseWrap": "preserve",
+        "quoteProps": "consistent",
+        "requirePragma": false,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "useTabs": false,
+      },
+      Object {
+        "usePrettierrc": false,
+      },
+    ],
+    "zillow/react-hooks/exhaustive-deps": Array [
+      "warn",
+    ],
+    "zillow/react-hooks/rules-of-hooks": Array [
+      "error",
+    ],
+    "zillow/react/boolean-prop-naming": Array [
+      "off",
+      Object {
+        "message": "",
+        "propTypeNames": Array [
+          "bool",
+          "mutuallyExclusiveTrueProps",
+        ],
+        "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+",
+      },
+    ],
+    "zillow/react/button-has-type": Array [
+      "error",
+      Object {
+        "button": true,
+        "reset": false,
+        "submit": true,
+      },
+    ],
+    "zillow/react/default-props-match-prop-types": Array [
+      "error",
+      Object {
+        "allowRequiredDefaults": false,
+      },
+    ],
+    "zillow/react/destructuring-assignment": Array [
+      "off",
+      "always",
+    ],
+    "zillow/react/display-name": Array [
+      "off",
+      Object {
+        "ignoreTranspilerName": false,
+      },
+    ],
+    "zillow/react/forbid-component-props": Array [
+      "off",
+      Object {
+        "forbid": Array [],
+      },
+    ],
+    "zillow/react/forbid-dom-props": Array [
+      "off",
+      Object {
+        "forbid": Array [],
+      },
+    ],
+    "zillow/react/forbid-elements": Array [
+      "off",
+      Object {
+        "forbid": Array [],
+      },
+    ],
+    "zillow/react/forbid-foreign-prop-types": Array [
+      "error",
+      Object {
+        "allowInPropTypes": true,
+      },
+    ],
+    "zillow/react/forbid-prop-types": Array [
+      "error",
+      Object {
+        "checkChildContextTypes": true,
+        "checkContextTypes": true,
+        "forbid": Array [
+          "any",
+          "array",
+          "object",
+        ],
+      },
+    ],
+    "zillow/react/function-component-definition": Array [
+      "off",
+      Object {
+        "namedComponents": "function-declaration",
+        "unnamedComponents": "arrow-function",
+      },
+    ],
+    "zillow/react/jsx-boolean-value": Array [
+      "error",
+      "never",
+      Object {
+        "always": Array [],
+      },
+    ],
+    "zillow/react/jsx-child-element-spacing": Array [
+      "off",
+    ],
+    "zillow/react/jsx-closing-bracket-location": Array [
+      "off",
+      "line-aligned",
+    ],
+    "zillow/react/jsx-closing-tag-location": Array [
+      "off",
+    ],
+    "zillow/react/jsx-curly-brace-presence": Array [
+      "error",
+      Object {
+        "children": "never",
+        "props": "never",
+      },
+    ],
+    "zillow/react/jsx-curly-newline": Array [
+      "off",
+    ],
+    "zillow/react/jsx-curly-spacing": Array [
+      "off",
+      "never",
+      Object {
+        "allowMultiline": true,
+      },
+    ],
+    "zillow/react/jsx-equals-spacing": Array [
+      "off",
+      "never",
+    ],
+    "zillow/react/jsx-filename-extension": Array [
+      "error",
+      Object {
+        "extensions": Array [
+          ".js",
+          ".jsx",
+        ],
+      },
+    ],
+    "zillow/react/jsx-first-prop-new-line": Array [
+      "off",
+      "multiline-multiprop",
+    ],
+    "zillow/react/jsx-fragments": Array [
+      "error",
+      "element",
+    ],
+    "zillow/react/jsx-handler-names": Array [
+      "off",
+      Object {
+        "eventHandlerPrefix": "handle",
+        "eventHandlerPropPrefix": "on",
+      },
+    ],
+    "zillow/react/jsx-indent": Array [
+      "off",
+      4,
+    ],
+    "zillow/react/jsx-indent-props": Array [
+      "off",
+      4,
+    ],
+    "zillow/react/jsx-key": Array [
+      "off",
+    ],
+    "zillow/react/jsx-max-depth": Array [
+      "off",
+    ],
+    "zillow/react/jsx-max-props-per-line": Array [
+      "off",
+      Object {
+        "maximum": 1,
+        "when": "multiline",
+      },
+    ],
+    "zillow/react/jsx-no-bind": Array [
+      "error",
+      Object {
+        "allowArrowFunctions": true,
+        "allowBind": false,
+        "allowFunctions": false,
+        "ignoreDOMComponents": true,
+        "ignoreRefs": true,
+      },
+    ],
+    "zillow/react/jsx-no-comment-textnodes": Array [
+      "error",
+    ],
+    "zillow/react/jsx-no-duplicate-props": Array [
+      "error",
+      Object {
+        "ignoreCase": true,
+      },
+    ],
+    "zillow/react/jsx-no-literals": Array [
+      "off",
+      Object {
+        "noStrings": true,
+      },
+    ],
+    "zillow/react/jsx-no-script-url": Array [
+      "error",
+    ],
+    "zillow/react/jsx-no-target-blank": Array [
+      "error",
+      Object {
+        "enforceDynamicLinks": "always",
+      },
+    ],
+    "zillow/react/jsx-no-undef": Array [
+      "error",
+    ],
+    "zillow/react/jsx-no-useless-fragment": Array [
+      "error",
+    ],
+    "zillow/react/jsx-one-expression-per-line": Array [
+      "off",
+    ],
+    "zillow/react/jsx-pascal-case": Array [
+      "error",
+      Object {
+        "allowAllCaps": true,
+        "ignore": Array [],
+      },
+    ],
+    "zillow/react/jsx-props-no-multi-spaces": Array [
+      "off",
+    ],
+    "zillow/react/jsx-props-no-spreading": Array [
+      "off",
+    ],
+    "zillow/react/jsx-sort-default-props": Array [
+      "off",
+      Object {
+        "ignoreCase": true,
+      },
+    ],
+    "zillow/react/jsx-sort-prop-types": Array [
+      "off",
+    ],
+    "zillow/react/jsx-sort-props": Array [
+      "off",
+      Object {
+        "callbacksLast": false,
+        "ignoreCase": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": true,
+        "shorthandFirst": false,
+        "shorthandLast": false,
+      },
+    ],
+    "zillow/react/jsx-space-before-closing": Array [
+      "off",
+      "always",
+    ],
+    "zillow/react/jsx-tag-spacing": Array [
+      "off",
+      Object {
+        "afterOpening": "never",
+        "beforeClosing": "never",
+        "beforeSelfClosing": "always",
+        "closingSlash": "never",
+      },
+    ],
+    "zillow/react/jsx-uses-react": Array [
+      "error",
+    ],
+    "zillow/react/jsx-uses-vars": Array [
+      "error",
+    ],
+    "zillow/react/jsx-wrap-multilines": Array [
+      "off",
+      Object {
+        "arrow": "parens-new-line",
+        "assignment": "parens-new-line",
+        "condition": "parens-new-line",
+        "declaration": "parens-new-line",
+        "logical": "parens-new-line",
+        "prop": "parens-new-line",
+        "return": "parens-new-line",
+      },
+    ],
+    "zillow/react/no-access-state-in-setstate": Array [
+      "error",
+    ],
+    "zillow/react/no-adjacent-inline-elements": Array [
+      "off",
+    ],
+    "zillow/react/no-array-index-key": Array [
+      "error",
+    ],
+    "zillow/react/no-children-prop": Array [
+      "error",
+    ],
+    "zillow/react/no-danger": Array [
+      "warn",
+    ],
+    "zillow/react/no-danger-with-children": Array [
+      "error",
+    ],
+    "zillow/react/no-deprecated": Array [
+      "error",
+    ],
+    "zillow/react/no-did-mount-set-state": Array [
+      "off",
+    ],
+    "zillow/react/no-did-update-set-state": Array [
+      "error",
+    ],
+    "zillow/react/no-direct-mutation-state": Array [
+      "off",
+    ],
+    "zillow/react/no-find-dom-node": Array [
+      "error",
+    ],
+    "zillow/react/no-is-mounted": Array [
+      "error",
+    ],
+    "zillow/react/no-multi-comp": Array [
+      "off",
+    ],
+    "zillow/react/no-redundant-should-component-update": Array [
+      "error",
+    ],
+    "zillow/react/no-render-return-value": Array [
+      "error",
+    ],
+    "zillow/react/no-set-state": Array [
+      "off",
+    ],
+    "zillow/react/no-string-refs": Array [
+      "error",
+    ],
+    "zillow/react/no-this-in-sfc": Array [
+      "error",
+    ],
+    "zillow/react/no-typos": Array [
+      "error",
+    ],
+    "zillow/react/no-unescaped-entities": Array [
+      "error",
+    ],
+    "zillow/react/no-unknown-property": Array [
+      "error",
+    ],
+    "zillow/react/no-unsafe": Array [
+      "off",
+    ],
+    "zillow/react/no-unused-prop-types": Array [
+      "error",
+      Object {
+        "customValidators": Array [],
+        "skipShapeProps": true,
+      },
+    ],
+    "zillow/react/no-unused-state": Array [
+      "error",
+    ],
+    "zillow/react/no-will-update-set-state": Array [
+      "error",
+    ],
+    "zillow/react/prefer-es6-class": Array [
+      "error",
+      "always",
+    ],
+    "zillow/react/prefer-read-only-props": Array [
+      "off",
+    ],
+    "zillow/react/prefer-stateless-function": Array [
+      "error",
+      Object {
+        "ignorePureComponents": true,
+      },
+    ],
+    "zillow/react/prop-types": Array [
+      "off",
+      Object {
+        "customValidators": Array [],
+        "ignore": Array [],
+        "skipUndeclared": false,
+      },
+    ],
+    "zillow/react/react-in-jsx-scope": Array [
+      "error",
+    ],
+    "zillow/react/require-default-props": Array [
+      "warn",
+      Object {
+        "forbidDefaultForRequired": true,
+      },
+    ],
+    "zillow/react/require-optimization": Array [
+      "off",
+      Object {
+        "allowDecorators": Array [],
+      },
+    ],
+    "zillow/react/require-render-return": Array [
+      "error",
+    ],
+    "zillow/react/self-closing-comp": Array [
+      "off",
+    ],
+    "zillow/react/sort-comp": Array [
+      "error",
+      Object {
+        "groups": Object {
+          "lifecycle": Array [
+            "displayName",
+            "propTypes",
+            "contextTypes",
+            "childContextTypes",
+            "mixins",
+            "statics",
+            "defaultProps",
+            "constructor",
+            "getDefaultProps",
+            "getInitialState",
+            "getChildContext",
+            "state",
+            "getDerivedStateFromProps",
+            "componentWillMount",
+            "UNSAFE_componentWillMount",
+            "componentDidMount",
+            "componentWillReceiveProps",
+            "UNSAFE_componentWillReceiveProps",
+            "shouldComponentUpdate",
+            "componentWillUpdate",
+            "UNSAFE_componentWillUpdate",
+            "getSnapshotBeforeUpdate",
+            "componentDidUpdate",
+            "componentDidCatch",
+            "componentWillUnmount",
+          ],
+          "rendering": Array [
+            "/^render.+$/",
+            "render",
+          ],
+        },
+        "order": Array [
+          "static-methods",
+          "instance-variables",
+          "lifecycle",
+          "/^on.+$/",
+          "getters",
+          "setters",
+          "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+          "instance-methods",
+          "everything-else",
+          "rendering",
+        ],
+      },
+    ],
+    "zillow/react/sort-prop-types": Array [
+      "off",
+      Object {
+        "callbacksLast": false,
+        "ignoreCase": true,
+        "requiredFirst": false,
+        "sortShapeProp": true,
+      },
+    ],
+    "zillow/react/state-in-constructor": Array [
+      "off",
+    ],
+    "zillow/react/static-property-placement": Array [
+      "off",
+    ],
+    "zillow/react/style-prop-object": Array [
+      "error",
+    ],
+    "zillow/react/void-dom-elements-no-children": Array [
+      "error",
+    ],
+  },
+  "settings": Object {
+    "import/core-modules": Array [],
+    "import/extensions": Array [
+      ".ts",
+      ".tsx",
+      ".d.ts",
+      ".cjs",
+      ".js",
+      ".mjs",
+      ".jsx",
+    ],
+    "import/external-module-folders": Array [
+      "node_modules",
+      "node_modules/@types",
+    ],
+    "import/ignore": Array [
+      "node_modules",
+      "\\\\.(coffee|scss|css|less|hbs|svg|json)$",
+    ],
+    "import/parsers": Object {
+      "@typescript-eslint/parser": Array [
+        ".ts",
+        ".tsx",
+        ".d.ts",
+      ],
+    },
+    "import/resolver": Object {
+      "node": Object {
+        "extensions": Array [
+          ".js",
+          ".jsx",
+          ".json",
+          ".ts",
+          ".tsx",
+          ".d.ts",
+          ".cjs",
+          ".mjs",
+        ],
+      },
+    },
+    "propWrapperFunctions": Array [
+      "forbidExtraProps",
+      "exact",
+      "Object.freeze",
+    ],
+    "react": Object {
+      "pragma": "React",
+      "version": "16.8",
+    },
+  },
+}
+`;
+
+exports[`rendered config typescript.json matches snapshot 1`] = `
+Object {
+  "overrides": Array [
+    Object {
+      "env": Object {},
+      "files": Array [
+        "**/*.ts?(x)",
+      ],
+      "globals": Object {},
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": Object {
+        "ecmaVersion": 2018,
+        "project": Array [
+          "./tsconfig.json",
+        ],
+        "sourceType": "module",
+      },
+      "plugins": Array [
+        "zillow",
+      ],
+      "rules": Object {
+        "camelcase": Array [
+          "off",
+        ],
+        "constructor-super": Array [
+          "off",
+        ],
+        "default-param-last": Array [
+          "off",
+        ],
+        "dot-notation": Array [
+          "off",
+        ],
+        "getter-return": Array [
+          "off",
+        ],
+        "init-declarations": Array [
+          "off",
+        ],
+        "lines-between-class-members": Array [
+          "off",
+        ],
+        "no-array-constructor": Array [
+          "off",
+        ],
+        "no-const-assign": Array [
+          "off",
+        ],
+        "no-dupe-args": Array [
+          "off",
+        ],
+        "no-dupe-class-members": Array [
+          "off",
+        ],
+        "no-dupe-keys": Array [
+          "off",
+        ],
+        "no-empty-function": Array [
+          "off",
+        ],
+        "no-func-assign": Array [
+          "off",
+        ],
+        "no-import-assign": Array [
+          "off",
+        ],
+        "no-invalid-this": Array [
+          "off",
+        ],
+        "no-loop-func": Array [
+          "off",
+        ],
+        "no-loss-of-precision": Array [
+          "off",
+        ],
+        "no-magic-numbers": Array [
+          "off",
+        ],
+        "no-new-symbol": Array [
+          "off",
+        ],
+        "no-obj-calls": Array [
+          "off",
+        ],
+        "no-redeclare": Array [
+          "off",
+        ],
+        "no-return-await": Array [
+          "off",
+        ],
+        "no-setter-return": Array [
+          "off",
+        ],
+        "no-shadow": Array [
+          "off",
+        ],
+        "no-this-before-super": Array [
+          "off",
+        ],
+        "no-undef": Array [
+          "off",
+        ],
+        "no-unreachable": Array [
+          "off",
+        ],
+        "no-unsafe-negation": Array [
+          "off",
+        ],
+        "no-unused-expressions": Array [
+          "off",
+        ],
+        "no-unused-vars": Array [
+          "off",
+        ],
+        "no-use-before-define": Array [
+          "off",
+        ],
+        "no-useless-constructor": Array [
+          "off",
+        ],
+        "no-var": Array [
+          "error",
+        ],
+        "prefer-const": Array [
+          "error",
+        ],
+        "prefer-rest-params": Array [
+          "error",
+        ],
+        "prefer-spread": Array [
+          "error",
+        ],
+        "require-await": Array [
+          "off",
+        ],
+        "spaced-comment": Array [
+          "error",
+          "always",
+          Object {
+            "line": Object {
+              "markers": Array [
+                "/",
+              ],
+            },
+          },
+        ],
+        "valid-typeof": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/adjacent-overload-signatures": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/array-type": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/await-thenable": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/ban-ts-comment": Array [
+          "error",
+          Object {
+            "minimumDescriptionLength": 3,
+            "ts-check": false,
+            "ts-expect-error": "allow-with-description",
+            "ts-ignore": true,
+            "ts-nocheck": true,
+          },
+        ],
+        "zillow/@typescript-eslint/ban-tslint-comment": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/ban-types": Array [
+          "error",
+          Object {
+            "extendDefaults": true,
+            "types": Object {
+              "object": Object {
+                "fixWith": "Record<string, unknown>",
+                "message": "The \`object\` type is currently hard to use ([see this issue](https://github.com/microsoft/TypeScript/issues/21732)).
+Consider using \`Record<string, unknown>\` instead, as it allows you to more easily inspect and use the keys.",
+              },
+            },
+          },
+        ],
+        "zillow/@typescript-eslint/brace-style": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/class-literal-property-style": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/comma-dangle": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/comma-spacing": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/consistent-type-assertions": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/consistent-type-definitions": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/consistent-type-imports": Array [
+          "error",
+          Object {
+            "disallowTypeAnnotations": true,
+            "prefer": "type-imports",
+          },
+        ],
+        "zillow/@typescript-eslint/default-param-last": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/dot-notation": Array [
+          "error",
+          Object {
+            "allowKeywords": true,
+            "allowPattern": "",
+            "allowPrivateClassPropertyAccess": false,
+          },
+        ],
+        "zillow/@typescript-eslint/explicit-function-return-type": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/explicit-member-accessibility": Array [
+          "error",
+          Object {
+            "accessibility": "no-public",
+          },
+        ],
+        "zillow/@typescript-eslint/explicit-module-boundary-types": Array [
+          "off",
+          Object {
+            "allowArgumentsExplicitlyTypedAsAny": false,
+            "allowDirectConstAssertionInArrowFunctions": true,
+            "allowHigherOrderFunctions": true,
+            "allowTypedFunctionExpressions": true,
+            "allowedNames": Array [],
+          },
+        ],
+        "zillow/@typescript-eslint/func-call-spacing": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/indent": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/init-declarations": Array [
+          "error",
+          "never",
+          Object {
+            "ignoreForLoopInit": true,
+          },
+        ],
+        "zillow/@typescript-eslint/keyword-spacing": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/lines-between-class-members": Array [
+          "error",
+          "always",
+          Object {
+            "exceptAfterOverload": true,
+            "exceptAfterSingleLine": false,
+          },
+        ],
+        "zillow/@typescript-eslint/member-delimiter-style": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/member-ordering": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/method-signature-style": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/naming-convention": Array [
+          "error",
+          Object {
+            "format": Array [
+              "camelCase",
+            ],
+            "selector": "default",
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+              "UPPER_CASE",
+            ],
+            "selector": "variable",
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+              "PascalCase",
+            ],
+            "selector": "variable",
+            "types": Array [
+              "function",
+            ],
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+              "PascalCase",
+            ],
+            "selector": "function",
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+            ],
+            "leadingUnderscore": "allow",
+            "selector": "parameter",
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+            ],
+            "leadingUnderscore": "require",
+            "modifiers": Array [
+              "private",
+            ],
+            "selector": "memberLike",
+          },
+          Object {
+            "filter": "^TODO$",
+            "format": null,
+            "selector": "memberLike",
+          },
+          Object {
+            "filter": "^(Component|AppTree)$",
+            "format": null,
+            "selector": "property",
+          },
+          Object {
+            "format": Array [
+              "PascalCase",
+            ],
+            "selector": "typeLike",
+          },
+          Object {
+            "custom": Object {
+              "match": false,
+              "regex": "^I[A-Z](?![A-Z])",
+            },
+            "format": Array [
+              "PascalCase",
+            ],
+            "selector": "interface",
+          },
+          Object {
+            "filter": "^UNSAFE_",
+            "format": null,
+            "selector": "method",
+          },
+        ],
+        "zillow/@typescript-eslint/no-array-constructor": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-base-to-string": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-confusing-non-null-assertion": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-dupe-class-members": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/no-dynamic-delete": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-empty-function": Array [
+          "error",
+          Object {
+            "allow": Array [
+              "arrowFunctions",
+              "functions",
+              "methods",
+            ],
+          },
+        ],
+        "zillow/@typescript-eslint/no-empty-interface": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-explicit-any": Array [
+          "warn",
+        ],
+        "zillow/@typescript-eslint/no-extra-non-null-assertion": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-extra-parens": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/no-extra-semi": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/no-extraneous-class": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-floating-promises": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-for-in-array": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-implicit-any-catch": Array [
+          "off",
+          Object {
+            "allowExplicitAny": false,
+          },
+        ],
+        "zillow/@typescript-eslint/no-implied-eval": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-inferrable-types": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-invalid-this": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-invalid-void-type": Array [
+          "error",
+          Object {
+            "allowInGenericTypeArguments": true,
+          },
+        ],
+        "zillow/@typescript-eslint/no-loop-func": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-loss-of-precision": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-magic-numbers": Array [
+          "off",
+          Object {
+            "detectObjects": false,
+            "enforceConst": true,
+            "ignore": Array [],
+            "ignoreArrayIndexes": true,
+            "ignoreNumericLiteralTypes": true,
+            "ignoreReadonlyClassProperties": true,
+          },
+        ],
+        "zillow/@typescript-eslint/no-misused-new": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-misused-promises": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-namespace": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-non-null-asserted-optional-chain": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-non-null-assertion": Array [
+          "warn",
+        ],
+        "zillow/@typescript-eslint/no-parameter-properties": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-redeclare": Array [
+          "error",
+          Object {
+            "builtinGlobals": true,
+            "ignoreDeclarationMerge": true,
+          },
+        ],
+        "zillow/@typescript-eslint/no-require-imports": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-shadow": Array [
+          "error",
+          Object {
+            "allow": Array [
+              "fetch",
+              "global",
+            ],
+            "builtinGlobals": false,
+            "hoist": "functions",
+            "ignoreFunctionTypeParameterNameValueShadow": true,
+            "ignoreTypeValueShadow": true,
+          },
+        ],
+        "zillow/@typescript-eslint/no-this-alias": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-throw-literal": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-type-alias": Array [
+          "error",
+          Object {
+            "allowAliases": "always",
+            "allowCallbacks": "always",
+            "allowConditionalTypes": "never",
+            "allowConstructors": "never",
+            "allowLiterals": "in-intersections",
+            "allowMappedTypes": "never",
+            "allowTupleTypes": "never",
+          },
+        ],
+        "zillow/@typescript-eslint/no-unnecessary-boolean-literal-compare": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unnecessary-condition": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unnecessary-qualifier": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unnecessary-type-arguments": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unnecessary-type-assertion": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unsafe-assignment": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unsafe-call": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unsafe-member-access": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unsafe-return": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unused-expressions": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-unused-vars": Array [
+          "error",
+          Object {
+            "args": "after-used",
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true,
+            "varsIgnorePattern": "^ignored",
+          },
+        ],
+        "zillow/@typescript-eslint/no-unused-vars-experimental": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/no-use-before-define": Array [
+          "error",
+          Object {
+            "functions": false,
+            "typedefs": false,
+          },
+        ],
+        "zillow/@typescript-eslint/no-useless-constructor": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/no-var-requires": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-as-const": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-enum-initializers": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-for-of": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-function-type": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-includes": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-literal-enum-member": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-namespace-keyword": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-nullish-coalescing": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-optional-chain": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-readonly": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-readonly-parameter-types": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/prefer-reduce-type-parameter": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-regexp-exec": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-string-starts-ends-with": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/prefer-ts-expect-error": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/promise-function-async": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/quotes": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/require-array-sort-compare": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/require-await": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/restrict-plus-operands": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/restrict-template-expressions": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/return-await": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/semi": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/space-before-function-paren": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/strict-boolean-expressions": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/switch-exhaustiveness-check": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/triple-slash-reference": Array [
+          "error",
+          Object {
+            "lib": "never",
+            "path": "never",
+            "types": "prefer-import",
+          },
+        ],
+        "zillow/@typescript-eslint/type-annotation-spacing": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/typedef": Array [
+          "off",
+        ],
+        "zillow/@typescript-eslint/unbound-method": Array [
+          "error",
+        ],
+        "zillow/@typescript-eslint/unified-signatures": Array [
+          "error",
+        ],
+        "zillow/import/first": Array [
+          "off",
+        ],
+        "zillow/prettier/prettier": Array [
+          "error",
+          Object {
+            "$schema": "http://json.schemastore.org/prettierrc",
+            "arrowParens": "always",
+            "bracketSpacing": true,
+            "embeddedLanguageFormatting": "auto",
+            "endOfLine": "lf",
+            "htmlWhitespaceSensitivity": "css",
+            "insertPragma": false,
+            "jsxBracketSameLine": false,
+            "printWidth": 100,
+            "proseWrap": "preserve",
+            "quoteProps": "consistent",
+            "requirePragma": false,
+            "semi": true,
+            "singleQuote": true,
+            "tabWidth": 4,
+            "trailingComma": "es5",
+            "useTabs": false,
+          },
+          Object {
+            "usePrettierrc": false,
+          },
+        ],
+        "zillow/react/jsx-filename-extension": Array [
+          "error",
+          Object {
+            "extensions": Array [
+              ".js",
+              ".jsx",
+              ".tsx",
+            ],
+          },
+        ],
+        "zillow/react/prop-types": Array [
+          "off",
+        ],
+        "zillow/react/sort-comp": Array [
+          "off",
+        ],
+      },
+      "settings": Object {},
+    },
+  ],
+}
+`;

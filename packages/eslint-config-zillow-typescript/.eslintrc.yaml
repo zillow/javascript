@@ -1,0 +1,3 @@
+---
+  rules:
+    prettier/prettier: [error, { tabWidth: 2 }]

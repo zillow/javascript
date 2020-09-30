@@ -2,13 +2,11 @@ module.exports = {
   rules: {
     // enforce line breaks after opening and before closing array brackets
     // https://eslint.org/docs/rules/array-bracket-newline
-    // TODO: enable? semver-major
     // object option alternative: { multiline: true, minItems: 3 }
     'array-bracket-newline': ['off', 'consistent'],
 
     // enforce line breaks between array elements
     // https://eslint.org/docs/rules/array-element-newline
-    // TODO: enable? semver-major
     'array-element-newline': ['off', { multiline: true, minItems: 3 }],
 
     // enforce spacing inside array brackets
@@ -110,9 +108,12 @@ module.exports = {
     // https://eslint.org/docs/rules/function-paren-newline
     'function-paren-newline': ['off'/* prettier */, 'multiline'],
 
-    // Blacklist certain identifiers to prevent them being used
-    // https://eslint.org/docs/rules/id-blacklist
-    'id-blacklist': 'off',
+    // https://eslint.org/docs/rules/function-call-argument-newline
+    'function-call-argument-newline': 'off'/* prettier */,
+
+    // List certain identifiers to prevent them being used
+    // https://eslint.org/docs/rules/id-denylist
+    'id-denylist': 'off',
 
     // this option enforces minimum and maximum identifier lengths
     // (variable names, property names etc.)

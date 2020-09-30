@@ -7,6 +7,7 @@ module.exports = {
     // TODO: (major) match v2 "arrowParens" default "always"
     arrowParens: 'avoid',
     bracketSpacing: true,
+    embeddedLanguageFormatting: 'auto',
     jsxBracketSameLine: false,
     htmlWhitespaceSensitivity: 'css',
     requirePragma: false,

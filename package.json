@@ -4,6 +4,7 @@
   "private": true,
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
+    "build:plugin": "node ./packages/eslint-plugin-zillow/lib/render-plugin-configs.js",
     "check:prettier:parser": "prettier --debug-check --ignore-path ./.gitignore 'packages/**/*.@(js|md)'",
     "lint": "npm-run-all --silent lint:*",
     "lint:js": "eslint ./packages --cache --cache-location ./node_modules/.cache/eslint --report-unused-disable-directives",
@@ -13,13 +14,12 @@
     "lint:rules:jest": "eslint-find-rules --unused packages/eslint-config-zillow-base/jest.js --no-core",
     "lint:rules:main": "eslint-find-rules --unused packages/eslint-config-zillow/index.js",
     "lint:rules:mocha": "eslint-find-rules --unused packages/eslint-config-zillow-base/mocha.js --no-core",
-    "lint:rules:typescript": "eslint-find-rules --unused packages/eslint-config-zillow-base/typescript.js --no-core",
+    "lint:rules:typescript": "eslint-find-rules --unused packages/eslint-config-zillow-typescript/index.js --no-core",
     "lint:prettier": "eslint --print-config packages/eslint-config-zillow/index.js | eslint-config-prettier-check",
-    "pretest": "lerna run prepare --loglevel error && npm run --silent lint",
+    "pretest": "npm run build:plugin && npm run --silent lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prerelease": "npm test",
-    "release": "lerna publish"
+    "preversion": "npm test"
   },
   "repository": {
     "type": "git",
@@ -37,9 +37,10 @@
   "license": "MIT",
   "homepage": "https://github.com/zillow/javascript",
   "engines": {
-    "node": ">= 8.9.0"
+    "node": ">= 10.17"
   },
   "jest": {
+    "testRunner": "jest-circus/runner",
     "testEnvironment": "node",
     "testMatch": [
       "<rootDir>/packages/**/test/**/*.js"
@@ -83,8 +84,9 @@
     "@babel/template": "^7.10.4",
     "@babel/traverse": "^7.11.5",
     "@babel/types": "^7.11.5",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
+    "@eslint/eslintrc": "^0.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-dynamic-import-node": "2.3.3",
     "babel-plugin-jsx-remove-data-test-id": "^2.1.3",
@@ -92,18 +94,19 @@
     "babel-plugin-styled-components": "^1.11.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "es-abstract": "1.17.6",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
     "eslint-find-rules": "^3.6.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^22.21.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-mocha": "^6.3.0",
+    "eslint-plugin-mocha": "^8.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.1",
-    "eslint-plugin-react-hooks": "^2.5.1",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "fast-async": "^7.0.6",
     "jest": "^26.4.2",
+    "jest-circus": "^26.4.2",
     "jsx-ast-utils": "2.4.1",
     "lerna": "^3.22.1",
     "markdownlint-cli": "^0.23.2",
@@ -115,12 +118,13 @@
     "side-channel": "1.0.2",
     "string.prototype.matchall": "4.0.2",
     "styled-components": "^4.4.1",
-    "typescript": "^3.9.7"
+    "typescript": "^4.0.3"
   },
   "dependencies": {
     "babel-preset-zillow": "file:packages/babel-preset-zillow",
     "eslint-config-zillow": "file:packages/eslint-config-zillow",
     "eslint-config-zillow-base": "file:packages/eslint-config-zillow-base",
+    "eslint-config-zillow-typescript": "file:packages/eslint-config-zillow-typescript",
     "eslint-plugin-zillow": "file:packages/eslint-plugin-zillow",
     "prettier-config-zillow": "file:packages/prettier-config-zillow",
     "zillow-browser-shims": "file:packages/zillow-browser-shims",

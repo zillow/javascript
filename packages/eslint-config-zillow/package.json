@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zillow",
-  "version": "3.6.0",
+  "version": "4.0.0-alpha.3",
   "description": "Zillow's ESLint config, following our code conventions",
   "main": "index.js",
   "files": [
@@ -8,7 +8,6 @@
     "jest.js",
     "mocha.js",
     "prettier.config.js",
-    "typescript.js",
     "rules"
   ],
   "scripts": {
@@ -30,22 +29,19 @@
   "license": "MIT",
   "homepage": "https://github.com/zillow/javascript/tree/latest/packages/eslint-config-zillow#readme",
   "engines": {
-    "node": ">= 8.9.0"
+    "node": ">= 10.17"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": ">= 5.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jest": "^22.3.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-mocha": "^5.3.0 || ^6.1.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.5.0 || ^2.1.2",
-    "prettier": "^1.16.4 || ^2.0.5",
-    "typescript": "^3.8.3"
+    "babel-eslint": "^10.1.0",
+    "eslint": ">= 7.4.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "prettier": "^2.1.2"
   },
   "dependencies": {
     "eslint-config-zillow-base": "file:../eslint-config-zillow-base",

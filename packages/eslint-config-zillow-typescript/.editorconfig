@@ -1,0 +1,4 @@
+# override root to minimize conflicts with upstream
+
+[*.js]
+indent_size = 2

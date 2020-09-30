@@ -1,16 +1,18 @@
-# eslint-config-zillow-base
+# eslint-config-zillow-typescript
 
-> Zillow's base ESLint config (without React plugins), following our code conventions
+> Zillow's ESLint config for TypeScript, following our code conventions
 
-[![npm version](https://img.shields.io/npm/v/eslint-config-zillow-base.svg)](https://www.npmjs.com/package/eslint-config-zillow-base)
+[![npm version](https://img.shields.io/npm/v/eslint-config-zillow-typescript.svg)](https://www.npmjs.com/package/eslint-config-zillow-typescript)
 [![Build Status](https://travis-ci.org/zillow/javascript.svg?branch=latest)](https://travis-ci.org/zillow/javascript)
 
 ## Usage
 
+Note: Unlike other Zillow eslint config plugins, this module is designed to be used in tandem with another extended config such as [eslint-config-zillow](https://npmjs.com/eslint-config-zillow).
+
 To install with all necessary `peerDependencies`, use [install-peerdeps](https://github.com/nathanhleung/install-peerdeps#usage):
 
 ```sh
-npx install-peerdeps --dev eslint-config-zillow-base
+npx install-peerdeps --dev eslint-config-zillow eslint-config-zillow-typescript
 ```
 
 All exported configs should be added to your [ESlint configuration file](https://eslint.org/docs/user-guide/configuring#extending-configuration-files) `extends`.
@@ -18,21 +20,24 @@ For example, in a JSON `.eslintrc`:
 
 ```json
 {
-  "extends": "zillow-base"
+  "extends": ["zillow", "zillow-typescript"]
 }
 ```
 
-### `"extends": "zillow-base"`
+### Project Config
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+ and Prettier.
+All flavors of this config expect your `tsconfig.json` to be in the current working directory (relative to your eslint config), which is extremely common. If it is elsewhere (say, a monorepo leaf), you will need to override various [`parserOptions`](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md):
 
-### `"extends": ["zillow-base", "zillow-base/jest]`
-
-Jest-specific rules and environment added to the default export.
-
-### `"extends": ["zillow-base", "zillow-base/mocha]`
-
-Mocha-specific rules and environment added to the default export.
+```js
+// .eslintrc.js
+module.exports = {
+  extends: ['zillow', 'zillow-typescript'],
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
+  },
+};
+```
 
 ### `prettier` Editor Plugin Integration
 
