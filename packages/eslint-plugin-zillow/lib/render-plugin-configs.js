@@ -22,6 +22,7 @@ async function main() {
             rules: {
                 // plugin-specific rules that hamper effective testing
                 '@typescript-eslint/no-invalid-void-type': ['off'],
+                'no-import-assign': ['off'],
                 'react/prop-types': ['off'],
             },
         },
@@ -44,6 +45,7 @@ async function main() {
                 // and this conflicts with mocha/no-mocha-arrow
                 'prefer-arrow-callback': 'off',
                 'func-names': 'off',
+                'no-import-assign': ['off'],
                 'react/prop-types': ['off'],
             },
         },

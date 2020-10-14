@@ -20,6 +20,9 @@ Object {
         "zillow",
       ],
       "rules": Object {
+        "no-import-assign": Array [
+          "off",
+        ],
         "zillow/@typescript-eslint/no-invalid-void-type": Array [
           "off",
         ],
@@ -195,6 +198,9 @@ Object {
       ],
       "rules": Object {
         "func-names": Array [
+          "off",
+        ],
+        "no-import-assign": Array [
           "off",
         ],
         "prefer-arrow-callback": Array [
