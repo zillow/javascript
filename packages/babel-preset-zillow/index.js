@@ -108,6 +108,8 @@ module.exports = declare((api, options) => {
 
             // need to hoist this above (possible) class transformer, otherwise it explodes
             [require('@babel/plugin-proposal-class-properties'), { loose: true }],
+            // class-properties and private-methods must have the same "loose" value
+            [require('@babel/plugin-proposal-private-methods'), { loose: true }],
 
             // prettier-ignore
             !isNode &&
